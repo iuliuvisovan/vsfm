@@ -80,7 +80,7 @@
     },
     {
       "subject": "Branduri",
-      "question": "Cărui brand aparține acest logo?",
+      "question": "Cărui brand îi aparține acest logo?",
       "imageName": "p-logo-1.png",
       "options": {
         "A": "Calvin Klein",
@@ -246,6 +246,75 @@
       },
       "correctAnswer": "D",
       "target": "petruta"
+    },
+    {
+      "subject": "Geografie",
+      "question": "Cărei țări îi aparține acest steag?",
+      "imageName": "leo-flag-1.png",
+      "options": {
+        "A": "Australia",
+        "D": "Brazilia",
+        "C": "Mare Britanie",
+        "B": "Ucraina"
+      },
+      "correctAnswer": "C",
+      "target": "leo"
+    },
+    {
+      "subject": "Branduri",
+      "question": "Cărui brand de mașină îi aparține acest logo?",
+      "imageName": "leo-logo-1.png",
+      "options": {
+        "A": "Mercedes",
+        "B": "Audi",
+        "C": "Volvo",
+        "D": "BMW"
+      },
+      "correctAnswer": "C",
+      "target": "leo"
+    },
+    {
+      "subject": "Pattern recognition",
+      "question": "Completează acest puzzle logic:",
+      "imageName": "leo-logic-1.png",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "correctAnswer": "B",
+      "target": "leo"
+    },
+    {
+      "subject": "Pattern recognition",
+      "question": "Completează acest puzzle logic:",
+      "imageName": "leo-logic-2.png",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D",
+        "E": "E",
+        "F": "F"
+      },
+      "correctAnswer": "E",
+      "target": "leo"
+    },
+    {
+      "subject": "Pattern recognition",
+      "question": "Completează acest puzzle logic:",
+      "imageName": "leo-logic-3.png",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D",
+        "E": "E",
+        "F": "F"
+      },
+      "correctAnswer": "D",
+      "target": "leo"
     }
   ]
 }
