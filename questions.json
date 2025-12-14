@@ -162,6 +162,18 @@
       },
       "correctAnswer": "C",
       "target": "petruta"
+    },
+    {
+      "subject": "Astronomie",
+      "question": "Cât timp îi ia luminii să ajungă de la Soare la Pământ?",
+      "options": {
+        "A": "Aproximativ 8 minute",
+        "B": "Aproximativ 8 secunde",
+        "C": "Aproximativ 1 oră",
+        "D": "Aproximativ 1 minut"
+      },
+      "correctAnswer": "A",
+      "target": "petruta"
     }
   ]
 }
