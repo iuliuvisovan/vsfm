@@ -1,7 +1,7 @@
 {
   "questions": [
     {
-      "subject": "Limba romana",
+      "subject": "Limba română",
       "question": "Care dintre următoarele propoziții este scrisă corect din punct de vedere gramatical?",
       "options": {
         "A": "S-a dus la magazin dar n a mai găsit nimic.",
@@ -314,6 +314,186 @@
         "F": "F"
       },
       "correctAnswer": "D",
+      "target": "leo"
+    },
+    {
+      "subject": "Limba română",
+      "question": "Care propoziție este scrisă corect?",
+      "options": {
+        "A": "S-a dus la scoală dimineata.",
+        "B": "S-a dus la școală dimineața.",
+        "C": "S a dus la școala dimineața.",
+        "D": "Sa-dus la școală dimineața."
+      },
+      "correctAnswer": "B",
+      "target": "leo"
+    },
+    {
+      "subject": "Geografie",
+      "question": "Care este capitala Republicii Moldova?",
+      "options": {
+        "A": "Iași",
+        "B": "Bălți",
+        "C": "Chișinău",
+        "D": "Minsk"
+      },
+      "correctAnswer": "C",
+      "target": "leo"
+    },
+    {
+      "subject": "Engleză",
+      "question": "Cum se spune în engleză \"întotdeauna\"?",
+      "options": {
+        "A": "Sometimes",
+        "B": "Usually",
+        "C": "Always",
+        "D": "Never"
+      },
+      "correctAnswer": "C",
+      "target": "leo"
+    },
+    {
+      "subject": "Astronomie",
+      "question": "Care este cea mai apropiată planetă de Pământ?",
+      "options": {
+        "A": "Venus",
+        "B": "Mercur",
+        "C": "Marte",
+        "D": "Jupiter"
+      },
+      "correctAnswer": "A",
+      "target": "leo"
+    },
+    {
+      "subject": "Matematică (Algebră)",
+      "question": "Cât e 5 la a 3-a?",
+      "options": {
+        "A": "45",
+        "B": "125",
+        "C": "155",
+        "D": "15"
+      },
+      "correctAnswer": "B",
+      "target": "leo"
+    },
+    {
+      "subject": "Matematică (Geometrie)",
+      "question": "Câte laturi are un dreptunghi?",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5"
+      },
+      "correctAnswer": "C",
+      "target": "leo"
+    },
+    {
+      "subject": "Tehnologie",
+      "question": "Care e principala cauză a încălzirii telefonului când te joci mult timp pe el?",
+      "options": {
+        "A": "Pentru că telefonul este ținut în mână și primește căldură de la corp",
+        "B": "Pentru că ecranul stă aprins mult timp la luminozitate mare",
+        "C": "Pentru că bateria se descarcă în timp ce te joci",
+        "D": "Pentru că procesorul telefonului lucrează intens când rulează jocul"
+      },
+      "correctAnswer": "D",
+      "target": "leo"
+    },
+    {
+      "subject": "Sport",
+      "question": "Câți jucători are o echipă profesionistă de fotbal (cu tot cu portar)?",
+      "options": {
+        "A": "9",
+        "B": "10",
+        "C": "11",
+        "D": "12"
+      },
+      "correctAnswer": "C",
+      "target": "leo"
+    },
+    {
+      "subject": "Biologie",
+      "question": "Ce este răceala?",
+      "options": {
+        "A": "O boală a ficatului provacată de bacterii",
+        "B": "O infecție virală ușoară a căilor respiratorii",
+        "C": "O alergie la frig",
+        "D": "O boală a plămânilor"
+      },
+      "correctAnswer": "B",
+      "target": "leo"
+    },
+    {
+      "subject": "Fizică",
+      "question": "Ce este viteza?",
+      "options": {
+        "A": "Forța aplicată unui obiect",
+        "B": "Unitate de masură a mașinii",
+        "C": "Distanța parcursă într-un timp",
+        "D": "Energia unui obiect"
+      },
+      "correctAnswer": "A",
+      "target": "leo"
+    },
+    {
+      "subject": "Rude",
+      "question": "Cum îl cheamă pe soțul Gabrielei?",
+      "options": {
+        "A": "Vișovan Iuliu-Adrian",
+        "B": "Vișovan Iuliu-Alexandru",
+        "C": "Vișovan Iuliu-Andrei",
+        "D": "Vișovan Iuliu-Augustin"
+      },
+      "correctAnswer": "C",
+      "target": "leo"
+    },
+    {
+      "subject": "Muzică",
+      "question": "Care este a 3-a notă din gama Do?",
+      "options": {
+        "C": "Fa",
+        "B": "Mi",
+        "A": "Re",
+        "D": "Sol"
+      },
+      "correctAnswer": "B",
+      "target": "leo"
+    },
+    {
+      "subject": "Entertainment",
+      "question": "Din ce sport este cunoscut John Cena?",
+      "options": {
+        "A": "Fotbal american",
+        "B": "Wrestling",
+        "C": "Box",
+        "D": "Baschet"
+      },
+      "correctAnswer": "B",
+      "target": "leo"
+    },
+    {
+      "subject": "Istorie",
+      "question": "Cum se numea teritoriul României în Antichitate?",
+      "options": {
+        "A": "Grecia",
+        "B": "Dacia",
+        "C": "Roma",
+        "D": "Macedonia"
+      },
+      "correctAnswer": "B",
+      "target": "leo"
+    },
+    {
+      "subject": "Biologie",
+      "question": "Ce plantă este cultivată pentru a obține făină?",
+      "options": {
+        "A": "Grâu",
+        "B": "Orz",
+        "C": "Secară",
+        "D": "Floarea-soarelui"
+      },
+      "correctAnswer": "A",
       "target": "leo"
     }
   ]
