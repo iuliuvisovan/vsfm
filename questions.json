@@ -126,6 +126,18 @@
       },
       "correctAnswer": "B",
       "target": "petruta"
+    },
+    {
+      "subject": "Matematică (Geometrie)",
+      "question": "Într-un triunghi dreptunghic, catetele au lungimile 6 și 8. Care este lungimea ipotenuzei?",
+      "options": {
+        "A": "9",
+        "B": "10",
+        "C": "12",
+        "D": "14"
+      },
+      "correctAnswer": "B",
+      "target": "petruta"
     }
   ]
 }
