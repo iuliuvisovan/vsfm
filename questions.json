@@ -102,6 +102,18 @@
       },
       "correctAnswer": "D",
       "target": "petruta"
+    },
+    {
+      "subject": "Astronomie",
+      "question": "Ce reprezintă un an-lumină?",
+      "options": {
+        "A": "Timpul în care lumina parcurge distanța Soare - Pământ",
+        "B": "Timpul de rotație a Pământului în jurul Soarelui",
+        "C": "Distanța pe care o parcurge lumina într-un an",
+        "D": "Unitatea de măsură pentru vârsta stelelor"
+      },
+      "correctAnswer": "B",
+      "target": "petruta"
     }
   ]
 }
