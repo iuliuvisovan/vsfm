@@ -189,18 +189,6 @@
     },
     {
       "subject": "Muzică",
-      "question": "Care artist este cunoscut ca \"Regele muzicii pop\"?",
-      "options": {
-        "A": "Elvis Presley",
-        "B": "Michael Jackson",
-        "C": "Prince",
-        "D": "Justin Timberlake"
-      },
-      "correctAnswer": "B",
-      "target": "petruta"
-    },
-    {
-      "subject": "Muzică",
       "question": "Până în ce fază a ajuns Paul Ananie la Vocea României în anul 2025?",
       "options": {
         "A": "Finala",
