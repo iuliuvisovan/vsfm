@@ -90,6 +90,18 @@
       },
       "correctAnswer": "B",
       "target": "petruta"
+    },
+    {
+      "subject": "Engleză",
+      "question": "Ce înseamnă expresia din limba engleză \"to break the ice\"?",
+      "options": {
+        "A": "A sparge gheața pentru a face o cale prin zăpadă",
+        "B": "A întrerupe o discuție importantă",
+        "C": "A face o greșeală într-o situație formală",
+        "D": "A iniția o conversație într-o situație socială incomodă"
+      },
+      "correctAnswer": "D",
+      "target": "petruta"
     }
   ]
 }
