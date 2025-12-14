@@ -114,6 +114,18 @@
       },
       "correctAnswer": "B",
       "target": "petruta"
+    },
+    {
+      "subject": "Matematică (Algebră)",
+      "question": "Rezolvă ecuația: 2(x - 3) + 4x = 18",
+      "options": {
+        "A": "x = 3",
+        "B": "x = 4",
+        "C": "x = 5",
+        "D": "x = 6"
+      },
+      "correctAnswer": "B",
+      "target": "petruta"
     }
   ]
 }
