@@ -138,6 +138,30 @@
       },
       "correctAnswer": "B",
       "target": "petruta"
+    },
+    {
+      "subject": "Informatică",
+      "question": "Ce valoare va afișa următorul cod?\n\nint a = 7;\nint b = 3;\nint c = a + b;\n\nif (c % 2 == 0) {\n  c = c / 2;\n} else {\n  c = c * 2;\n}\n\ncout << c;",
+      "options": {
+        "A": "10",
+        "B": "5",
+        "C": "20",
+        "D": "7"
+      },
+      "correctAnswer": "B",
+      "target": "petruta"
+    },
+    {
+      "subject": "Biologie",
+      "question": "Ce este febra?",
+      "options": {
+        "A": "O boală cauzată de bacterii",
+        "B": "O creștere necontrolată a temperaturii corpului",
+        "C": "Un mecanism de apărare al organismului",
+        "D": "Un efect secundar al deshidratării"
+      },
+      "correctAnswer": "C",
+      "target": "petruta"
     }
   ]
 }
