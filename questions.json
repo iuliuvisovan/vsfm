@@ -1,0 +1,95 @@
+{
+  "questions": [
+    {
+      "subject": "Limba romana",
+      "question": "Care dintre următoarele propoziții este scrisă corect din punct de vedere gramatical?",
+      "options": {
+        "A": "S-a dus la magazin dar n a mai găsit nimic.",
+        "B": "N-am știut dacă o să ajunga la timp.",
+        "C": "S-a întors mai devreme fiindcă n-a mai așteptat.",
+        "D": "Mi-a spus că s a grăbit prea tare."
+      },
+      "correctAnswer": "C",
+      "target": "petruta"
+    },
+    {
+      "subject": "Geografie",
+      "question": "Care este capitala Australiei?",
+      "options": {
+        "A": "Sydney",
+        "D": "Washington D.C.",
+        "C": "Canberra",
+        "B": "Melbourne"
+      },
+      "correctAnswer": "C",
+      "target": "petruta"
+    },
+    {
+      "subject": "Geografie",
+      "question": "Cărei țări îi aparține acest steag?",
+      "imageName": "p-flag-1.png",
+      "options": {
+        "A": "India",
+        "D": "Pakistan",
+        "C": "China",
+        "B": "Sri Lanka"
+      },
+      "correctAnswer": "A",
+      "target": "petruta"
+    },
+    {
+      "subject": "Pattern recognition",
+      "question": "Completează acest puzzle logic:",
+      "imageName": "p-logic-1.png",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "correctAnswer": "A",
+      "target": "petruta"
+    },
+    {
+      "subject": "Pattern recognition",
+      "question": "Completează acest puzzle logic:",
+      "imageName": "p-logic-2.png",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "correctAnswer": "D",
+      "target": "petruta"
+    },
+    {
+      "subject": "Recunoasștere Pattern",
+      "question": "Completează acest puzzle logic:",
+      "imageName": "p-logic-2.png",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D",
+        "E": "E",
+        "F": "F"
+      },
+      "correctAnswer": "E",
+      "target": "petruta"
+    },
+    {
+      "subject": "Branduri",
+      "question": "Cărui brand aparține acest logo?",
+      "imageName": "p-logo-1.png",
+      "options": {
+        "A": "Calvin Klein",
+        "B": "Chanel",
+        "C": "Cartier",
+        "D": "Céline"
+      },
+      "correctAnswer": "B",
+      "target": "petruta"
+    }
+  ]
+}
