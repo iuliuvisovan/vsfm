@@ -155,15 +155,16 @@ function App() {
           />
         )}
 
-        {gameState !== 'select' && (
-          <button className="reset-button" onClick={handleReset}>
-            Reset
+        <div className="controls-area">
+          <button className={`sound-button ${soundEnabled ? 'on' : 'off'}`} onClick={handleToggleSound}>
+            {soundEnabled ? '🔊' : '🔇'}
           </button>
-        )}
-
-        <button className={`sound-button ${soundEnabled ? 'on' : 'off'}`} onClick={handleToggleSound}>
-          {soundEnabled ? '🔊' : '🔇'}
-        </button>
+          {gameState !== 'select' && (
+            <button className="reset-button" onClick={handleReset}>
+              Reset
+            </button>
+          )}
+        </div>
       </div>
     </div>
   )

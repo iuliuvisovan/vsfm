@@ -10,10 +10,24 @@
   position: relative;
 }
 
-.reset-button {
+.controls-area {
   position: fixed;
   bottom: 1.5rem;
   left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.controls-area:hover {
+  opacity: 1;
+}
+
+.reset-button {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.3);
@@ -23,7 +37,6 @@
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
-  z-index: 100;
 }
 
 .reset-button:hover {
@@ -33,15 +46,11 @@
 }
 
 .sound-button {
-  position: fixed;
-  bottom: 4.5rem;
-  left: 1.5rem;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.3s ease;
-  z-index: 100;
   font-size: 1.5rem;
   display: flex;
   align-items: center;
@@ -51,7 +60,6 @@
 .sound-button.off {
   background: rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.3);
-  animation: pulse-off 2s infinite;
 }
 
 .sound-button.on {
@@ -61,14 +69,4 @@
 
 .sound-button:hover {
   transform: scale(1.1);
-}
-
-@keyframes pulse-off {
-  0%,
-  100% {
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
-  }
-  50% {
-    box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.2);
-  }
 }
