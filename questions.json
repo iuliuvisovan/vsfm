@@ -587,7 +587,8 @@
         "C": "Vaca",
         "D": "Oaia"
       },
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "difficulty": 3
     },
     {
       "target": "iustin",
@@ -600,7 +601,8 @@
         "C": "voy",
         "D": "soy"
       },
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "difficulty": 2
     },
     {
       "target": "iustin",
@@ -613,7 +615,8 @@
         "C": "Mihai",
         "D": "Petru"
       },
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "difficulty": 6
     },
     {
       "target": "iustin",
@@ -626,7 +629,8 @@
         "C": "Moș Nicolae",
         "D": "Moș Gerilă"
       },
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "difficulty": 5
     },
     {
       "target": "iustin",
@@ -639,7 +643,8 @@
         "C": "Vara",
         "D": "Toamna"
       },
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "difficulty": 7
     },
     {
       "target": "iustin",
@@ -652,7 +657,8 @@
         "C": "Curcubeul",
         "D": "Iepurasi"
       },
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "difficulty": 6
     },
     {
       "target": "iustin",
@@ -666,7 +672,8 @@
         "C": "Iepure",
         "D": "Elefant"
       },
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "difficulty": 8
     },
     {
       "target": "iustin",
@@ -680,7 +687,8 @@
         "C": "C",
         "D": "D"
       },
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "difficulty": 6
     },
     {
       "target": "iustin",
@@ -693,7 +701,8 @@
         "C": "Elena",
         "D": "Ana"
       },
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "difficulty": 4
     },
     {
       "target": "iustin",
@@ -707,7 +716,8 @@
         "C": "Doamna educatoare",
         "D": "Nana Gabița"
       },
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "difficulty": 7
     }
   ]
 }
