@@ -597,12 +597,12 @@
       "subject": "Diverse",
       "question": "Completați fraza: Sigma sigma...",
       "options": {
-        "A": "boy",
-        "B": "poy",
+        "A": "bot",
+        "B": "boy",
         "C": "voy",
         "D": "soy"
       },
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "difficulty": 2
     },
     {
