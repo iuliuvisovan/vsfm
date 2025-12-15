@@ -16,9 +16,9 @@ function Summary({ player, results, onRestart }) {
 
   const getMessage = () => {
     if (percentage === 100) return 'PERFECT! Ești un adevărat milionar!';
-    if (percentage >= 80) return 'Excelent! Aproape perfect!';
-    if (percentage >= 60) return 'Foarte bine! Ai multe cunoștințe!';
-    if (percentage >= 40) return 'Bine! Mai exersează!';
+    if (percentage >= 90) return 'Excelent! Aproape perfect!';
+    if (percentage >= 70) return 'Foarte bine! Ai multe cunoștințe!';
+    if (percentage >= 50) return 'Bine! Mai exersează!';
     return 'Nu renunța! Încearcă din nou!';
   };
 
@@ -32,43 +32,46 @@ function Summary({ player, results, onRestart }) {
         <p className="player-name">{player.name}</p>
       </div>
 
-      <div className="score-display">
-        <div className="score-circle">
-          <span className="score-number">{correctCount}</span>
-          <span className="score-divider">/</span>
-          <span className="score-total">{totalQuestions}</span>
-        </div>
+      <div className="total-won">
+        <span className="total-won-label">Total câștigat</span>
+        <span className="total-won-amount">{totalWon.toFixed(totalWon % 1 === 0 ? 0 : 1)} RON</span>
         <p className="score-message">{getMessage()}</p>
       </div>
 
-      <div className="total-won">
-        <span className="total-won-label">Total câștigat:</span>
-        <span className="total-won-amount">{totalWon.toFixed(totalWon % 1 === 0 ? 0 : 1)} RON</span>
+      <div className="score-display">
+        <span className="score-number">{correctCount}</span>
+        <span className="score-divider">/</span>
+        <span className="score-total">{totalQuestions}</span>
+        <span className="score-label">răspunsuri corecte</span>
       </div>
 
       <div className="results-list">
-        <h2 className="results-title">Detalii răspunsuri</h2>
+        <h2 className="results-title">Rezumat răspunsuri</h2>
         <div className="results-scroll">
-          {results.map((result, index) => (
-            <div key={index} className={`result-item ${result.isCorrect ? 'correct' : 'incorrect'}`}>
-              <div className="result-number">{index + 1}</div>
-              {result.question.imageName && (
-                <div className="result-thumb">
-                  <img src={`/images/${result.question.imageName}`} alt="Imagine întrebare" />
+          {results.map((result, index) => {
+            const questionValue = player.questionValue + index * player.valueIncrement;
+            return (
+              <div key={index} className={`result-item ${result.isCorrect ? 'correct' : 'incorrect'}`}>
+                <div className="result-number">{index + 1}</div>
+                {result.question.imageName && (
+                  <div className="result-thumb">
+                    <img src={`/images/${result.question.imageName}`} alt="Imagine întrebare" />
+                  </div>
+                )}
+                <div className="result-content">
+                  <p className="result-question">{result.question.question}</p>
+                  <div className="result-answers">
+                    <span className={`your-answer ${result.isCorrect ? 'correct' : 'incorrect'}`}>
+                      Răspunsul tău: {result.selectedAnswer}
+                    </span>
+                    {!result.isCorrect && <span className="correct-answer">Corect: {result.question.correctAnswer}</span>}
+                  </div>
                 </div>
-              )}
-              <div className="result-content">
-                <p className="result-question">{result.question.question}</p>
-                <div className="result-answers">
-                  <span className={`your-answer ${result.isCorrect ? 'correct' : 'incorrect'}`}>
-                    Răspunsul tău: {result.selectedAnswer}
-                  </span>
-                  {!result.isCorrect && <span className="correct-answer">Corect: {result.question.correctAnswer}</span>}
-                </div>
+                <div className="result-value">{questionValue.toFixed(questionValue % 1 === 0 ? 0 : 1)} RON</div>
+                <div className={`result-icon ${result.isCorrect ? 'correct' : 'incorrect'}`}>{result.isCorrect ? '✓' : '✗'}</div>
               </div>
-              <div className={`result-icon ${result.isCorrect ? 'correct' : 'incorrect'}`}>{result.isCorrect ? '✓' : '✗'}</div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </div>
