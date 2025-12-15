@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import './QuizGame.css';
 import { playCorrectSound, playWrongSound, playSuspenseSound, stopSuspenseSound } from '../utils/sounds';
 
+const WITH_ANIMATIONS = false;
+
 function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onIndexChange, onResultsChange }) {
   const [currentIndex, setCurrentIndex] = useState(savedIndex || 0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -34,20 +36,31 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
 
   // Show options with delay - 3 seconds wait, then one by one
   useEffect(() => {
+    if (!currentQuestion) return;
+
+    if (!WITH_ANIMATIONS) {
+      setVisibleOptions(optionKeys);
+      return;
+    }
+
     setVisibleOptions([]);
 
+    const timers = [];
     const initialDelay = setTimeout(() => {
       optionKeys.forEach((key, index) => {
-        setTimeout(() => {
+        const timer = setTimeout(() => {
           setVisibleOptions(prev => [...prev, key]);
         }, index * 2000); // 2s between each option
+        timers.push(timer);
       });
     }, 2000); // 2 seconds initial delay
 
+    timers.push(initialDelay);
+
     return () => {
-      clearTimeout(initialDelay);
+      timers.forEach(clearTimeout);
     };
-  }, [currentIndex]);
+  }, [currentIndex, currentQuestion, optionKeys]);
 
   const allOptionsVisible = visibleOptions.length === optionKeys.length;
 
