@@ -21,7 +21,7 @@
       "options": {
         "A": "Australia",
         "D": "Brazilia",
-        "C": "Mare Britanie",
+        "C": "Marea Britanie",
         "B": "Ucraina"
       },
       "correctAnswer": "C"
@@ -125,10 +125,10 @@
       "subject": "Biologie",
       "question": "Ce este răceala?",
       "options": {
-        "A": "O boală a ficatului provacată de bacterii",
-        "B": "O boală a plămânilor",
+        "A": "O boală a ficatului provocată de bacterii",
+        "B": "O boală a rinichilor",
         "C": "O alergie la frig",
-        "D": "O infecție virală ușoară a căilor respiratorii"
+        "D": "O infecție cauzată de virusuri"
       },
       "correctAnswer": "D",
       "difficulty": 6.12

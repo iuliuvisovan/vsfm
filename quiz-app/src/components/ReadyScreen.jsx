@@ -7,9 +7,10 @@ function ReadyScreen({ player, questionCount, onStart }) {
   const isFeminine = player.id === 'petruta';
 
   // Calculate max possible winnings
-  const maxWinnings = Array.from({ length: questionCount }, (_, i) =>
-    player.questionValue + i * player.valueIncrement
-  ).reduce((sum, val) => sum + val, 0);
+  const maxWinnings = Array.from({ length: questionCount }, (_, i) => player.questionValue + i * player.valueIncrement).reduce(
+    (sum, val) => sum + val,
+    0,
+  );
 
   const handleStart = () => {
     setIsStarting(true);
@@ -35,21 +36,33 @@ function ReadyScreen({ player, questionCount, onStart }) {
         <div className="ready-rules">
           <div className="rule-item">
             <span className="rule-icon">❓</span>
-            <span className="rule-text"><strong>{questionCount}</strong> întrebări</span>
+            <span className="rule-text">
+              <strong>{questionCount}</strong> întrebări
+            </span>
           </div>
           <div className="rule-item">
             <span className="rule-icon">💰</span>
-            <span className="rule-text">{player.valueIncrement > 0 ? 'Prima întrebare' : 'Fiecare întrebare'}: <strong>{player.questionValue} RON</strong></span>
+            <span className="rule-text">
+              {player.valueIncrement > 0 ? 'Prima întrebare' : 'Fiecare întrebare'}: <strong>{player.questionValue} RON</strong>
+            </span>
+          </div>
+          <div className="rule-item">
+            <span className="rule-icon">⏱️</span>
+            <span className="rule-text">Fără limită de timp</span>
           </div>
           {player.valueIncrement > 0 && (
             <div className="rule-item">
               <span className="rule-icon">📈</span>
-              <span className="rule-text">+{player.valueIncrement} RON la fiecare întrebare</span>
+              <span className="rule-text">
+                Valoarea fiecărei întrebări crește cu <strong>{player.valueIncrement} RON</strong>
+              </span>
             </div>
           )}
           <div className="rule-item highlight">
             <span className="rule-icon">🏆</span>
-            <span className="rule-text">Premiu maxim: <strong>{maxWinnings} RON</strong></span>
+            <span className="rule-text">
+              Premiu total: <strong>{maxWinnings} RON</strong>
+            </span>
           </div>
         </div>
 
@@ -68,11 +81,15 @@ function ReadyScreen({ player, questionCount, onStart }) {
         <div className="spotlight spotlight-2"></div>
         <div className="particles">
           {[...Array(20)].map((_, i) => (
-            <div key={i} className="particle" style={{
-              '--delay': `${Math.random() * 5}s`,
-              '--x': `${Math.random() * 100}%`,
-              '--duration': `${3 + Math.random() * 4}s`
-            }}></div>
+            <div
+              key={i}
+              className="particle"
+              style={{
+                '--delay': `${Math.random() * 5}s`,
+                '--x': `${Math.random() * 100}%`,
+                '--duration': `${3 + Math.random() * 4}s`,
+              }}
+            ></div>
           ))}
         </div>
       </div>
