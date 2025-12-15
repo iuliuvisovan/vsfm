@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import './QuizGame.css';
 import { playCorrectSound, playWrongSound, playSuspenseSound, stopSuspenseSound } from '../utils/sounds';
 
-const WITH_ANIMATIONS = false;
+const WITH_ANIMATIONS = true;
 
 function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onIndexChange, onResultsChange }) {
   const [currentIndex, setCurrentIndex] = useState(savedIndex || 0);
