@@ -25,7 +25,7 @@ function Summary({ player, results, onRestart }) {
     if (percentage >= 90) return 'Excelent! Aproape perfect!';
     if (percentage >= 70) return 'Foarte bine! Ai multe cunoștințe!';
     if (percentage >= 50) return 'Bine! Mai exersează!';
-    return 'Nu renunța! Încearcă din nou!';
+    return 'Nu renunța! Încearcă din nou la anul!';
   };
 
   return (
@@ -34,7 +34,7 @@ function Summary({ player, results, onRestart }) {
         <img src="/images/milionar-logo.png" alt="Vrei să fii milionar?" />
       </div>
       <div className="summary-header">
-        <h1 className="summary-title">Rezultate finale</h1>
+        <h1 className="summary-title">Rezultat final</h1>
         <p className="player-name">{player.name}</p>
       </div>
 
