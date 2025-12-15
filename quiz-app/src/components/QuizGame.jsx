@@ -86,7 +86,7 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
         <div className="subject-badge">{currentQuestion.subject}</div>
 
         {hasImage && (
-          <div className="question-image-container">
+          <div className={`question-image-container ${showResult ? 'compact' : ''}`}>
             <img
               src={`/images/${currentQuestion.imageName}`}
               alt="Imagine întrebare"

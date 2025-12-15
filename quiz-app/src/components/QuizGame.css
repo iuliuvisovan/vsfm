@@ -91,12 +91,17 @@
 }
 
 .question-image-container {
-  height: 400px;
+  height: 500px;
   border-radius: 15px;
   overflow: hidden;
   border: 2px solid rgba(212, 175, 55, 0.5);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
   flex-shrink: 0;
+  transition: height 0.3s ease;
+}
+
+.question-image-container.compact {
+  height: 250px;
 }
 
 .question-image {
