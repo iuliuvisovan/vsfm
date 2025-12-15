@@ -15,9 +15,9 @@ function App() {
   const [isLoaded, setIsLoaded] = useState(false)
 
   const players = [
-    { id: 'petruta', name: 'Petruța' },
-    { id: 'leo', name: 'Leo' },
-    { id: 'iustin', name: 'Iustin' }
+    { id: 'petruta', name: 'Petruța', questionValue: 5, valueIncrement: 0.5 },
+    { id: 'leo', name: 'Leo', questionValue: 3, valueIncrement: 0.5 },
+    { id: 'iustin', name: 'Iustin', questionValue: 5, valueIncrement: 0 }
   ]
 
   // Load state from localStorage on mount
