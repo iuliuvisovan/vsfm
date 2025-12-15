@@ -316,7 +316,7 @@
         "D": "BMW"
       },
       "correctAnswer": "C",
-      "difficulty": 7.01
+      "difficulty": 7.10
     },
     {
       "target": "leo",
@@ -379,7 +379,7 @@
         "D": "Sa-dus la școală dimineața."
       },
       "correctAnswer": "B",
-      "difficulty": 6
+      "difficulty": 6.10
     },
     {
       "target": "leo",
@@ -393,7 +393,7 @@
         "D": "Minsk"
       },
       "correctAnswer": "C",
-      "difficulty": 5
+      "difficulty": 5.10
     },
     {
       "target": "leo",
@@ -407,7 +407,7 @@
         "D": "Never"
       },
       "correctAnswer": "C",
-      "difficulty": 4
+      "difficulty": 4.11
     },
     {
       "target": "leo",
@@ -421,7 +421,7 @@
         "D": "O cometă"
       },
       "correctAnswer": "C",
-      "difficulty": 8
+      "difficulty": 8.10
     },
     {
       "target": "leo",
@@ -435,7 +435,7 @@
         "D": "15"
       },
       "correctAnswer": "B",
-      "difficulty": 2
+      "difficulty": 2.10
     },
     {
       "target": "leo",
@@ -449,7 +449,7 @@
         "D": "5"
       },
       "correctAnswer": "C",
-      "difficulty": 4
+      "difficulty": 4.12
     },
     {
       "target": "leo",
@@ -463,7 +463,7 @@
         "D": "Pentru că procesorul telefonului lucrează intens când rulează jocul"
       },
       "correctAnswer": "D",
-      "difficulty": 7
+      "difficulty": 7.12
     },
     {
       "target": "leo",
@@ -477,7 +477,7 @@
         "D": "11"
       },
       "correctAnswer": "D",
-      "difficulty": 6
+      "difficulty": 6.11
     },
     {
       "target": "leo",
@@ -491,7 +491,7 @@
         "D": "O infecție virală ușoară a căilor respiratorii"
       },
       "correctAnswer": "D",
-      "difficulty": 6.1
+      "difficulty": 6.12
     },
     {
       "target": "leo",
@@ -505,7 +505,7 @@
         "D": "Energia unui obiect"
       },
       "correctAnswer": "A",
-      "difficulty": 5
+      "difficulty": 5.11
     },
     {
       "target": "leo",
@@ -519,7 +519,7 @@
         "D": "Vișovan Iuliu-Augustin"
       },
       "correctAnswer": "C",
-      "difficulty": 8
+      "difficulty": 8.11
     },
     {
       "target": "leo",
@@ -533,7 +533,7 @@
         "D": "Sol"
       },
       "correctAnswer": "B",
-      "difficulty": 6
+      "difficulty": 6.13
     },
     {
       "target": "leo",
@@ -547,7 +547,7 @@
         "D": "Baschet"
       },
       "correctAnswer": "B",
-      "difficulty": 6
+      "difficulty": 6.14
     },
     {
       "target": "leo",
@@ -561,7 +561,7 @@
         "D": "Macedonia"
       },
       "correctAnswer": "B",
-      "difficulty": 6
+      "difficulty": 6.15
     },
     {
       "target": "leo",
@@ -575,7 +575,7 @@
         "D": "Grâu"
       },
       "correctAnswer": "D",
-      "difficulty": 7
+      "difficulty": 7.13
     },
     {
       "target": "iustin",
@@ -589,7 +589,7 @@
         "D": "Oaia"
       },
       "correctAnswer": "A",
-      "difficulty": 3
+      "difficulty": 3.20
     },
     {
       "target": "iustin",
@@ -603,7 +603,7 @@
         "D": "soy"
       },
       "correctAnswer": "B",
-      "difficulty": 2
+      "difficulty": 2.20
     },
     {
       "target": "iustin",
@@ -617,7 +617,7 @@
         "D": "Iustin"
       },
       "correctAnswer": "D",
-      "difficulty": 6
+      "difficulty": 6.20
     },
     {
       "target": "iustin",
@@ -631,7 +631,7 @@
         "D": "Moș Gerilă"
       },
       "correctAnswer": "A",
-      "difficulty": 5
+      "difficulty": 5.20
     },
     {
       "target": "iustin",
@@ -645,7 +645,7 @@
         "D": "Toamna"
       },
       "correctAnswer": "A",
-      "difficulty": 7
+      "difficulty": 7.20
     },
     {
       "target": "iustin",
@@ -659,7 +659,7 @@
         "D": "Iepurasi"
       },
       "correctAnswer": "A",
-      "difficulty": 6
+      "difficulty": 6.21
     },
     {
       "target": "iustin",
@@ -674,7 +674,7 @@
         "D": "Elefant"
       },
       "correctAnswer": "A",
-      "difficulty": 8
+      "difficulty": 8.20
     },
     {
       "target": "iustin",
@@ -689,7 +689,7 @@
         "D": "Varianta D"
       },
       "correctAnswer": "D",
-      "difficulty": 6
+      "difficulty": 6.22
     },
     {
       "target": "iustin",
@@ -703,7 +703,7 @@
         "D": "Georgiana"
       },
       "correctAnswer": "D",
-      "difficulty": 4
+      "difficulty": 4.20
     },
     {
       "target": "iustin",
@@ -718,7 +718,7 @@
         "D": "Doamna educatoare"
       },
       "correctAnswer": "B",
-      "difficulty": 7
+      "difficulty": 7.21
     }
   ]
 }
