@@ -45,7 +45,7 @@
     },
     {
       "target": "petruta",
-      "id": "p-pattern-1",
+      "id": "p-logic-1",
       "subject": "Pattern recognition",
       "question": "Completează acest puzzle logic:",
       "imageName": "p-logic-1.png",
@@ -60,7 +60,7 @@
     },
     {
       "target": "petruta",
-      "id": "p-pattern-2",
+      "id": "p-logic-2",
       "subject": "Pattern recognition",
       "question": "Completează acest puzzle logic:",
       "imageName": "p-logic-2.png",
@@ -75,19 +75,19 @@
     },
     {
       "target": "petruta",
-      "id": "p-pattern-3",
-      "subject": "Recunoasștere Pattern",
+      "id": "p-logic-3",
+      "subject": "Recunoaștere Pattern",
       "question": "Completează acest puzzle logic:",
-      "imageName": "p-logic-2.png",
+      "imageName": "p-logic-3.png",
       "options": {
         "A": "Varianta A",
         "B": "Varianta B",
         "C": "Varianta C",
         "D": "Varianta D",
-        "E": "E",
-        "F": "F"
+        "E": "Varianta E",
+        "F": "Varianta F"
       },
-      "correctAnswer": "E",
+      "correctAnswer": "D",
       "difficulty": 10
     },
     {
@@ -165,7 +165,8 @@
       "target": "petruta",
       "id": "p-informatica-1",
       "subject": "Informatică",
-      "question": "Ce valoare va afișa următorul cod?\n\nint a = 7;\nint b = 3;\nint c = a + b;\n\nif (c % 2 == 0) {\n  c = c / 2;\n} else {\n  c = c * 2;\n}\n\ncout << c;",
+      "question": "Ce valoare va afișa următorul cod?",
+      "imageName": "p-code-1.png",
       "options": {
         "A": "10",
         "B": "5",
