@@ -147,7 +147,7 @@ function App() {
           />
         )}
 
-        {(gameState === 'playing' || gameState === 'summary') && (
+        {gameState !== 'select' && (
           <button className="reset-button" onClick={handleReset}>
             Reset
           </button>

@@ -4,6 +4,7 @@ import { playGameStartSound } from '../utils/sounds';
 
 function ReadyScreen({ player, onStart }) {
   const [isStarting, setIsStarting] = useState(false);
+  const isFeminine = player.id === 'petruta';
 
   const handleStart = () => {
     setIsStarting(true);
@@ -27,8 +28,8 @@ function ReadyScreen({ player, onStart }) {
         </div>
 
         <h1 className="ready-title">
-          <span className="ready-line">EȘTI PREGĂTIT</span>
-          <span className="ready-line highlight">SĂ FII MILIONAR?</span>
+          <span className="ready-line">EȘTI {isFeminine ? 'PREGĂTITĂ' : 'PREGĂTIT'}</span>
+          <span className="ready-line highlight">SĂ FII {isFeminine ? 'MILIONARĂ' : 'MILIONAR'}?</span>
         </h1>
 
         <button className="start-game-button" onClick={handleStart} disabled={isStarting}>
