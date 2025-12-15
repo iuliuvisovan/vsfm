@@ -19,21 +19,24 @@
   gap: 1rem;
 }
 
-.header-logo {
-  justify-self: center;
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-self: start;
 }
 
 .header-logo img {
   height: 70px;
   width: auto;
   display: block;
+  margin-left: -9px;
 }
 
 .header-player {
   display: flex;
   align-items: center;
   gap: 0.25rem;
-  justify-self: start;
 }
 
 .player-label {
@@ -51,9 +54,29 @@
 .progress-info {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 0.4rem;
+  justify-self: center;
+}
+
+.subject-text {
+  color: #ffffff;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
   justify-self: end;
+}
+
+.header-right .question-value {
+  padding: 0.5rem 1.2rem;
+  background: linear-gradient(135deg, rgba(0, 100, 0, 0.3), rgba(0, 150, 0, 0.2));
+  border: 2px solid #00c853;
+  border-radius: 20px;
 }
 
 .question-counter {
@@ -81,13 +104,7 @@
 .question-value {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-  padding: 0.75rem 2rem;
-  background: linear-gradient(135deg, rgba(0, 100, 0, 0.3), rgba(0, 150, 0, 0.2));
-  border: 2px solid #00c853;
-  border-radius: 30px;
-  align-self: center;
+  gap: 0.5rem;
 }
 
 .value-label {
@@ -97,7 +114,7 @@
 
 .value-amount {
   color: #00c853;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
 }
 
@@ -115,20 +132,8 @@
   gap: 2rem;
 }
 
-.subject-badge {
-  background: linear-gradient(135deg, rgba(74, 26, 107, 0.8), rgba(107, 45, 145, 0.8));
-  color: #ffffff;
-  padding: 0.6rem 2rem;
-  border-radius: 25px;
-  font-size: 0.95rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  border: 1px solid rgba(212, 175, 55, 0.4);
-}
-
 .question-image-container {
-  height: 200px;
+  height: 250px;
   border-radius: 15px;
   overflow: hidden;
   border: 2px solid rgba(212, 175, 55, 0.5);
@@ -138,7 +143,7 @@
 }
 
 .question-image-container.compact {
-  height: 100px;
+  height: 155px;
 }
 
 .question-image {
@@ -186,7 +191,6 @@
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  margin-bottom: 1.5rem;
 }
 
 .options-grid.six-options {
@@ -300,7 +304,7 @@
 
 .option-text {
   color: #ffffff;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   line-height: 1.4;
 }
 
@@ -310,7 +314,6 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  padding: 1rem;
   animation: fade-in 0.3s ease;
 }
 

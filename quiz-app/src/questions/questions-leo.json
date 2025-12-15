@@ -55,7 +55,7 @@
     {
       "target": "leo",
       "id": "leo-pattern-1",
-      "subject": "Pattern recognition",
+      "subject": "Puzzle logic",
       "question": "Completează acest puzzle logic:",
       "imageName": "leo-logic-1.png",
       "options": {
@@ -193,7 +193,7 @@
     {
       "target": "leo",
       "id": "leo-pattern-2",
-      "subject": "Pattern recognition",
+      "subject": "Puzzle logic",
       "question": "Completează acest puzzle logic:",
       "imageName": "leo-logic-2.png",
       "options": {
@@ -261,7 +261,7 @@
     {
       "target": "leo",
       "id": "leo-pattern-3",
-      "subject": "Pattern recognition",
+      "subject": "Puzzle logic",
       "question": "Completează acest puzzle logic:",
       "imageName": "leo-logic-3.png",
       "options": {

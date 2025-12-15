@@ -39,7 +39,7 @@
     },
     {
       "id": "p-logic-1",
-      "subject": "Pattern recognition",
+      "subject": "Puzzle logic",
       "question": "Completează acest puzzle logic:",
       "imageName": "p-logic-1.png",
       "options": {
@@ -126,7 +126,7 @@
     },
     {
       "id": "p-logic-2",
-      "subject": "Pattern recognition",
+      "subject": "Puzzle logic",
       "question": "Completează acest puzzle logic:",
       "imageName": "p-logic-2.png",
       "options": {

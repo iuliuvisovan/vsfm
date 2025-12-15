@@ -127,13 +127,14 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
   return (
     <div className="quiz-game">
       <div className="game-header">
-        <div className="header-player">
-          <span className="player-label">Jucător:</span>
-          <span className="player-name">{player.name}</span>
-        </div>
-
-        <div className="header-logo">
-          <img src="/images/milionar-logo.png" alt="Vrei să fii milionar?" />
+        <div className="header-left">
+          <div className="header-logo">
+            <img src="/images/milionar-logo.png" alt="Vrei să fii milionar?" />
+          </div>
+          <div className="header-player">
+            <span className="player-label">Jucător:</span>
+            <span className="player-name">{player.name}</span>
+          </div>
         </div>
 
         <div className="progress-info">
@@ -143,16 +144,18 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
           <div className="progress-bar">
             <div className="progress-fill" style={{ width: `${((currentIndex + 1) / totalQuestions) * 100}%` }} />
           </div>
+          <span className="subject-text">{currentQuestion.subject}</span>
+        </div>
+
+        <div className="header-right">
+          <div className="question-value">
+            <span className="value-label">Valoare întrebare:</span>
+            <span className="value-amount">{questionValue.toFixed(questionValue % 1 === 0 ? 0 : 1)} RON</span>
+          </div>
         </div>
       </div>
 
-      <div className="question-value">
-        <span className="value-label">Valoare:</span>
-        <span className="value-amount">{questionValue.toFixed(questionValue % 1 === 0 ? 0 : 1)} RON</span>
-      </div>
-
       <div className={`question-area ${hasImage ? 'has-image' : 'no-image'}`}>
-        <div className="subject-badge">{currentQuestion.subject}</div>
 
         <p className={`question-text ${hasImage ? '' : 'large'}`}>{currentQuestion.question}</p>
 
