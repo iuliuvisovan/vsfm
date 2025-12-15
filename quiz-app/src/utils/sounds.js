@@ -1,85 +1,106 @@
-// Sound effects using Web Audio API
-let audioContext = null;
+// Sound effects using audio files
 
-const getAudioContext = () => {
-  if (!audioContext) {
-    audioContext = new (window.AudioContext || window.webkitAudioContext)();
-  }
-  return audioContext;
+const sounds = {
+  before: null,
+  correct: null,
+  wrong: null,
+  suspense: null,
+  final: null,
 };
 
-// Correct answer sound - pleasant ding
+// Preload all sounds
+const preloadSounds = () => {
+  if (!sounds.before) {
+    sounds.before = new Audio('/sounds/before.mp3');
+    sounds.correct = new Audio('/sounds/correct.mp3');
+    sounds.wrong = new Audio('/sounds/wrong.mp3');
+    sounds.suspense = new Audio('/sounds/suspense.mp3');
+    sounds.final = new Audio('/sounds/final.mp3');
+
+    // Suspense loops
+    sounds.suspense.loop = true;
+  }
+};
+
+// Before game starts
+export const playBeforeSound = () => {
+  try {
+    preloadSounds();
+    sounds.before.currentTime = 0;
+    sounds.before.play();
+  } catch {
+    console.log('Sound not available');
+  }
+};
+
+// Correct answer
 export const playCorrectSound = () => {
   try {
-    const ctx = getAudioContext();
-    const oscillator = ctx.createOscillator();
-    const gainNode = ctx.createGain();
-
-    oscillator.connect(gainNode);
-    gainNode.connect(ctx.destination);
-
-    oscillator.frequency.setValueAtTime(880, ctx.currentTime); // A5
-    oscillator.frequency.setValueAtTime(1108.73, ctx.currentTime + 0.1); // C#6
-    oscillator.type = 'sine';
-
-    gainNode.gain.setValueAtTime(0.3, ctx.currentTime);
-    gainNode.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.4);
-
-    oscillator.start(ctx.currentTime);
-    oscillator.stop(ctx.currentTime + 0.4);
-  } catch (e) {
+    preloadSounds();
+    stopSuspenseSound();
+    sounds.correct.currentTime = 0;
+    sounds.correct.play();
+  } catch {
     console.log('Sound not available');
   }
 };
 
-// Wrong answer sound - buzzer
+// Wrong answer
 export const playWrongSound = () => {
   try {
-    const ctx = getAudioContext();
-    const oscillator = ctx.createOscillator();
-    const gainNode = ctx.createGain();
-
-    oscillator.connect(gainNode);
-    gainNode.connect(ctx.destination);
-
-    oscillator.frequency.setValueAtTime(200, ctx.currentTime);
-    oscillator.frequency.setValueAtTime(150, ctx.currentTime + 0.15);
-    oscillator.type = 'square';
-
-    gainNode.gain.setValueAtTime(0.2, ctx.currentTime);
-    gainNode.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.3);
-
-    oscillator.start(ctx.currentTime);
-    oscillator.stop(ctx.currentTime + 0.3);
-  } catch (e) {
+    preloadSounds();
+    stopSuspenseSound();
+    sounds.wrong.currentTime = 0;
+    sounds.wrong.play();
+  } catch {
     console.log('Sound not available');
   }
 };
 
-// Victory sound - ascending notes
+// Suspense while question is displayed
+export const playSuspenseSound = () => {
+  try {
+    preloadSounds();
+    sounds.suspense.currentTime = 0;
+    sounds.suspense.play();
+  } catch {
+    console.log('Sound not available');
+  }
+};
+
+// Stop suspense sound
+export const stopSuspenseSound = () => {
+  try {
+    preloadSounds();
+    sounds.suspense.pause();
+    sounds.suspense.currentTime = 0;
+  } catch {
+    console.log('Sound not available');
+  }
+};
+
+// Victory/final sound
 export const playVictorySound = () => {
   try {
-    const ctx = getAudioContext();
-    const notes = [523.25, 659.25, 783.99, 1046.50]; // C5, E5, G5, C6
+    preloadSounds();
+    sounds.final.currentTime = 0;
+    sounds.final.play();
+  } catch {
+    console.log('Sound not available');
+  }
+};
 
-    notes.forEach((freq, i) => {
-      const oscillator = ctx.createOscillator();
-      const gainNode = ctx.createGain();
-
-      oscillator.connect(gainNode);
-      gainNode.connect(ctx.destination);
-
-      oscillator.frequency.setValueAtTime(freq, ctx.currentTime + i * 0.15);
-      oscillator.type = 'sine';
-
-      gainNode.gain.setValueAtTime(0, ctx.currentTime + i * 0.15);
-      gainNode.gain.linearRampToValueAtTime(0.3, ctx.currentTime + i * 0.15 + 0.05);
-      gainNode.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + i * 0.15 + 0.3);
-
-      oscillator.start(ctx.currentTime + i * 0.15);
-      oscillator.stop(ctx.currentTime + i * 0.15 + 0.3);
+// Stop all sounds
+export const stopAllSounds = () => {
+  try {
+    preloadSounds();
+    Object.values(sounds).forEach((sound) => {
+      if (sound) {
+        sound.pause();
+        sound.currentTime = 0;
+      }
     });
-  } catch (e) {
+  } catch {
     console.log('Sound not available');
   }
 };

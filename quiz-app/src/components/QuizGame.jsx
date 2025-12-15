@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import './QuizGame.css';
-import { playCorrectSound, playWrongSound } from '../utils/sounds';
+import { playCorrectSound, playWrongSound, playSuspenseSound, stopSuspenseSound } from '../utils/sounds';
 
 function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onIndexChange, onResultsChange }) {
   const [currentIndex, setCurrentIndex] = useState(savedIndex || 0);
@@ -21,6 +21,14 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
   useEffect(() => {
     onResultsChange?.(results);
   }, [results, onResultsChange]);
+
+  // Play suspense when question starts, stop on unmount
+  useEffect(() => {
+    if (!showResult) {
+      playSuspenseSound();
+    }
+    return () => stopSuspenseSound();
+  }, [currentIndex, showResult]);
 
   const handleAnswerClick = (answerKey) => {
     if (showResult) return;
