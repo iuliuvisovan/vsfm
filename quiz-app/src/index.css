@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bg-dark: #0a0a2e;
+  --color-bg-medium: #1a1a4e;
+  --color-bg-light: #2d2d7a;
+  --color-purple: #4a1a6b;
+  --color-gold: #d4af37;
+  --color-gold-light: #f4d03f;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #a8b4ce;
+  --color-correct: #00c853;
+  --color-incorrect: #ff1744;
+
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--color-text-primary);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: linear-gradient(135deg, var(--color-bg-dark) 0%, var(--color-bg-medium) 50%, var(--color-purple) 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Animated background effect */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(ellipse at 20% 20%, rgba(74, 26, 107, 0.4) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 80%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 50%, rgba(45, 45, 122, 0.3) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Subtle animated particles effect */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    radial-gradient(2px 2px at 20px 30px, rgba(212, 175, 55, 0.3), transparent),
+    radial-gradient(2px 2px at 40px 70px, rgba(212, 175, 55, 0.2), transparent),
+    radial-gradient(2px 2px at 50px 160px, rgba(212, 175, 55, 0.3), transparent),
+    radial-gradient(2px 2px at 90px 40px, rgba(212, 175, 55, 0.2), transparent),
+    radial-gradient(2px 2px at 130px 80px, rgba(212, 175, 55, 0.3), transparent),
+    radial-gradient(2px 2px at 160px 120px, rgba(212, 175, 55, 0.2), transparent);
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  animation: sparkle 20s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+@keyframes sparkle {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-200px); }
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 600;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Responsive base font */
+@media (max-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    font-size: 12px;
+  }
+}

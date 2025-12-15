@@ -1,0 +1,127 @@
+import { useState } from 'react'
+import './QuizGame.css'
+
+function QuizGame({ player, questions, onComplete }) {
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [selectedAnswer, setSelectedAnswer] = useState(null)
+  const [showResult, setShowResult] = useState(false)
+  const [results, setResults] = useState([])
+
+  const currentQuestion = questions[currentIndex]
+  const isCorrect = selectedAnswer === currentQuestion?.correctAnswer
+  const totalQuestions = questions.length
+
+  const handleAnswerClick = (answerKey) => {
+    if (showResult) return
+
+    setSelectedAnswer(answerKey)
+    setShowResult(true)
+
+    const result = {
+      question: currentQuestion,
+      selectedAnswer: answerKey,
+      isCorrect: answerKey === currentQuestion.correctAnswer
+    }
+    setResults([...results, result])
+  }
+
+  const handleNext = () => {
+    if (currentIndex + 1 >= totalQuestions) {
+      onComplete([...results])
+    } else {
+      setCurrentIndex(currentIndex + 1)
+      setSelectedAnswer(null)
+      setShowResult(false)
+    }
+  }
+
+  const getOptionClass = (key) => {
+    let className = 'option'
+
+    if (showResult) {
+      if (key === currentQuestion.correctAnswer) {
+        className += ' correct'
+      } else if (key === selectedAnswer && !isCorrect) {
+        className += ' incorrect'
+      }
+    } else if (selectedAnswer === key) {
+      className += ' selected'
+    }
+
+    return className
+  }
+
+  const optionKeys = Object.keys(currentQuestion.options).sort()
+
+  return (
+    <div className="quiz-game">
+      <div className="game-header">
+        <div className="player-info">
+          <span className="player-label">Jucător:</span>
+          <span className="player-name">{player.name}</span>
+        </div>
+        <div className="progress-info">
+          <span className="question-counter">
+            Întrebarea {currentIndex + 1} din {totalQuestions}
+          </span>
+          <div className="progress-bar">
+            <div
+              className="progress-fill"
+              style={{ width: `${((currentIndex + 1) / totalQuestions) * 100}%` }}
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="question-area">
+        <div className="subject-badge">{currentQuestion.subject}</div>
+
+        {currentQuestion.imageName && (
+          <div className="question-image-container">
+            <img
+              src={`/images/${currentQuestion.imageName}`}
+              alt="Imagine întrebare"
+              className="question-image"
+            />
+          </div>
+        )}
+
+        <div className="question-box">
+          <p className="question-text">{currentQuestion.question}</p>
+        </div>
+      </div>
+
+      <div className={`options-grid ${optionKeys.length > 4 ? 'six-options' : ''}`}>
+        {optionKeys.map(key => (
+          <button
+            key={key}
+            className={getOptionClass(key)}
+            onClick={() => handleAnswerClick(key)}
+            disabled={showResult}
+          >
+            <span className="option-letter">{key}</span>
+            <span className="option-text">{currentQuestion.options[key]}</span>
+          </button>
+        ))}
+      </div>
+
+      {showResult && (
+        <div className="result-area">
+          <div className={`result-message ${isCorrect ? 'correct' : 'incorrect'}`}>
+            {isCorrect ? 'CORECT!' : 'GREȘIT!'}
+          </div>
+          {!isCorrect && (
+            <div className="correct-answer-info">
+              Răspunsul corect: <strong>{currentQuestion.correctAnswer}</strong> - {currentQuestion.options[currentQuestion.correctAnswer]}
+            </div>
+          )}
+          <button className="next-button" onClick={handleNext}>
+            {currentIndex + 1 >= totalQuestions ? 'Vezi rezultatele' : 'Următoarea întrebare'}
+          </button>
+        </div>
+      )}
+    </div>
+  )
+}
+
+export default QuizGame
