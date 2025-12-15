@@ -128,7 +128,7 @@
 }
 
 .question-image-container {
-  height: 400px;
+  height: 200px;
   border-radius: 15px;
   overflow: hidden;
   border: 2px solid rgba(212, 175, 55, 0.5);
@@ -138,7 +138,7 @@
 }
 
 .question-image-container.compact {
-  height: 150px;
+  height: 100px;
 }
 
 .question-image {
