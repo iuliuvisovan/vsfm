@@ -113,7 +113,7 @@
 
 .question-text {
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 1.6;
   margin: 0;
   white-space: pre-wrap;
@@ -123,7 +123,7 @@
 }
 
 .question-text.large {
-  font-size: 2.8rem;
+  font-size: 3rem;
   line-height: 1.4;
   max-width: 1000px;
   animation: subtle-pulse 3s ease-in-out infinite;
@@ -136,8 +136,8 @@
     transform: scale(1);
   }
   50% {
-    opacity: 0.92;
-    transform: scale(1.01);
+    opacity: 1;
+    transform: scale(1.04);
   }
 }
 
@@ -238,7 +238,7 @@
 
 .option-text {
   color: #ffffff;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   line-height: 1.4;
 }
 

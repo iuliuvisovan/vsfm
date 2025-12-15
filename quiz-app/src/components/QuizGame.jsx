@@ -1,66 +1,66 @@
-import { useState, useEffect } from 'react'
-import './QuizGame.css'
+import { useState, useEffect } from 'react';
+import './QuizGame.css';
 
 function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onIndexChange, onResultsChange }) {
-  const [currentIndex, setCurrentIndex] = useState(savedIndex || 0)
-  const [selectedAnswer, setSelectedAnswer] = useState(null)
-  const [showResult, setShowResult] = useState(false)
-  const [results, setResults] = useState(savedResults || [])
+  const [currentIndex, setCurrentIndex] = useState(savedIndex || 0);
+  const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [showResult, setShowResult] = useState(false);
+  const [results, setResults] = useState(savedResults || []);
 
-  const currentQuestion = questions[currentIndex]
-  const isCorrect = selectedAnswer === currentQuestion?.correctAnswer
-  const totalQuestions = questions.length
-  const hasImage = !!currentQuestion?.imageName
-
-  useEffect(() => {
-    onIndexChange?.(currentIndex)
-  }, [currentIndex, onIndexChange])
+  const currentQuestion = questions[currentIndex];
+  const isCorrect = selectedAnswer === currentQuestion?.correctAnswer;
+  const totalQuestions = questions.length;
+  const hasImage = !!currentQuestion?.imageName;
 
   useEffect(() => {
-    onResultsChange?.(results)
-  }, [results, onResultsChange])
+    onIndexChange?.(currentIndex);
+  }, [currentIndex, onIndexChange]);
+
+  useEffect(() => {
+    onResultsChange?.(results);
+  }, [results, onResultsChange]);
 
   const handleAnswerClick = (answerKey) => {
-    if (showResult) return
+    if (showResult) return;
 
-    setSelectedAnswer(answerKey)
-    setShowResult(true)
+    setSelectedAnswer(answerKey);
+    setShowResult(true);
 
     const result = {
       question: currentQuestion,
       selectedAnswer: answerKey,
-      isCorrect: answerKey === currentQuestion.correctAnswer
-    }
-    setResults([...results, result])
-  }
+      isCorrect: answerKey === currentQuestion.correctAnswer,
+    };
+    setResults([...results, result]);
+  };
 
   const handleNext = () => {
     if (currentIndex + 1 >= totalQuestions) {
-      onComplete([...results])
+      onComplete([...results]);
     } else {
-      setCurrentIndex(currentIndex + 1)
-      setSelectedAnswer(null)
-      setShowResult(false)
+      setCurrentIndex(currentIndex + 1);
+      setSelectedAnswer(null);
+      setShowResult(false);
     }
-  }
+  };
 
   const getOptionClass = (key) => {
-    let className = 'option'
+    let className = 'option';
 
     if (showResult) {
       if (key === currentQuestion.correctAnswer) {
-        className += ' correct'
+        className += ' correct';
       } else if (key === selectedAnswer && !isCorrect) {
-        className += ' incorrect'
+        className += ' incorrect';
       }
     } else if (selectedAnswer === key) {
-      className += ' selected'
+      className += ' selected';
     }
 
-    return className
-  }
+    return className;
+  };
 
-  const optionKeys = Object.keys(currentQuestion.options).sort()
+  const optionKeys = Object.keys(currentQuestion.options).sort();
 
   return (
     <div className="quiz-game">
@@ -74,10 +74,7 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
             Întrebarea {currentIndex + 1} din {totalQuestions}
           </span>
           <div className="progress-bar">
-            <div
-              className="progress-fill"
-              style={{ width: `${((currentIndex + 1) / totalQuestions) * 100}%` }}
-            />
+            <div className="progress-fill" style={{ width: `${((currentIndex + 1) / totalQuestions) * 100}%` }} />
           </div>
         </div>
       </div>
@@ -85,27 +82,18 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
       <div className={`question-area ${hasImage ? 'has-image' : 'no-image'}`}>
         <div className="subject-badge">{currentQuestion.subject}</div>
 
+        <p className={`question-text ${hasImage ? '' : 'large'}`}>{currentQuestion.question}</p>
+
         {hasImage && (
           <div className={`question-image-container ${showResult ? 'compact' : ''}`}>
-            <img
-              src={`/images/${currentQuestion.imageName}`}
-              alt="Imagine întrebare"
-              className="question-image"
-            />
+            <img src={`/images/${currentQuestion.imageName}`} alt="Imagine întrebare" className="question-image" />
           </div>
         )}
-
-        <p className={`question-text ${hasImage ? '' : 'large'}`}>{currentQuestion.question}</p>
       </div>
 
       <div className={`options-grid ${optionKeys.length > 4 ? 'six-options' : ''}`}>
-        {optionKeys.map(key => (
-          <button
-            key={key}
-            className={getOptionClass(key)}
-            onClick={() => handleAnswerClick(key)}
-            disabled={showResult}
-          >
+        {optionKeys.map((key) => (
+          <button key={key} className={getOptionClass(key)} onClick={() => handleAnswerClick(key)} disabled={showResult}>
             <span className="option-letter">{key}</span>
             <span className="option-text">{currentQuestion.options[key]}</span>
           </button>
@@ -114,9 +102,7 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
 
       {showResult && (
         <div className="result-area">
-          <div className={`result-message ${isCorrect ? 'correct' : 'incorrect'}`}>
-            {isCorrect ? 'CORECT!' : 'GREȘIT!'}
-          </div>
+          <div className={`result-message ${isCorrect ? 'correct' : 'incorrect'}`}>{isCorrect ? 'CORECT!' : 'GREȘIT!'}</div>
           {!isCorrect && (
             <div className="correct-answer-info">
               Răspunsul corect: <strong>{currentQuestion.correctAnswer}</strong> - {currentQuestion.options[currentQuestion.correctAnswer]}
@@ -128,7 +114,7 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
         </div>
       )}
     </div>
-  )
+  );
 }
 
-export default QuizGame
+export default QuizGame;
