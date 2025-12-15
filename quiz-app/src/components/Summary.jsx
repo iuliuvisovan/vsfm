@@ -39,6 +39,11 @@ function Summary({ player, results, onRestart }) {
               className={`result-item ${result.isCorrect ? 'correct' : 'incorrect'}`}
             >
               <div className="result-number">{index + 1}</div>
+              {result.question.imageName && (
+                <div className="result-thumb">
+                  <img src={`/images/${result.question.imageName}`} alt="Imagine întrebare" />
+                </div>
+              )}
               <div className="result-content">
                 <p className="result-question">{result.question.question}</p>
                 <div className="result-answers">
