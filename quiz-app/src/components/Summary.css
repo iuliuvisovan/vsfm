@@ -34,8 +34,12 @@
 }
 
 @keyframes rotate-glow {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .hero-header {
@@ -92,11 +96,12 @@
   height: 300px;
   background: radial-gradient(circle, rgba(0, 200, 83, 0.4) 0%, rgba(0, 200, 83, 0.1) 40%, transparent 70%);
   border-radius: 50%;
-  animation: pulse-glow 2s ease-in-out infinite;
+  animation: money-glow 2s ease-in-out infinite;
 }
 
-@keyframes pulse-glow {
-  0%, 100% {
+@keyframes money-glow {
+  0%,
+  100% {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
   }

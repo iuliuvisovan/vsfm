@@ -12,17 +12,16 @@ function Summary({ player, results, onRestart }) {
   const percentage = Math.round((correctCount / totalQuestions) * 100);
 
   // Calculate total won
-  const totalWon = results.reduce((sum, result, index) => {
+  const totalWon = results.reduce((sum, result) => {
     if (result.isCorrect) {
-      const questionValue = player.questionValue + index * player.valueIncrement;
-      return sum + questionValue;
+      return sum + (result.questionValue ?? 0);
     }
     return sum;
   }, 0);
 
   // Calculate max possible
-  const maxPossible = results.reduce((sum, _, index) => {
-    return sum + player.questionValue + index * player.valueIncrement;
+  const maxPossible = results.reduce((sum, result) => {
+    return sum + (result.questionValue ?? 0);
   }, 0);
 
   const getMessage = () => {
@@ -80,9 +79,9 @@ function Summary({ player, results, onRestart }) {
         <h2 className="results-header">Rezumat întrebări</h2>
         <div className="results-scroll">
           {results.map((result, index) => {
-            const questionValue = player.questionValue + index * player.valueIncrement;
+            const questionValue = result.questionValue ?? 0;
             return (
-              <div key={index} className={`result-card ${result.isCorrect ? 'correct' : 'incorrect'}`}>
+              <div key={result.question.id} className={`result-card ${result.isCorrect ? 'correct' : 'incorrect'}`}>
                 <div className="card-left">
                   <span className="card-number">{index + 1}</span>
                   {result.question.imageName && (

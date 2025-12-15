@@ -83,17 +83,26 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
 
     const result = {
       question: currentQuestion,
+      questionValue: questionValue,
       selectedAnswer: answerKey,
       isCorrect: isAnswerCorrect,
     };
-    setResults([...results, result]);
+
+    // Replace if result for this question ID already exists, otherwise append
+    const existingIndex = results.findIndex(r => r.question.id === currentQuestion.id);
+    if (existingIndex >= 0) {
+      const newResults = [...results];
+      newResults[existingIndex] = result;
+      setResults(newResults);
+    } else {
+      setResults([...results, result]);
+    }
   };
 
   const handleRetry = () => {
     if (!showResult) return;
-    if (results.length > 0) {
-      setResults(results.slice(0, -1));
-    }
+    // Remove the result for current question
+    setResults(results.filter(r => r.question.id !== currentQuestion.id));
     setSelectedAnswer(null);
     setShowResult(false);
   };
