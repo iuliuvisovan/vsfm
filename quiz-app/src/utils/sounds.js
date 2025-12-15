@@ -1,17 +1,33 @@
 // Sound effects using audio files
 
+let soundsEnabled = false;
+
 const sounds = {
   before: null,
+  gameStart: null,
   correct: null,
   wrong: null,
   suspense: null,
   final: null,
 };
 
+// Enable sounds (call after user interaction)
+export const enableSounds = () => {
+  soundsEnabled = true;
+  preloadSounds();
+  // Play a silent sound to unlock audio
+  const unlock = new Audio();
+  unlock.play().catch(() => {});
+};
+
+// Check if sounds are enabled
+export const areSoundsEnabled = () => soundsEnabled;
+
 // Preload all sounds
 const preloadSounds = () => {
   if (!sounds.before) {
     sounds.before = new Audio('/sounds/before.mp3');
+    sounds.gameStart = new Audio('/sounds/game-start.mp3');
     sounds.correct = new Audio('/sounds/correct.mp3');
     sounds.wrong = new Audio('/sounds/wrong.mp3');
     sounds.suspense = new Audio('/sounds/suspense.mp3');
@@ -22,8 +38,9 @@ const preloadSounds = () => {
   }
 };
 
-// Before game starts
+// Before game starts (player select screen)
 export const playBeforeSound = () => {
+  if (!soundsEnabled) return;
   try {
     preloadSounds();
     sounds.before.currentTime = 0;
@@ -33,8 +50,22 @@ export const playBeforeSound = () => {
   }
 };
 
+// Game start (when quiz begins)
+export const playGameStartSound = () => {
+  if (!soundsEnabled) return;
+  try {
+    preloadSounds();
+    sounds.before.pause();
+    sounds.gameStart.currentTime = 0;
+    sounds.gameStart.play();
+  } catch {
+    console.log('Sound not available');
+  }
+};
+
 // Correct answer
 export const playCorrectSound = () => {
+  if (!soundsEnabled) return;
   try {
     preloadSounds();
     stopSuspenseSound();
@@ -47,6 +78,7 @@ export const playCorrectSound = () => {
 
 // Wrong answer
 export const playWrongSound = () => {
+  if (!soundsEnabled) return;
   try {
     preloadSounds();
     stopSuspenseSound();
@@ -59,6 +91,7 @@ export const playWrongSound = () => {
 
 // Suspense while question is displayed
 export const playSuspenseSound = () => {
+  if (!soundsEnabled) return;
   try {
     preloadSounds();
     sounds.suspense.currentTime = 0;
@@ -81,6 +114,7 @@ export const stopSuspenseSound = () => {
 
 // Victory/final sound
 export const playVictorySound = () => {
+  if (!soundsEnabled) return;
   try {
     preloadSounds();
     sounds.final.currentTime = 0;
@@ -90,9 +124,10 @@ export const playVictorySound = () => {
   }
 };
 
-// Stop all sounds
+// Stop all sounds and disable
 export const stopAllSounds = () => {
   try {
+    soundsEnabled = false;
     preloadSounds();
     Object.values(sounds).forEach((sound) => {
       if (sound) {

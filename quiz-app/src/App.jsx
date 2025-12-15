@@ -3,6 +3,7 @@ import PlayerSelect from './components/PlayerSelect'
 import QuizGame from './components/QuizGame'
 import Summary from './components/Summary'
 import questionsData from './questions.json'
+import { enableSounds, playBeforeSound, playSuspenseSound, stopAllSounds } from './utils/sounds'
 import './App.css'
 
 const STORAGE_KEY = 'vsfm-quiz-state'
@@ -13,6 +14,23 @@ function App() {
   const [results, setResults] = useState([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isLoaded, setIsLoaded] = useState(false)
+  const [soundEnabled, setSoundEnabled] = useState(false)
+
+  const handleToggleSound = () => {
+    if (soundEnabled) {
+      stopAllSounds()
+      setSoundEnabled(false)
+    } else {
+      enableSounds()
+      setSoundEnabled(true)
+      // Play appropriate sound based on current game state
+      if (gameState === 'select') {
+        playBeforeSound()
+      } else if (gameState === 'playing') {
+        playSuspenseSound()
+      }
+    }
+  }
 
   const players = [
     { id: 'petruta', name: 'Petruța', questionValue: 5, valueIncrement: 0.5 },
@@ -122,6 +140,10 @@ function App() {
             Reset
           </button>
         )}
+
+        <button className={`sound-button ${soundEnabled ? 'on' : 'off'}`} onClick={handleToggleSound}>
+          {soundEnabled ? '🔊' : '🔇'}
+        </button>
       </div>
     </div>
   )
