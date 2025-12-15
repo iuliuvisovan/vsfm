@@ -1,7 +1,6 @@
 {
   "questions": [
     {
-      "target": "petruta",
       "id": "p-romana-gramatica",
       "subject": "Limba română",
       "question": "Care dintre următoarele propoziții este scrisă corect din punct de vedere gramatical?",
@@ -11,26 +10,9 @@
         "C": "S-a întors mai devreme fiindcă n-a mai așteptat.",
         "D": "Mi-a spus că s a grăbit prea tare."
       },
-      "correctAnswer": "C",
-      "difficulty": 2.01
+      "correctAnswer": "C"
     },
     {
-      "target": "petruta",
-      "id": "p-logic-1",
-      "subject": "Pattern recognition",
-      "question": "Completează acest puzzle logic:",
-      "imageName": "p-logic-1.png",
-      "options": {
-        "A": "Varianta A",
-        "B": "Varianta B",
-        "C": "Varianta C",
-        "D": "Varianta D"
-      },
-      "correctAnswer": "A",
-      "difficulty": 3.01
-    },
-    {
-      "target": "petruta",
       "id": "p-tehnologie-gps",
       "subject": "Tehnologie",
       "question": "De la ce vine prescurtarea GPS?",
@@ -40,11 +22,9 @@
         "C": "Global Positioning System",
         "D": "German Positioning Software"
       },
-      "correctAnswer": "C",
-      "difficulty": 4.01
+      "correctAnswer": "C"
     },
     {
-      "target": "petruta",
       "id": "p-branduri-logo",
       "subject": "Branduri",
       "question": "Cărui brand îi aparține acest logo?",
@@ -55,11 +35,22 @@
         "C": "Cartier",
         "D": "Céline"
       },
-      "correctAnswer": "B",
-      "difficulty": 6.01
+      "correctAnswer": "B"
     },
     {
-      "target": "petruta",
+      "id": "p-logic-1",
+      "subject": "Pattern recognition",
+      "question": "Completează acest puzzle logic:",
+      "imageName": "p-logic-1.png",
+      "options": {
+        "A": "Varianta A",
+        "B": "Varianta B",
+        "C": "Varianta C",
+        "D": "Varianta D"
+      },
+      "correctAnswer": "A"
+    },
+    {
       "id": "p-biologie-febra",
       "subject": "Biologie",
       "question": "Ce este febra?",
@@ -69,11 +60,9 @@
         "C": "Un mecanism de apărare al organismului",
         "D": "Un efect secundar al deshidratării"
       },
-      "correctAnswer": "C",
-      "difficulty": 6.01
+      "correctAnswer": "C"
     },
     {
-      "target": "petruta",
       "id": "p-matematica-catete",
       "subject": "Matematică (Geometrie)",
       "question": "Într-un triunghi dreptunghic, catetele au lungimile 6 și 8. Care este lungimea ipotenuzei?",
@@ -87,7 +76,6 @@
       "difficulty": 6.02
     },
     {
-      "target": "petruta",
       "id": "p-cultura-kardashian",
       "subject": "Cultură generală",
       "question": "Care dintre următoarele NU este sora lui Kim Kardashian?",
@@ -97,11 +85,9 @@
         "C": "Khloé Kardashian",
         "D": "Kylie Jenner"
       },
-      "correctAnswer": "A",
-      "difficulty": 6.03
+      "correctAnswer": "A"
     },
     {
-      "target": "petruta",
       "id": "p-muzica-paul",
       "subject": "Muzică",
       "question": "Până în ce fază a ajuns Paul Ananie la Vocea României în anul 2025?",
@@ -111,11 +97,9 @@
         "C": "Sferturile",
         "D": "Finala mică"
       },
-      "correctAnswer": "B",
-      "difficulty": 6.04
+      "correctAnswer": "B"
     },
     {
-      "target": "petruta",
       "id": "p-geografie-capitala",
       "subject": "Geografie",
       "question": "Care este capitala Australiei?",
@@ -125,11 +109,9 @@
         "C": "Canberra",
         "B": "Melbourne"
       },
-      "correctAnswer": "C",
-      "difficulty": 6.05
+      "correctAnswer": "C"
     },
     {
-      "target": "petruta",
       "id": "p-geografie-steag",
       "subject": "Geografie",
       "question": "Cărei țări îi aparține acest steag?",
@@ -140,11 +122,9 @@
         "C": "China",
         "B": "Sri Lanka"
       },
-      "correctAnswer": "A",
-      "difficulty": 7.01
+      "correctAnswer": "A"
     },
     {
-      "target": "petruta",
       "id": "p-logic-2",
       "subject": "Pattern recognition",
       "question": "Completează acest puzzle logic:",
@@ -155,11 +135,9 @@
         "C": "Varianta C",
         "D": "Varianta D"
       },
-      "correctAnswer": "D",
-      "difficulty": 7.01
+      "correctAnswer": "D"
     },
     {
-      "target": "petruta",
       "id": "p-engleza-breakice",
       "subject": "Engleză",
       "question": "Ce înseamnă expresia din limba engleză \"to break the ice\"?",
@@ -169,11 +147,9 @@
         "C": "A face o greșeală într-o situație formală",
         "D": "A iniția o conversație într-o situație socială incomodă"
       },
-      "correctAnswer": "D",
-      "difficulty": 7.02
+      "correctAnswer": "D"
     },
     {
-      "target": "petruta",
       "id": "p-matematica-ecuatie",
       "subject": "Matematică (Algebră)",
       "question": "Rezolvă ecuația: 2(x - 3) + 4x = 18",
@@ -183,11 +159,9 @@
         "C": "x = 5",
         "D": "x = 6"
       },
-      "correctAnswer": "B",
-      "difficulty": 7.03
+      "correctAnswer": "B"
     },
     {
-      "target": "petruta",
       "id": "p-biologie-pasari",
       "subject": "Biologie",
       "question": "Care structură ajută păsările în zbor prin oxigenare eficientă și reducerea densității corpului?",
@@ -197,11 +171,9 @@
         "C": "Penele de zbor",
         "D": "Sternul"
       },
-      "correctAnswer": "B",
-      "difficulty": 7.04
+      "correctAnswer": "B"
     },
     {
-      "target": "petruta",
       "id": "p-astronomie-anlumina",
       "subject": "Astronomie",
       "question": "Ce reprezintă un an-lumină?",
@@ -211,11 +183,9 @@
         "C": "Distanța pe care o parcurge lumina într-un an",
         "D": "Unitatea de măsură pentru vârsta stelelor"
       },
-      "correctAnswer": "C",
-      "difficulty": 8.01
+      "correctAnswer": "C"
     },
     {
-      "target": "petruta",
       "id": "p-tehnologie-elonmusk",
       "subject": "Tehnologie",
       "question": "Care dintre următoarele companii NU a fost fondată sau cofondată de Elon Musk?",
@@ -225,11 +195,9 @@
         "C": "Neuralink",
         "D": "Amazon"
       },
-      "correctAnswer": "D",
-      "difficulty": 8.01
+      "correctAnswer": "D"
     },
     {
-      "target": "petruta",
       "id": "p-biologie-rumega",
       "subject": "Biologie",
       "question": "Ce animal NU rumegă?",
@@ -239,11 +207,9 @@
         "C": "Capra",
         "D": "Calul"
       },
-      "correctAnswer": "D",
-      "difficulty": 8.02
+      "correctAnswer": "D"
     },
     {
-      "target": "petruta",
       "id": "p-informatica-1",
       "subject": "Informatică",
       "question": "Ce valoare va afișa următorul cod?",
@@ -254,11 +220,9 @@
         "C": "20",
         "D": "7"
       },
-      "correctAnswer": "B",
-      "difficulty": 9.01
+      "correctAnswer": "B"
     },
     {
-      "target": "petruta",
       "id": "p-astronomie-lumina",
       "subject": "Astronomie",
       "question": "Cât timp îi ia luminii să ajungă de la Soare la Pământ?",
@@ -268,11 +232,9 @@
         "C": "Aproximativ 1 oră",
         "D": "Aproximativ 1 minut"
       },
-      "correctAnswer": "A",
-      "difficulty": 9.01
+      "correctAnswer": "A"
     },
     {
-      "target": "petruta",
       "id": "p-logic-3",
       "subject": "Recunoaștere Pattern",
       "question": "Completează acest puzzle logic:",
@@ -285,8 +247,7 @@
         "E": "Varianta E",
         "F": "Varianta F"
       },
-      "correctAnswer": "E",
-      "difficulty": 10.01
+      "correctAnswer": "E"
     }
   ]
 }
