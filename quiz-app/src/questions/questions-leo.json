@@ -1,0 +1,293 @@
+{
+  "questions": [
+    {
+      "target": "leo",
+      "id": "leo-matematica-5la3a",
+      "subject": "Matematică (Algebră)",
+      "question": "Cât e 5 la a 3-a?",
+      "options": {
+        "A": "45",
+        "B": "125",
+        "C": "155",
+        "D": "15"
+      },
+      "correctAnswer": "B",
+      "difficulty": 2.1
+    },
+    {
+      "target": "leo",
+      "id": "leo-geografie-steag",
+      "subject": "Geografie",
+      "question": "Cărei țări îi aparține acest steag?",
+      "imageName": "leo-flag-1.png",
+      "options": {
+        "A": "Australia",
+        "D": "Brazilia",
+        "C": "Mare Britanie",
+        "B": "Ucraina"
+      },
+      "correctAnswer": "C",
+      "difficulty": 3.1
+    },
+    {
+      "target": "leo",
+      "id": "leo-pattern-1",
+      "subject": "Pattern recognition",
+      "question": "Completează acest puzzle logic:",
+      "imageName": "leo-logic-1.png",
+      "options": {
+        "A": "Varianta A",
+        "B": "Varianta B",
+        "C": "Varianta C",
+        "D": "Varianta D"
+      },
+      "correctAnswer": "B",
+      "difficulty": 4.1
+    },
+    {
+      "target": "leo",
+      "id": "leo-engleza-intotdeauna",
+      "subject": "Engleză",
+      "question": "Cum se spune în engleză \"întotdeauna\"?",
+      "options": {
+        "A": "Sometimes",
+        "B": "Usually",
+        "C": "Always",
+        "D": "Never"
+      },
+      "correctAnswer": "C",
+      "difficulty": 4.11
+    },
+    {
+      "target": "leo",
+      "id": "leo-matematica-laturi-dreptunghi",
+      "subject": "Matematică (Geometrie)",
+      "question": "Câte laturi are un dreptunghi?",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5"
+      },
+      "correctAnswer": "C",
+      "difficulty": 4.12
+    },
+    {
+      "target": "leo",
+      "id": "leo-geografie-capitala-moldova",
+      "subject": "Geografie",
+      "question": "Care este capitala Republicii Moldova?",
+      "options": {
+        "A": "Iași",
+        "B": "Bălți",
+        "C": "Chișinău",
+        "D": "Minsk"
+      },
+      "correctAnswer": "C",
+      "difficulty": 5.1
+    },
+    {
+      "target": "leo",
+      "id": "leo-fizica-viteza",
+      "subject": "Fizică",
+      "question": "Ce este viteza?",
+      "options": {
+        "A": "Distanța parcursă într-un timp",
+        "B": "Unitate de masură a mașinii",
+        "C": "Forța aplicată unui obiect",
+        "D": "Energia unui obiect"
+      },
+      "correctAnswer": "A",
+      "difficulty": 5.11
+    },
+    {
+      "target": "leo",
+      "id": "leo-romana-propozitie-corecta",
+      "subject": "Limba română",
+      "question": "Care propoziție este scrisă corect?",
+      "options": {
+        "A": "S-a dus la scoală dimineata.",
+        "B": "S-a dus la școală dimineața.",
+        "C": "S a dus la școala dimineața.",
+        "D": "Sa-dus la școală dimineața."
+      },
+      "correctAnswer": "B",
+      "difficulty": 6.1
+    },
+    {
+      "target": "leo",
+      "id": "leo-sport-fotbal",
+      "subject": "Sport",
+      "question": "Câți jucători are o echipă profesionistă de fotbal (cu tot cu portar)?",
+      "options": {
+        "A": "9",
+        "B": "10",
+        "C": "12",
+        "D": "11"
+      },
+      "correctAnswer": "D",
+      "difficulty": 6.11
+    },
+    {
+      "target": "leo",
+      "id": "leo-biologie-raceala",
+      "subject": "Biologie",
+      "question": "Ce este răceala?",
+      "options": {
+        "A": "O boală a ficatului provacată de bacterii",
+        "B": "O boală a plămânilor",
+        "C": "O alergie la frig",
+        "D": "O infecție virală ușoară a căilor respiratorii"
+      },
+      "correctAnswer": "D",
+      "difficulty": 6.12
+    },
+    {
+      "target": "leo",
+      "id": "leo-muzica-do",
+      "subject": "Muzică",
+      "question": "Care este a 3-a notă din gama Do?",
+      "options": {
+        "C": "Fa",
+        "B": "Mi",
+        "A": "Re",
+        "D": "Sol"
+      },
+      "correctAnswer": "B",
+      "difficulty": 6.13
+    },
+    {
+      "target": "leo",
+      "id": "leo-entertainment-johncena",
+      "subject": "Entertainment",
+      "question": "Din ce sport este cunoscut John Cena?",
+      "options": {
+        "A": "Fotbal american",
+        "B": "Wrestling",
+        "C": "Box",
+        "D": "Baschet"
+      },
+      "correctAnswer": "B",
+      "difficulty": 6.14
+    },
+    {
+      "target": "leo",
+      "id": "leo-istorie-dacia",
+      "subject": "Istorie",
+      "question": "Cum se numea teritoriul României în Antichitate?",
+      "options": {
+        "A": "Grecia",
+        "B": "Dacia",
+        "C": "Roma",
+        "D": "Macedonia"
+      },
+      "correctAnswer": "B",
+      "difficulty": 6.15
+    },
+    {
+      "target": "leo",
+      "id": "leo-brand-masina",
+      "subject": "Branduri",
+      "question": "Cărui brand de mașină îi aparține acest logo?",
+      "imageName": "leo-logo-1.jpeg",
+      "options": {
+        "A": "Mercedes",
+        "B": "Audi",
+        "C": "Volvo",
+        "D": "BMW"
+      },
+      "correctAnswer": "C",
+      "difficulty": 7.1
+    },
+    {
+      "target": "leo",
+      "id": "leo-pattern-2",
+      "subject": "Pattern recognition",
+      "question": "Completează acest puzzle logic:",
+      "imageName": "leo-logic-2.png",
+      "options": {
+        "A": "Varianta A",
+        "B": "Varianta B",
+        "C": "Varianta C",
+        "D": "Varianta D",
+        "E": "Varianta E",
+        "F": "Varianta F"
+      },
+      "correctAnswer": "E",
+      "difficulty": 7.11
+    },
+    {
+      "target": "leo",
+      "id": "leo-tehnologie-incalzire",
+      "subject": "Tehnologie",
+      "question": "Care e principala cauză a încălzirii telefonului când te joci mult timp pe el?",
+      "options": {
+        "A": "Pentru că telefonul este ținut în mână și primește căldură de la corp",
+        "B": "Pentru că ecranul stă aprins mult timp la luminozitate mare",
+        "C": "Pentru că bateria se descarcă în timp ce te joci",
+        "D": "Pentru că procesorul telefonului lucrează intens când rulează jocul"
+      },
+      "correctAnswer": "D",
+      "difficulty": 7.12
+    },
+    {
+      "target": "leo",
+      "id": "leo-biologie-paine",
+      "subject": "Biologie",
+      "question": "Ce plantă este cultivată pentru a obține făină?",
+      "options": {
+        "A": "Floarea-soarelui",
+        "B": "Orz",
+        "C": "Secară",
+        "D": "Grâu"
+      },
+      "correctAnswer": "D",
+      "difficulty": 7.13
+    },
+    {
+      "target": "leo",
+      "id": "leo-astronomie-planeta-aproape",
+      "subject": "Astronomie",
+      "question": "Ce este soarele?",
+      "options": {
+        "A": "O planetă",
+        "B": "Un satelit",
+        "C": "O stea",
+        "D": "O cometă"
+      },
+      "correctAnswer": "C",
+      "difficulty": 8.1
+    },
+    {
+      "target": "leo",
+      "id": "leo-rude-iuliuandrei",
+      "subject": "Rude",
+      "question": "Cum îl cheamă pe soțul Gabrielei?",
+      "options": {
+        "A": "Vișovan Iuliu-Adrian",
+        "B": "Vișovan Iuliu-Alexandru",
+        "C": "Vișovan Iuliu-Andrei",
+        "D": "Vișovan Iuliu-Augustin"
+      },
+      "correctAnswer": "C",
+      "difficulty": 8.11
+    },
+    {
+      "target": "leo",
+      "id": "leo-pattern-3",
+      "subject": "Pattern recognition",
+      "question": "Completează acest puzzle logic:",
+      "imageName": "leo-logic-3.png",
+      "options": {
+        "A": "Varianta A",
+        "B": "Varianta B",
+        "C": "Varianta C",
+        "D": "Varianta D",
+        "E": "Varianta E",
+        "F": "Varianta F"
+      },
+      "correctAnswer": "D",
+      "difficulty": 9.1
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "questions": [
+    {
+      "target": "iustin",
+      "id": "iusti-mama",
+      "subject": "Diverse",
+      "question": "Cum o cheamă pe mama?",
+      "options": {
+        "A": "Ana",
+        "B": "Maria",
+        "C": "Elena",
+        "D": "Georgiana"
+      },
+      "correctAnswer": "D",
+      "difficulty": 0.2
+    },
+    {
+      "target": "iustin",
+      "id": "iusti-miau",
+      "subject": "Diverse",
+      "question": "Ce animal spune \"miau\"?",
+      "options": {
+        "A": "Pisica",
+        "B": "Câinele",
+        "C": "Vaca",
+        "D": "Oaia"
+      },
+      "correctAnswer": "A",
+      "difficulty": 0.21
+    },
+    {
+      "target": "iustin",
+      "id": "iusti-sigma",
+      "subject": "Diverse",
+      "question": "Completați fraza: Sigma sigma...",
+      "options": {
+        "A": "bot",
+        "B": "boy",
+        "C": "voy",
+        "D": "soy"
+      },
+      "correctAnswer": "B",
+      "difficulty": 0.22
+    },
+    {
+      "target": "iustin",
+      "id": "iusti-frate-leo",
+      "subject": "Diverse",
+      "question": "Cum îl cheamă pe fratele lui Leo?",
+      "options": {
+        "A": "Petru",
+        "B": "George",
+        "C": "Mihai",
+        "D": "Iustin"
+      },
+      "correctAnswer": "D",
+      "difficulty": 0.23
+    },
+    {
+      "target": "iustin",
+      "id": "iusti-mos-craciun",
+      "subject": "Diverse",
+      "question": "Cum se numește Moșul care aduce cadouri de Crăciun?",
+      "options": {
+        "A": "Moș Crăciun",
+        "B": "Moș Martin",
+        "C": "Moș Nicolae",
+        "D": "Moș Gerilă"
+      },
+      "correctAnswer": "A",
+      "difficulty": 0.24
+    },
+    {
+      "target": "iustin",
+      "id": "iusti-masina-iuliu",
+      "subject": "Diverse",
+      "question": "Care e mașina lui Iuliu?",
+      "imageName": "iusti-car.png",
+      "options": {
+        "A": "Varianta A",
+        "B": "Varianta B",
+        "C": "Varianta C",
+        "D": "Varianta D"
+      },
+      "correctAnswer": "D",
+      "difficulty": 0.25
+    },
+    {
+      "target": "iustin",
+      "id": "iusti-noaptea-cer",
+      "subject": "Diverse",
+      "question": "Ce se vede noaptea pe cer?",
+      "options": {
+        "A": "Luna",
+        "B": "Soarele",
+        "C": "Curcubeul",
+        "D": "Iepurasi"
+      },
+      "correctAnswer": "A",
+      "difficulty": 0.26
+    },
+    {
+      "target": "iustin",
+      "id": "iusti-gabita",
+      "subject": "Diverse",
+      "question": "Cine este în această poză?",
+      "imageName": "iusti-gabita.jpg",
+      "options": {
+        "A": "Mama",
+        "B": "Nana Găbița",
+        "C": "Bunica",
+        "D": "Doamna educatoare"
+      },
+      "correctAnswer": "B",
+      "difficulty": 0.27
+    },
+    {
+      "target": "iustin",
+      "id": "iusti-animal",
+      "subject": "Diverse",
+      "question": "Ce animal este acesta?",
+      "imageName": "iusti-camel.jpeg",
+      "options": {
+        "A": "Cămilă",
+        "B": "Vacă",
+        "C": "Iepure",
+        "D": "Elefant"
+      },
+      "correctAnswer": "A",
+      "difficulty": 0.28
+    },
+    {
+      "target": "iustin",
+      "id": "iusti-anotimp-iarna",
+      "subject": "Diverse",
+      "question": "În ce anotimp ninge afară?",
+      "options": {
+        "A": "Iarna",
+        "B": "Primăvara",
+        "C": "Vara",
+        "D": "Toamna"
+      },
+      "correctAnswer": "A",
+      "difficulty": 0.29
+    }
+  ]
+}

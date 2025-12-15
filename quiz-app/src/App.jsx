@@ -3,7 +3,7 @@ import PlayerSelect from './components/PlayerSelect'
 import ReadyScreen from './components/ReadyScreen'
 import QuizGame from './components/QuizGame'
 import Summary from './components/Summary'
-import questionsData from './questions.json'
+import questionsData from './questions/questions.json'
 import { enableSounds, playBeforeSound, playSuspenseSound, stopAllSounds } from './utils/sounds'
 import './App.css'
 

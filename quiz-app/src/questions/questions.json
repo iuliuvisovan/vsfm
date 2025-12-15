@@ -144,20 +144,6 @@
       "difficulty": 0.29
     },
     {
-      "target": "leo",
-      "id": "leo-matematica-5la3a",
-      "subject": "Matematică (Algebră)",
-      "question": "Cât e 5 la a 3-a?",
-      "options": {
-        "A": "45",
-        "B": "125",
-        "C": "155",
-        "D": "15"
-      },
-      "correctAnswer": "B",
-      "difficulty": 2.1
-    },
-    {
       "target": "petruta",
       "id": "p-romana-gramatica",
       "subject": "Limba română",
@@ -170,6 +156,20 @@
       },
       "correctAnswer": "C",
       "difficulty": 2.01
+    },
+    {
+      "target": "leo",
+      "id": "leo-matematica-5la3a",
+      "subject": "Matematică (Algebră)",
+      "question": "Cât e 5 la a 3-a?",
+      "options": {
+        "A": "45",
+        "B": "125",
+        "C": "155",
+        "D": "15"
+      },
+      "correctAnswer": "B",
+      "difficulty": 2.1
     },
     {
       "target": "petruta",
