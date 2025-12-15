@@ -65,10 +65,15 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
   return (
     <div className="quiz-game">
       <div className="game-header">
-        <div className="player-info">
+        <div className="header-player">
           <span className="player-label">Jucător:</span>
           <span className="player-name">{player.name}</span>
         </div>
+
+        <div className="header-logo">
+          <img src="/images/milionar-logo.png" alt="Vrei să fii milionar?" />
+        </div>
+
         <div className="progress-info">
           <span className="question-counter">
             Întrebarea {currentIndex + 1} din {totalQuestions}

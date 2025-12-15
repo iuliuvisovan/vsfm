@@ -50,10 +50,10 @@
       "question": "Completează acest puzzle logic:",
       "imageName": "p-logic-1.png",
       "options": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "Varianta A",
+        "B": "Varianta B",
+        "C": "Varianta C",
+        "D": "Varianta D"
       },
       "correctAnswer": "A",
       "difficulty": 3
@@ -65,10 +65,10 @@
       "question": "Completează acest puzzle logic:",
       "imageName": "p-logic-2.png",
       "options": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "Varianta A",
+        "B": "Varianta B",
+        "C": "Varianta C",
+        "D": "Varianta D"
       },
       "correctAnswer": "D",
       "difficulty": 7
@@ -80,10 +80,10 @@
       "question": "Completează acest puzzle logic:",
       "imageName": "p-logic-2.png",
       "options": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D",
+        "A": "Varianta A",
+        "B": "Varianta B",
+        "C": "Varianta C",
+        "D": "Varianta D",
         "E": "E",
         "F": "F"
       },
@@ -165,8 +165,7 @@
       "target": "petruta",
       "id": "p-informatica-1",
       "subject": "Informatică",
-      "question": "Ce valoare va afișa următorul cod?",
-      "imageName": "p-code-1.png",
+      "question": "Ce valoare va afișa următorul cod?\n\nint a = 7;\nint b = 3;\nint c = a + b;\n\nif (c % 2 == 0) {\n  c = c / 2;\n} else {\n  c = c * 2;\n}\n\ncout << c;",
       "options": {
         "A": "10",
         "B": "5",
@@ -308,7 +307,7 @@
       "id": "leo-brand-masina",
       "subject": "Branduri",
       "question": "Cărui brand de mașină îi aparține acest logo?",
-      "imageName": "leo-logo-1.jpeg",
+      "imageName": "leo-logo-1.png",
       "options": {
         "A": "Mercedes",
         "B": "Audi",
@@ -325,10 +324,10 @@
       "question": "Completează acest puzzle logic:",
       "imageName": "leo-logic-1.png",
       "options": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "Varianta A",
+        "B": "Varianta B",
+        "C": "Varianta C",
+        "D": "Varianta D"
       },
       "correctAnswer": "B",
       "difficulty": 4
@@ -340,10 +339,10 @@
       "question": "Completează acest puzzle logic:",
       "imageName": "leo-logic-2.png",
       "options": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D",
+        "A": "Varianta A",
+        "B": "Varianta B",
+        "C": "Varianta C",
+        "D": "Varianta D",
         "E": "E",
         "F": "F"
       },
@@ -357,10 +356,10 @@
       "question": "Completează acest puzzle logic:",
       "imageName": "leo-logic-3.png",
       "options": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D",
+        "A": "Varianta A",
+        "B": "Varianta B",
+        "C": "Varianta C",
+        "D": "Varianta D",
         "E": "E",
         "F": "F"
       },
@@ -681,12 +680,12 @@
       "id": "iusti-masina-iuliu",
       "subject": "Diverse",
       "question": "Care e mașina lui Iuliu?",
-      "imageName": "iusti-car.png",
+      "imageName": "iusti-car.jpeg",
       "options": {
-        "A": "A",
-        "B": "B",
-        "C": "C",
-        "D": "D"
+        "A": "Varianta A",
+        "B": "Varianta B",
+        "C": "Varianta C",
+        "D": "Varianta D"
       },
       "correctAnswer": "D",
       "difficulty": 6
