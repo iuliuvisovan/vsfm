@@ -1,18 +1,16 @@
 {
   "questions": [
     {
-      "target": "leo",
-      "id": "leo-matematica-5la3a",
-      "subject": "Matematică (Algebră)",
-      "question": "Cât e 5 la a 3-a?",
+      "id": "leo-matematica-laturi-dreptunghi",
+      "subject": "Matematică (Geometrie)",
+      "question": "Câte laturi are un dreptunghi?",
       "options": {
-        "A": "45",
-        "B": "125",
-        "C": "155",
-        "D": "15"
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5"
       },
-      "correctAnswer": "B",
-      "difficulty": 2.1
+      "correctAnswer": "C"
     },
     {
       "target": "leo",
@@ -26,23 +24,7 @@
         "C": "Mare Britanie",
         "B": "Ucraina"
       },
-      "correctAnswer": "C",
-      "difficulty": 3.1
-    },
-    {
-      "target": "leo",
-      "id": "leo-pattern-1",
-      "subject": "Pattern recognition",
-      "question": "Completează acest puzzle logic:",
-      "imageName": "leo-logic-1.png",
-      "options": {
-        "A": "Varianta A",
-        "B": "Varianta B",
-        "C": "Varianta C",
-        "D": "Varianta D"
-      },
-      "correctAnswer": "B",
-      "difficulty": 4.1
+      "correctAnswer": "C"
     },
     {
       "target": "leo",
@@ -59,46 +41,30 @@
       "difficulty": 4.11
     },
     {
-      "target": "leo",
-      "id": "leo-matematica-laturi-dreptunghi",
-      "subject": "Matematică (Geometrie)",
-      "question": "Câte laturi are un dreptunghi?",
+      "id": "leo-matematica-5la3a",
+      "subject": "Matematică (Algebră)",
+      "question": "Cât e 5 la a 3-a?",
       "options": {
-        "A": "2",
-        "B": "3",
-        "C": "4",
-        "D": "5"
+        "A": "45",
+        "B": "125",
+        "C": "155",
+        "D": "15"
       },
-      "correctAnswer": "C",
-      "difficulty": 4.12
+      "correctAnswer": "B"
     },
     {
       "target": "leo",
-      "id": "leo-geografie-capitala-moldova",
-      "subject": "Geografie",
-      "question": "Care este capitala Republicii Moldova?",
+      "id": "leo-pattern-1",
+      "subject": "Pattern recognition",
+      "question": "Completează acest puzzle logic:",
+      "imageName": "leo-logic-1.png",
       "options": {
-        "A": "Iași",
-        "B": "Bălți",
-        "C": "Chișinău",
-        "D": "Minsk"
+        "A": "Varianta A",
+        "B": "Varianta B",
+        "C": "Varianta C",
+        "D": "Varianta D"
       },
-      "correctAnswer": "C",
-      "difficulty": 5.1
-    },
-    {
-      "target": "leo",
-      "id": "leo-fizica-viteza",
-      "subject": "Fizică",
-      "question": "Ce este viteza?",
-      "options": {
-        "A": "Distanța parcursă într-un timp",
-        "B": "Unitate de masură a mașinii",
-        "C": "Forța aplicată unui obiect",
-        "D": "Energia unui obiect"
-      },
-      "correctAnswer": "A",
-      "difficulty": 5.11
+      "correctAnswer": "B"
     },
     {
       "target": "leo",
@@ -111,9 +77,35 @@
         "C": "S a dus la școala dimineața.",
         "D": "Sa-dus la școală dimineața."
       },
-      "correctAnswer": "B",
-      "difficulty": 6.1
+      "correctAnswer": "B"
     },
+    {
+      "target": "leo",
+      "id": "leo-geografie-capitala-moldova",
+      "subject": "Geografie",
+      "question": "Care este capitala Republicii Moldova?",
+      "options": {
+        "A": "Iași",
+        "B": "Bălți",
+        "C": "Chișinău",
+        "D": "Minsk"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "target": "leo",
+      "id": "leo-fizica-viteza",
+      "subject": "Fizică",
+      "question": "Ce este viteza?",
+      "options": {
+        "A": "Distanța parcursă într-un timp",
+        "B": "Unitate de masură a mașinii",
+        "C": "Forța aplicată unui obiect",
+        "D": "Energia unui obiect"
+      },
+      "correctAnswer": "A"
+    },
+
     {
       "target": "leo",
       "id": "leo-sport-fotbal",
@@ -125,8 +117,7 @@
         "C": "12",
         "D": "11"
       },
-      "correctAnswer": "D",
-      "difficulty": 6.11
+      "correctAnswer": "D"
     },
     {
       "target": "leo",
@@ -213,8 +204,7 @@
         "E": "Varianta E",
         "F": "Varianta F"
       },
-      "correctAnswer": "E",
-      "difficulty": 7.11
+      "correctAnswer": "E"
     },
     {
       "target": "leo",
@@ -227,36 +217,7 @@
         "C": "Pentru că bateria se descarcă în timp ce te joci",
         "D": "Pentru că procesorul telefonului lucrează intens când rulează jocul"
       },
-      "correctAnswer": "D",
-      "difficulty": 7.12
-    },
-    {
-      "target": "leo",
-      "id": "leo-biologie-paine",
-      "subject": "Biologie",
-      "question": "Ce plantă este cultivată pentru a obține făină?",
-      "options": {
-        "A": "Floarea-soarelui",
-        "B": "Orz",
-        "C": "Secară",
-        "D": "Grâu"
-      },
-      "correctAnswer": "D",
-      "difficulty": 7.13
-    },
-    {
-      "target": "leo",
-      "id": "leo-astronomie-planeta-aproape",
-      "subject": "Astronomie",
-      "question": "Ce este soarele?",
-      "options": {
-        "A": "O planetă",
-        "B": "Un satelit",
-        "C": "O stea",
-        "D": "O cometă"
-      },
-      "correctAnswer": "C",
-      "difficulty": 8.1
+      "correctAnswer": "D"
     },
     {
       "target": "leo",
@@ -269,8 +230,33 @@
         "C": "Vișovan Iuliu-Andrei",
         "D": "Vișovan Iuliu-Augustin"
       },
-      "correctAnswer": "C",
-      "difficulty": 8.11
+      "correctAnswer": "C"
+    },
+    {
+      "target": "leo",
+      "id": "leo-astronomie-planeta-aproape",
+      "subject": "Astronomie",
+      "question": "Ce este soarele?",
+      "options": {
+        "A": "O planetă",
+        "B": "Un satelit",
+        "C": "O stea",
+        "D": "O cometă"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "target": "leo",
+      "id": "leo-biologie-paine",
+      "subject": "Biologie",
+      "question": "Ce plantă este cultivată pentru a obține făină?",
+      "options": {
+        "A": "Floarea-soarelui",
+        "B": "Orz",
+        "C": "Secară",
+        "D": "Grâu"
+      },
+      "correctAnswer": "D"
     },
     {
       "target": "leo",
