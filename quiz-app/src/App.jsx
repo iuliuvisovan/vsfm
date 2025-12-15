@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import PlayerSelect from './components/PlayerSelect'
+import ReadyScreen from './components/ReadyScreen'
 import QuizGame from './components/QuizGame'
 import Summary from './components/Summary'
 import questionsData from './questions.json'
@@ -24,7 +25,7 @@ function App() {
       enableSounds()
       setSoundEnabled(true)
       // Play appropriate sound based on current game state
-      if (gameState === 'select') {
+      if (gameState === 'select' || gameState === 'ready') {
         playBeforeSound()
       } else if (gameState === 'playing') {
         playSuspenseSound()
@@ -77,6 +78,10 @@ function App() {
     setSelectedPlayer(player)
     setResults([])
     setCurrentIndex(0)
+    setGameState('ready')
+  }
+
+  const handleStartGame = () => {
     setGameState('playing')
   }
 
@@ -115,6 +120,13 @@ function App() {
           />
         )}
 
+        {gameState === 'ready' && selectedPlayer && (
+          <ReadyScreen
+            player={selectedPlayer}
+            onStart={handleStartGame}
+          />
+        )}
+
         {gameState === 'playing' && selectedPlayer && (
           <QuizGame
             player={selectedPlayer}
@@ -135,7 +147,7 @@ function App() {
           />
         )}
 
-        {gameState !== 'select' && (
+        {(gameState === 'playing' || gameState === 'summary') && (
           <button className="reset-button" onClick={handleReset}>
             Reset
           </button>

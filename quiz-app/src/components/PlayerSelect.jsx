@@ -1,12 +1,6 @@
-import { useEffect } from 'react';
 import './PlayerSelect.css';
-import { playBeforeSound } from '../utils/sounds';
 
 function PlayerSelect({ players, onSelect }) {
-  useEffect(() => {
-    playBeforeSound();
-  }, []);
-
   return (
     <div className="player-select">
       <div className="logo-container">

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import './QuizGame.css';
-import { playCorrectSound, playWrongSound, playSuspenseSound, stopSuspenseSound, playGameStartSound } from '../utils/sounds';
+import { playCorrectSound, playWrongSound, playSuspenseSound, stopSuspenseSound } from '../utils/sounds';
 
 function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onIndexChange, onResultsChange }) {
   const [currentIndex, setCurrentIndex] = useState(savedIndex || 0);
@@ -13,13 +13,6 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
   const totalQuestions = questions.length;
   const hasImage = !!currentQuestion?.imageName;
   const questionValue = player.questionValue + currentIndex * player.valueIncrement;
-
-  // Play game start sound on mount (new game)
-  useEffect(() => {
-    if (savedIndex === 0 && savedResults?.length === 0) {
-      playGameStartSound();
-    }
-  }, []);
 
   useEffect(() => {
     onIndexChange?.(currentIndex);
