@@ -308,7 +308,7 @@
       "id": "leo-brand-masina",
       "subject": "Branduri",
       "question": "Cărui brand de mașină îi aparține acest logo?",
-      "imageName": "leo-logo-1.png",
+      "imageName": "leo-logo-1.jpeg",
       "options": {
         "A": "Mercedes",
         "B": "Audi",
@@ -344,8 +344,8 @@
         "B": "Varianta B",
         "C": "Varianta C",
         "D": "Varianta D",
-        "E": "E",
-        "F": "F"
+        "E": "Varianta E",
+        "F": "Varianta F"
       },
       "correctAnswer": "E",
       "difficulty": 7
@@ -361,8 +361,8 @@
         "B": "Varianta B",
         "C": "Varianta C",
         "D": "Varianta D",
-        "E": "E",
-        "F": "F"
+        "E": "Varianta E",
+        "F": "Varianta F"
       },
       "correctAnswer": "D",
       "difficulty": 9
@@ -413,14 +413,14 @@
       "target": "leo",
       "id": "leo-astronomie-planeta-aproape",
       "subject": "Astronomie",
-      "question": "Care este cea mai apropiată planetă de Pământ?",
+      "question": "Ce este soarele?",
       "options": {
-        "A": "Venus",
-        "B": "Mercur",
-        "C": "Marte",
-        "D": "Jupiter"
+        "A": "O planetă",
+        "B": "Un satelit",
+        "C": "O stea",
+        "D": "O cometă"
       },
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "difficulty": 8
     },
     {
