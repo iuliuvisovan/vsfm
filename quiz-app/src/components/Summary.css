@@ -86,6 +86,28 @@
   text-align: center;
 }
 
+.total-won {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(135deg, rgba(0, 100, 0, 0.3), rgba(0, 150, 0, 0.2));
+  border: 2px solid #00c853;
+  border-radius: 30px;
+}
+
+.total-won-label {
+  color: #a8b4ce;
+  font-size: 1.2rem;
+}
+
+.total-won-amount {
+  color: #00c853;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
 .results-list {
   flex: 1;
   width: 100%;

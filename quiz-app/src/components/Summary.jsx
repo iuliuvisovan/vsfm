@@ -5,6 +5,15 @@ function Summary({ player, results, onRestart }) {
   const totalQuestions = results.length;
   const percentage = Math.round((correctCount / totalQuestions) * 100);
 
+  // Calculate total won
+  const totalWon = results.reduce((sum, result, index) => {
+    if (result.isCorrect) {
+      const questionValue = player.questionValue + index * player.valueIncrement;
+      return sum + questionValue;
+    }
+    return sum;
+  }, 0);
+
   const getMessage = () => {
     if (percentage === 100) return 'PERFECT! Ești un adevărat milionar!';
     if (percentage >= 80) return 'Excelent! Aproape perfect!';
@@ -29,8 +38,12 @@ function Summary({ player, results, onRestart }) {
           <span className="score-divider">/</span>
           <span className="score-total">{totalQuestions}</span>
         </div>
-        <div className="score-percentage">{percentage}%</div>
         <p className="score-message">{getMessage()}</p>
+      </div>
+
+      <div className="total-won">
+        <span className="total-won-label">Total câștigat:</span>
+        <span className="total-won-amount">{totalWon.toFixed(totalWon % 1 === 0 ? 0 : 1)} RON</span>
       </div>
 
       <div className="results-list">

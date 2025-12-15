@@ -77,6 +77,30 @@
   transition: width 0.5s ease;
 }
 
+/* Question Value */
+.question-value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.75rem 2rem;
+  background: linear-gradient(135deg, rgba(0, 100, 0, 0.3), rgba(0, 150, 0, 0.2));
+  border: 2px solid #00c853;
+  border-radius: 30px;
+  align-self: center;
+}
+
+.value-label {
+  color: #a8b4ce;
+  font-size: 1.1rem;
+}
+
+.value-amount {
+  color: #00c853;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
 /* Question Area */
 .question-area {
   display: flex;

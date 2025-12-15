@@ -11,6 +11,7 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
   const isCorrect = selectedAnswer === currentQuestion?.correctAnswer;
   const totalQuestions = questions.length;
   const hasImage = !!currentQuestion?.imageName;
+  const questionValue = player.questionValue + currentIndex * player.valueIncrement;
 
   useEffect(() => {
     onIndexChange?.(currentIndex);
@@ -91,6 +92,11 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
             <div className="progress-fill" style={{ width: `${((currentIndex + 1) / totalQuestions) * 100}%` }} />
           </div>
         </div>
+      </div>
+
+      <div className="question-value">
+        <span className="value-label">Valoare:</span>
+        <span className="value-amount">{questionValue.toFixed(questionValue % 1 === 0 ? 0 : 1)} RON</span>
       </div>
 
       <div className={`question-area ${hasImage ? 'has-image' : 'no-image'}`}>
