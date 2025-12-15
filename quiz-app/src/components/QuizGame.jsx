@@ -166,7 +166,7 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
         )}
       </div>
 
-      <div className={`options-grid ${optionKeys.length > 4 ? 'six-options' : ''}`}>
+      <div className={`options-grid ${optionKeys.length > 4 ? 'six-options' : ''} ${showResult ? 'compact' : ''}`}>
         {optionKeys.map((key) => (
           <button
             key={key}
