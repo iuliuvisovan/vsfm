@@ -7,8 +7,10 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [showResult, setShowResult] = useState(false);
   const [results, setResults] = useState(savedResults || []);
+  const [visibleOptions, setVisibleOptions] = useState([]);
 
   const currentQuestion = questions[currentIndex];
+  const optionKeys = Object.keys(currentQuestion?.options || {}).sort();
   const isCorrect = selectedAnswer === currentQuestion?.correctAnswer;
   const totalQuestions = questions.length;
   const hasImage = !!currentQuestion?.imageName;
@@ -30,8 +32,27 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
     return () => stopSuspenseSound();
   }, [currentIndex, showResult]);
 
+  // Show options with delay - 3 seconds wait, then one by one
+  useEffect(() => {
+    setVisibleOptions([]);
+
+    const initialDelay = setTimeout(() => {
+      optionKeys.forEach((key, index) => {
+        setTimeout(() => {
+          setVisibleOptions(prev => [...prev, key]);
+        }, index * 2000); // 2s between each option
+      });
+    }, 2000); // 2 seconds initial delay
+
+    return () => {
+      clearTimeout(initialDelay);
+    };
+  }, [currentIndex]);
+
+  const allOptionsVisible = visibleOptions.length === optionKeys.length;
+
   const handleAnswerClick = (answerKey) => {
-    if (showResult) return;
+    if (showResult || !allOptionsVisible) return;
 
     setSelectedAnswer(answerKey);
     setShowResult(true);
@@ -88,8 +109,6 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
     return className;
   };
 
-  const optionKeys = Object.keys(currentQuestion.options).sort();
-
   return (
     <div className="quiz-game">
       <div className="game-header">
@@ -131,7 +150,12 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
 
       <div className={`options-grid ${optionKeys.length > 4 ? 'six-options' : ''}`}>
         {optionKeys.map((key) => (
-          <button key={key} className={getOptionClass(key)} onClick={() => handleAnswerClick(key)} disabled={showResult}>
+          <button
+            key={key}
+            className={`${getOptionClass(key)} ${visibleOptions.includes(key) ? 'visible' : 'hidden'}`}
+            onClick={() => handleAnswerClick(key)}
+            disabled={showResult || !allOptionsVisible}
+          >
             <span className="option-letter">{key}</span>
             <span className="option-text">{currentQuestion.options[key]}</span>
           </button>

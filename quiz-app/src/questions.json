@@ -56,7 +56,7 @@
         "D": "Varianta D"
       },
       "correctAnswer": "A",
-      "difficulty": 3
+      "difficulty": 3.1
     },
     {
       "target": "petruta",
@@ -103,7 +103,7 @@
         "D": "Céline"
       },
       "correctAnswer": "B",
-      "difficulty": 6
+      "difficulty": 6.1
     },
     {
       "target": "petruta",
@@ -159,7 +159,7 @@
         "D": "14"
       },
       "correctAnswer": "B",
-      "difficulty": 6
+      "difficulty": 6.2
     },
     {
       "target": "petruta",
@@ -230,7 +230,7 @@
         "D": "Finala mică"
       },
       "correctAnswer": "B",
-      "difficulty": 6
+      "difficulty": 6.4
     },
     {
       "target": "petruta",
@@ -244,7 +244,7 @@
         "D": "Kylie Jenner"
       },
       "correctAnswer": "A",
-      "difficulty": 6
+      "difficulty": 6.3
     },
     {
       "target": "petruta",
@@ -301,7 +301,7 @@
         "B": "Ucraina"
       },
       "correctAnswer": "C",
-      "difficulty": 4
+      "difficulty": 3
     },
     {
       "target": "leo",
@@ -491,7 +491,7 @@
         "D": "O infecție virală ușoară a căilor respiratorii"
       },
       "correctAnswer": "D",
-      "difficulty": 6
+      "difficulty": 6.1
     },
     {
       "target": "leo",
