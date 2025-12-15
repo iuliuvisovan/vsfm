@@ -87,7 +87,7 @@
         "E": "Varianta E",
         "F": "Varianta F"
       },
-      "correctAnswer": "D",
+      "correctAnswer": "E",
       "difficulty": 10
     },
     {
@@ -637,7 +637,7 @@
       "target": "iustin",
       "id": "iusti-anotimp-iarna",
       "subject": "Diverse",
-      "question": "În ce anotimp ninge afara?",
+      "question": "În ce anotimp ninge afară?",
       "options": {
         "A": "Iarna",
         "B": "Primăvara",
@@ -709,15 +709,15 @@
       "target": "iustin",
       "id": "iusti-gabita",
       "subject": "Diverse",
-      "question": "Cine e în această poză?",
+      "question": "Cine este în această poză?",
       "imageName": "iusti-gabita.jpg",
       "options": {
         "A": "Mama",
-        "B": "Bunica",
-        "C": "Doamna educatoare",
-        "D": "Nana Gabița"
+        "B": "Nana Găbița",
+        "C": "Bunica",
+        "D": "Doamna educatoare"
       },
-      "correctAnswer": "D",
+      "correctAnswer": "B",
       "difficulty": 7
     }
   ]
