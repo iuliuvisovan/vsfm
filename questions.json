@@ -299,7 +299,8 @@
         "C": "Mare Britanie",
         "B": "Ucraina"
       },
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "difficulty": 4
     },
     {
       "target": "leo",
@@ -313,7 +314,8 @@
         "C": "Volvo",
         "D": "BMW"
       },
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "difficulty": 7
     },
     {
       "target": "leo",
@@ -327,7 +329,8 @@
         "C": "C",
         "D": "D"
       },
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "difficulty": 4
     },
     {
       "target": "leo",
@@ -343,7 +346,8 @@
         "E": "E",
         "F": "F"
       },
-      "correctAnswer": "E"
+      "correctAnswer": "E",
+      "difficulty": 7
     },
     {
       "target": "leo",
@@ -359,7 +363,8 @@
         "E": "E",
         "F": "F"
       },
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "difficulty": 9
     },
     {
       "target": "leo",
@@ -372,7 +377,8 @@
         "C": "S a dus la școala dimineața.",
         "D": "Sa-dus la școală dimineața."
       },
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "difficulty": 6
     },
     {
       "target": "leo",
@@ -385,7 +391,8 @@
         "C": "Chișinău",
         "D": "Minsk"
       },
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "difficulty": 5
     },
     {
       "target": "leo",
@@ -398,7 +405,8 @@
         "C": "Always",
         "D": "Never"
       },
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "difficulty": 4
     },
     {
       "target": "leo",
@@ -411,7 +419,8 @@
         "C": "Marte",
         "D": "Jupiter"
       },
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "difficulty": 8
     },
     {
       "target": "leo",
@@ -424,7 +433,8 @@
         "C": "155",
         "D": "15"
       },
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "difficulty": 2
     },
     {
       "target": "leo",
@@ -437,7 +447,8 @@
         "C": "4",
         "D": "5"
       },
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "difficulty": 4
     },
     {
       "target": "leo",
@@ -450,7 +461,8 @@
         "C": "Pentru că bateria se descarcă în timp ce te joci",
         "D": "Pentru că procesorul telefonului lucrează intens când rulează jocul"
       },
-      "correctAnswer": "D"
+      "correctAnswer": "D",
+      "difficulty": 7
     },
     {
       "target": "leo",
@@ -463,7 +475,8 @@
         "C": "11",
         "D": "12"
       },
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "difficulty": 6
     },
     {
       "target": "leo",
@@ -476,7 +489,8 @@
         "C": "O alergie la frig",
         "D": "O boală a plămânilor"
       },
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "difficulty": 6
     },
     {
       "target": "leo",
@@ -489,7 +503,8 @@
         "C": "Distanța parcursă într-un timp",
         "D": "Energia unui obiect"
       },
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "difficulty": 5
     },
     {
       "target": "leo",
@@ -502,7 +517,8 @@
         "C": "Vișovan Iuliu-Andrei",
         "D": "Vișovan Iuliu-Augustin"
       },
-      "correctAnswer": "C"
+      "correctAnswer": "C",
+      "difficulty": 8
     },
     {
       "target": "leo",
@@ -515,7 +531,8 @@
         "A": "Re",
         "D": "Sol"
       },
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "difficulty": 6
     },
     {
       "target": "leo",
@@ -528,7 +545,8 @@
         "C": "Box",
         "D": "Baschet"
       },
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "difficulty": 6
     },
     {
       "target": "leo",
@@ -541,7 +559,8 @@
         "C": "Roma",
         "D": "Macedonia"
       },
-      "correctAnswer": "B"
+      "correctAnswer": "B",
+      "difficulty": 6
     },
     {
       "target": "leo",
@@ -554,7 +573,8 @@
         "C": "Secară",
         "D": "Floarea-soarelui"
       },
-      "correctAnswer": "A"
+      "correctAnswer": "A",
+      "difficulty": 7
     },
     {
       "target": "iustin",
