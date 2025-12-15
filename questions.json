@@ -11,7 +11,8 @@
         "D": "Mi-a spus că s a grăbit prea tare."
       },
       "correctAnswer": "C",
-      "target": "petruta"
+      "target": "petruta",
+      "difficulty": 4
     },
     {
       "id": "p-geografie-capitala",
@@ -24,7 +25,8 @@
         "B": "Melbourne"
       },
       "correctAnswer": "C",
-      "target": "petruta"
+      "target": "petruta",
+      "difficulty": 5
     },
     {
       "id": "p-geografie-steag",
@@ -38,7 +40,8 @@
         "B": "Sri Lanka"
       },
       "correctAnswer": "A",
-      "target": "petruta"
+      "target": "petruta",
+      "difficulty": 4
     },
     {
       "id": "p-pattern-1",
@@ -52,7 +55,8 @@
         "D": "D"
       },
       "correctAnswer": "A",
-      "target": "petruta"
+      "target": "petruta",
+      "difficulty": 6
     },
     {
       "id": "p-pattern-2",
@@ -66,7 +70,8 @@
         "D": "D"
       },
       "correctAnswer": "D",
-      "target": "petruta"
+      "target": "petruta",
+      "difficulty": 7
     },
     {
       "id": "p-pattern-3",
@@ -82,7 +87,8 @@
         "F": "F"
       },
       "correctAnswer": "E",
-      "target": "petruta"
+      "target": "petruta",
+      "difficulty": 10
     },
     {
       "id": "p-branduri-logo",
@@ -96,7 +102,8 @@
         "D": "Céline"
       },
       "correctAnswer": "B",
-      "target": "petruta"
+      "target": "petruta",
+      "difficulty": 3
     },
     {
       "id": "p-engleza-breakice",
@@ -109,7 +116,8 @@
         "D": "A iniția o conversație într-o situație socială incomodă"
       },
       "correctAnswer": "D",
-      "target": "petruta"
+      "target": "petruta",
+      "difficulty": 4
     },
     {
       "id": "p-astronomie-anlumina",
@@ -122,7 +130,8 @@
         "D": "Unitatea de măsură pentru vârsta stelelor"
       },
       "correctAnswer": "C",
-      "target": "petruta"
+      "target": "petruta",
+      "difficulty": 5
     },
     {
       "id": "p-matematica-ecuatie",
@@ -135,7 +144,8 @@
         "D": "x = 6"
       },
       "correctAnswer": "B",
-      "target": "petruta"
+      "target": "petruta",
+      "difficulty": 3
     },
     {
       "id": "p-matematica-catete",
@@ -148,7 +158,8 @@
         "D": "14"
       },
       "correctAnswer": "B",
-      "target": "petruta"
+      "target": "petruta",
+      "difficulty": 2
     },
     {
       "id": "p-informatica-1",
@@ -161,7 +172,8 @@
         "D": "7"
       },
       "correctAnswer": "B",
-      "target": "petruta"
+      "target": "petruta",
+      "difficulty": 6
     },
     {
       "id": "p-biologie-febra",
@@ -174,7 +186,8 @@
         "D": "Un efect secundar al deshidratării"
       },
       "correctAnswer": "C",
-      "target": "petruta"
+      "target": "petruta",
+      "difficulty": 4
     },
     {
       "id": "p-astronomie-lumina",
@@ -187,7 +200,8 @@
         "D": "Aproximativ 1 minut"
       },
       "correctAnswer": "A",
-      "target": "petruta"
+      "target": "petruta",
+      "difficulty": 4
     },
     {
       "id": "p-biologie-pasari",
@@ -200,7 +214,8 @@
         "D": "Sternul"
       },
       "correctAnswer": "B",
-      "target": "petruta"
+      "target": "petruta",
+      "difficulty": 6
     },
     {
       "id": "p-muzica-paul",
@@ -213,7 +228,8 @@
         "D": "Finala mică"
       },
       "correctAnswer": "B",
-      "target": "petruta"
+      "target": "petruta",
+      "difficulty": 7
     },
     {
       "id": "p-cultura-kardashian",
@@ -226,7 +242,8 @@
         "D": "Kylie Jenner"
       },
       "correctAnswer": "A",
-      "target": "petruta"
+      "target": "petruta",
+      "difficulty": 5
     },
     {
       "id": "p-tehnologie-elonmusk",
@@ -239,7 +256,8 @@
         "D": "Amazon"
       },
       "correctAnswer": "D",
-      "target": "petruta"
+      "target": "petruta",
+      "difficulty": 2
     },
     {
       "id": "p-tehnologie-gps",
@@ -252,7 +270,8 @@
         "D": "German Positioning Software"
       },
       "correctAnswer": "C",
-      "target": "petruta"
+      "target": "petruta",
+      "difficulty": 2
     },
     {
       "id": "p-biologie-rumega",
@@ -265,7 +284,8 @@
         "D": "Calul"
       },
       "correctAnswer": "D",
-      "target": "petruta"
+      "target": "petruta",
+      "difficulty": 5
     },
     {
       "id": "leo-geografie-steag",
