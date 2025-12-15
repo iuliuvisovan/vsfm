@@ -472,10 +472,10 @@
       "options": {
         "A": "9",
         "B": "10",
-        "C": "11",
-        "D": "12"
+        "C": "12",
+        "D": "11"
       },
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "difficulty": 6
     },
     {
@@ -485,11 +485,11 @@
       "question": "Ce este răceala?",
       "options": {
         "A": "O boală a ficatului provacată de bacterii",
-        "B": "O infecție virală ușoară a căilor respiratorii",
+        "B": "O boală a plămânilor",
         "C": "O alergie la frig",
-        "D": "O boală a plămânilor"
+        "D": "O infecție virală ușoară a căilor respiratorii"
       },
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "difficulty": 6
     },
     {
@@ -568,12 +568,12 @@
       "subject": "Biologie",
       "question": "Ce plantă este cultivată pentru a obține făină?",
       "options": {
-        "A": "Grâu",
+        "A": "Floarea-soarelui",
         "B": "Orz",
         "C": "Secară",
-        "D": "Floarea-soarelui"
+        "D": "Grâu"
       },
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "difficulty": 7
     },
     {
@@ -610,12 +610,12 @@
       "subject": "Diverse",
       "question": "Cum îl cheamă pe fratele lui Leo?",
       "options": {
-        "A": "Iustin",
+        "A": "Petru",
         "B": "George",
         "C": "Mihai",
-        "D": "Petru"
+        "D": "Iustin"
       },
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "difficulty": 6
     },
     {
@@ -696,12 +696,12 @@
       "subject": "Diverse",
       "question": "Cum o cheamă pe mama?",
       "options": {
-        "A": "Georgiana",
+        "A": "Ana",
         "B": "Maria",
         "C": "Elena",
-        "D": "Ana"
+        "D": "Georgiana"
       },
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "difficulty": 4
     },
     {
