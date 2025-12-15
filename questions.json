@@ -1,6 +1,7 @@
 {
   "questions": [
     {
+      "target": "petruta",
       "id": "p-romana-gramatica",
       "subject": "Limba română",
       "question": "Care dintre următoarele propoziții este scrisă corect din punct de vedere gramatical?",
@@ -11,10 +12,10 @@
         "D": "Mi-a spus că s a grăbit prea tare."
       },
       "correctAnswer": "C",
-      "target": "petruta",
       "difficulty": 4
     },
     {
+      "target": "petruta",
       "id": "p-geografie-capitala",
       "subject": "Geografie",
       "question": "Care este capitala Australiei?",
@@ -25,10 +26,10 @@
         "B": "Melbourne"
       },
       "correctAnswer": "C",
-      "target": "petruta",
       "difficulty": 5
     },
     {
+      "target": "petruta",
       "id": "p-geografie-steag",
       "subject": "Geografie",
       "question": "Cărei țări îi aparține acest steag?",
@@ -40,10 +41,10 @@
         "B": "Sri Lanka"
       },
       "correctAnswer": "A",
-      "target": "petruta",
       "difficulty": 4
     },
     {
+      "target": "petruta",
       "id": "p-pattern-1",
       "subject": "Pattern recognition",
       "question": "Completează acest puzzle logic:",
@@ -55,10 +56,10 @@
         "D": "D"
       },
       "correctAnswer": "A",
-      "target": "petruta",
       "difficulty": 6
     },
     {
+      "target": "petruta",
       "id": "p-pattern-2",
       "subject": "Pattern recognition",
       "question": "Completează acest puzzle logic:",
@@ -70,10 +71,10 @@
         "D": "D"
       },
       "correctAnswer": "D",
-      "target": "petruta",
       "difficulty": 7
     },
     {
+      "target": "petruta",
       "id": "p-pattern-3",
       "subject": "Recunoasștere Pattern",
       "question": "Completează acest puzzle logic:",
@@ -87,10 +88,10 @@
         "F": "F"
       },
       "correctAnswer": "E",
-      "target": "petruta",
       "difficulty": 10
     },
     {
+      "target": "petruta",
       "id": "p-branduri-logo",
       "subject": "Branduri",
       "question": "Cărui brand îi aparține acest logo?",
@@ -102,10 +103,10 @@
         "D": "Céline"
       },
       "correctAnswer": "B",
-      "target": "petruta",
       "difficulty": 3
     },
     {
+      "target": "petruta",
       "id": "p-engleza-breakice",
       "subject": "Engleză",
       "question": "Ce înseamnă expresia din limba engleză \"to break the ice\"?",
@@ -116,10 +117,10 @@
         "D": "A iniția o conversație într-o situație socială incomodă"
       },
       "correctAnswer": "D",
-      "target": "petruta",
       "difficulty": 4
     },
     {
+      "target": "petruta",
       "id": "p-astronomie-anlumina",
       "subject": "Astronomie",
       "question": "Ce reprezintă un an-lumină?",
@@ -130,10 +131,10 @@
         "D": "Unitatea de măsură pentru vârsta stelelor"
       },
       "correctAnswer": "C",
-      "target": "petruta",
       "difficulty": 5
     },
     {
+      "target": "petruta",
       "id": "p-matematica-ecuatie",
       "subject": "Matematică (Algebră)",
       "question": "Rezolvă ecuația: 2(x - 3) + 4x = 18",
@@ -144,10 +145,10 @@
         "D": "x = 6"
       },
       "correctAnswer": "B",
-      "target": "petruta",
       "difficulty": 3
     },
     {
+      "target": "petruta",
       "id": "p-matematica-catete",
       "subject": "Matematică (Geometrie)",
       "question": "Într-un triunghi dreptunghic, catetele au lungimile 6 și 8. Care este lungimea ipotenuzei?",
@@ -158,10 +159,10 @@
         "D": "14"
       },
       "correctAnswer": "B",
-      "target": "petruta",
       "difficulty": 2
     },
     {
+      "target": "petruta",
       "id": "p-informatica-1",
       "subject": "Informatică",
       "question": "Ce valoare va afișa următorul cod?\n\nint a = 7;\nint b = 3;\nint c = a + b;\n\nif (c % 2 == 0) {\n  c = c / 2;\n} else {\n  c = c * 2;\n}\n\ncout << c;",
@@ -172,10 +173,10 @@
         "D": "7"
       },
       "correctAnswer": "B",
-      "target": "petruta",
       "difficulty": 6
     },
     {
+      "target": "petruta",
       "id": "p-biologie-febra",
       "subject": "Biologie",
       "question": "Ce este febra?",
@@ -186,10 +187,10 @@
         "D": "Un efect secundar al deshidratării"
       },
       "correctAnswer": "C",
-      "target": "petruta",
       "difficulty": 4
     },
     {
+      "target": "petruta",
       "id": "p-astronomie-lumina",
       "subject": "Astronomie",
       "question": "Cât timp îi ia luminii să ajungă de la Soare la Pământ?",
@@ -200,10 +201,10 @@
         "D": "Aproximativ 1 minut"
       },
       "correctAnswer": "A",
-      "target": "petruta",
       "difficulty": 4
     },
     {
+      "target": "petruta",
       "id": "p-biologie-pasari",
       "subject": "Biologie",
       "question": "Care structură ajută păsările în zbor prin oxigenare eficientă și reducerea densității corpului?",
@@ -214,10 +215,10 @@
         "D": "Sternul"
       },
       "correctAnswer": "B",
-      "target": "petruta",
       "difficulty": 6
     },
     {
+      "target": "petruta",
       "id": "p-muzica-paul",
       "subject": "Muzică",
       "question": "Până în ce fază a ajuns Paul Ananie la Vocea României în anul 2025?",
@@ -228,10 +229,10 @@
         "D": "Finala mică"
       },
       "correctAnswer": "B",
-      "target": "petruta",
       "difficulty": 7
     },
     {
+      "target": "petruta",
       "id": "p-cultura-kardashian",
       "subject": "Cultură generală",
       "question": "Care dintre următoarele NU este sora lui Kim Kardashian?",
@@ -242,10 +243,10 @@
         "D": "Kylie Jenner"
       },
       "correctAnswer": "A",
-      "target": "petruta",
       "difficulty": 5
     },
     {
+      "target": "petruta",
       "id": "p-tehnologie-elonmusk",
       "subject": "Tehnologie",
       "question": "Care dintre următoarele companii NU a fost fondată sau cofondată de Elon Musk?",
@@ -256,10 +257,10 @@
         "D": "Amazon"
       },
       "correctAnswer": "D",
-      "target": "petruta",
       "difficulty": 2
     },
     {
+      "target": "petruta",
       "id": "p-tehnologie-gps",
       "subject": "Tehnologie",
       "question": "De la ce vine prescurtarea GPS?",
@@ -270,10 +271,10 @@
         "D": "German Positioning Software"
       },
       "correctAnswer": "C",
-      "target": "petruta",
       "difficulty": 2
     },
     {
+      "target": "petruta",
       "id": "p-biologie-rumega",
       "subject": "Biologie",
       "question": "Ce animal NU rumegă?",
@@ -284,10 +285,10 @@
         "D": "Calul"
       },
       "correctAnswer": "D",
-      "target": "petruta",
       "difficulty": 5
     },
     {
+      "target": "leo",
       "id": "leo-geografie-steag",
       "subject": "Geografie",
       "question": "Cărei țări îi aparține acest steag?",
@@ -298,10 +299,10 @@
         "C": "Mare Britanie",
         "B": "Ucraina"
       },
-      "correctAnswer": "C",
-      "target": "leo"
+      "correctAnswer": "C"
     },
     {
+      "target": "leo",
       "id": "leo-brand-masina",
       "subject": "Branduri",
       "question": "Cărui brand de mașină îi aparține acest logo?",
@@ -312,10 +313,10 @@
         "C": "Volvo",
         "D": "BMW"
       },
-      "correctAnswer": "C",
-      "target": "leo"
+      "correctAnswer": "C"
     },
     {
+      "target": "leo",
       "id": "leo-pattern-1",
       "subject": "Pattern recognition",
       "question": "Completează acest puzzle logic:",
@@ -326,10 +327,10 @@
         "C": "C",
         "D": "D"
       },
-      "correctAnswer": "B",
-      "target": "leo"
+      "correctAnswer": "B"
     },
     {
+      "target": "leo",
       "id": "leo-pattern-2",
       "subject": "Pattern recognition",
       "question": "Completează acest puzzle logic:",
@@ -342,10 +343,10 @@
         "E": "E",
         "F": "F"
       },
-      "correctAnswer": "E",
-      "target": "leo"
+      "correctAnswer": "E"
     },
     {
+      "target": "leo",
       "id": "leo-pattern-3",
       "subject": "Pattern recognition",
       "question": "Completează acest puzzle logic:",
@@ -358,10 +359,10 @@
         "E": "E",
         "F": "F"
       },
-      "correctAnswer": "D",
-      "target": "leo"
+      "correctAnswer": "D"
     },
     {
+      "target": "leo",
       "id": "leo-romana-propozitie-corecta",
       "subject": "Limba română",
       "question": "Care propoziție este scrisă corect?",
@@ -371,10 +372,10 @@
         "C": "S a dus la școala dimineața.",
         "D": "Sa-dus la școală dimineața."
       },
-      "correctAnswer": "B",
-      "target": "leo"
+      "correctAnswer": "B"
     },
     {
+      "target": "leo",
       "id": "leo-geografie-capitala-moldova",
       "subject": "Geografie",
       "question": "Care este capitala Republicii Moldova?",
@@ -384,10 +385,10 @@
         "C": "Chișinău",
         "D": "Minsk"
       },
-      "correctAnswer": "C",
-      "target": "leo"
+      "correctAnswer": "C"
     },
     {
+      "target": "leo",
       "id": "leo-engleza-intotdeauna",
       "subject": "Engleză",
       "question": "Cum se spune în engleză \"întotdeauna\"?",
@@ -397,10 +398,10 @@
         "C": "Always",
         "D": "Never"
       },
-      "correctAnswer": "C",
-      "target": "leo"
+      "correctAnswer": "C"
     },
     {
+      "target": "leo",
       "id": "leo-astronomie-planeta-aproape",
       "subject": "Astronomie",
       "question": "Care este cea mai apropiată planetă de Pământ?",
@@ -410,10 +411,10 @@
         "C": "Marte",
         "D": "Jupiter"
       },
-      "correctAnswer": "A",
-      "target": "leo"
+      "correctAnswer": "A"
     },
     {
+      "target": "leo",
       "id": "leo-matematica-5la3a",
       "subject": "Matematică (Algebră)",
       "question": "Cât e 5 la a 3-a?",
@@ -423,10 +424,10 @@
         "C": "155",
         "D": "15"
       },
-      "correctAnswer": "B",
-      "target": "leo"
+      "correctAnswer": "B"
     },
     {
+      "target": "leo",
       "id": "leo-matematica-laturi-dreptunghi",
       "subject": "Matematică (Geometrie)",
       "question": "Câte laturi are un dreptunghi?",
@@ -436,10 +437,10 @@
         "C": "4",
         "D": "5"
       },
-      "correctAnswer": "C",
-      "target": "leo"
+      "correctAnswer": "C"
     },
     {
+      "target": "leo",
       "id": "leo-tehnologie-incalzire",
       "subject": "Tehnologie",
       "question": "Care e principala cauză a încălzirii telefonului când te joci mult timp pe el?",
@@ -449,10 +450,10 @@
         "C": "Pentru că bateria se descarcă în timp ce te joci",
         "D": "Pentru că procesorul telefonului lucrează intens când rulează jocul"
       },
-      "correctAnswer": "D",
-      "target": "leo"
+      "correctAnswer": "D"
     },
     {
+      "target": "leo",
       "id": "leo-sport-fotbal",
       "subject": "Sport",
       "question": "Câți jucători are o echipă profesionistă de fotbal (cu tot cu portar)?",
@@ -462,10 +463,10 @@
         "C": "11",
         "D": "12"
       },
-      "correctAnswer": "C",
-      "target": "leo"
+      "correctAnswer": "C"
     },
     {
+      "target": "leo",
       "id": "leo-biologie-raceala",
       "subject": "Biologie",
       "question": "Ce este răceala?",
@@ -475,10 +476,10 @@
         "C": "O alergie la frig",
         "D": "O boală a plămânilor"
       },
-      "correctAnswer": "B",
-      "target": "leo"
+      "correctAnswer": "B"
     },
     {
+      "target": "leo",
       "id": "leo-fizica-viteza",
       "subject": "Fizică",
       "question": "Ce este viteza?",
@@ -488,10 +489,10 @@
         "C": "Distanța parcursă într-un timp",
         "D": "Energia unui obiect"
       },
-      "correctAnswer": "A",
-      "target": "leo"
+      "correctAnswer": "A"
     },
     {
+      "target": "leo",
       "id": "leo-rude-iuliuandrei",
       "subject": "Rude",
       "question": "Cum îl cheamă pe soțul Gabrielei?",
@@ -501,10 +502,10 @@
         "C": "Vișovan Iuliu-Andrei",
         "D": "Vișovan Iuliu-Augustin"
       },
-      "correctAnswer": "C",
-      "target": "leo"
+      "correctAnswer": "C"
     },
     {
+      "target": "leo",
       "id": "leo-muzica-do",
       "subject": "Muzică",
       "question": "Care este a 3-a notă din gama Do?",
@@ -514,10 +515,10 @@
         "A": "Re",
         "D": "Sol"
       },
-      "correctAnswer": "B",
-      "target": "leo"
+      "correctAnswer": "B"
     },
     {
+      "target": "leo",
       "id": "leo-entertainment-johncena",
       "subject": "Entertainment",
       "question": "Din ce sport este cunoscut John Cena?",
@@ -527,10 +528,10 @@
         "C": "Box",
         "D": "Baschet"
       },
-      "correctAnswer": "B",
-      "target": "leo"
+      "correctAnswer": "B"
     },
     {
+      "target": "leo",
       "id": "leo-istorie-dacia",
       "subject": "Istorie",
       "question": "Cum se numea teritoriul României în Antichitate?",
@@ -540,10 +541,10 @@
         "C": "Roma",
         "D": "Macedonia"
       },
-      "correctAnswer": "B",
-      "target": "leo"
+      "correctAnswer": "B"
     },
     {
+      "target": "leo",
       "id": "leo-biologie-paine",
       "subject": "Biologie",
       "question": "Ce plantă este cultivată pentru a obține făină?",
@@ -553,10 +554,10 @@
         "C": "Secară",
         "D": "Floarea-soarelui"
       },
-      "correctAnswer": "A",
-      "target": "leo"
+      "correctAnswer": "A"
     },
     {
+      "target": "iustin",
       "id": "iusti-miau",
       "subject": "Diverse",
       "question": "Ce animal spune \"miau\"?",
@@ -566,10 +567,10 @@
         "C": "Vaca",
         "D": "Oaia"
       },
-      "correctAnswer": "A",
-      "target": "iustin"
+      "correctAnswer": "A"
     },
     {
+      "target": "iustin",
       "id": "iusti-sigma",
       "subject": "Diverse",
       "question": "Completați fraza: Sigma sigma...",
@@ -579,10 +580,10 @@
         "C": "voy",
         "D": "soy"
       },
-      "correctAnswer": "A",
-      "target": "iustin"
+      "correctAnswer": "A"
     },
     {
+      "target": "iustin",
       "id": "iusti-frate-leo",
       "subject": "Diverse",
       "question": "Cum îl cheamă pe fratele lui Leo?",
@@ -592,10 +593,10 @@
         "C": "Mihai",
         "D": "Petru"
       },
-      "correctAnswer": "A",
-      "target": "iustin"
+      "correctAnswer": "A"
     },
     {
+      "target": "iustin",
       "id": "iusti-mos-craciun",
       "subject": "Diverse",
       "question": "Cum se numește Moșul care aduce cadouri de Crăciun?",
@@ -605,10 +606,10 @@
         "C": "Moș Nicolae",
         "D": "Moș Gerilă"
       },
-      "correctAnswer": "A",
-      "target": "iustin"
+      "correctAnswer": "A"
     },
     {
+      "target": "iustin",
       "id": "iusti-anotimp-iarna",
       "subject": "Diverse",
       "question": "În ce anotimp ninge afara?",
@@ -618,10 +619,10 @@
         "C": "Vara",
         "D": "Toamna"
       },
-      "correctAnswer": "A",
-      "target": "iustin"
+      "correctAnswer": "A"
     },
     {
+      "target": "iustin",
       "id": "iusti-noaptea-cer",
       "subject": "Diverse",
       "question": "Ce se vede noaptea pe cer?",
@@ -631,10 +632,10 @@
         "C": "Curcubeul",
         "D": "Iepurasi"
       },
-      "correctAnswer": "A",
-      "target": "iustin"
+      "correctAnswer": "A"
     },
     {
+      "target": "iustin",
       "id": "iusti-animal",
       "subject": "Diverse",
       "question": "Ce animal este acesta?",
@@ -645,10 +646,10 @@
         "C": "Iepure",
         "D": "Elefant"
       },
-      "correctAnswer": "A",
-      "target": "iustin"
+      "correctAnswer": "A"
     },
     {
+      "target": "iustin",
       "id": "iusti-masina-iuliu",
       "subject": "Diverse",
       "question": "Care e mașina lui Iuliu?",
@@ -659,10 +660,10 @@
         "C": "C",
         "D": "D"
       },
-      "correctAnswer": "D",
-      "target": "iustin"
+      "correctAnswer": "D"
     },
     {
+      "target": "iustin",
       "id": "iusti-mama",
       "subject": "Diverse",
       "question": "Cum o cheamă pe mama?",
@@ -672,10 +673,10 @@
         "C": "Elena",
         "D": "Ana"
       },
-      "correctAnswer": "A",
-      "target": "iustin"
+      "correctAnswer": "A"
     },
     {
+      "target": "iustin",
       "id": "iusti-gabita",
       "subject": "Diverse",
       "question": "Cine e în această poză?",
@@ -686,8 +687,7 @@
         "C": "Doamna educatoare",
         "D": "Nana Gabița"
       },
-      "correctAnswer": "D",
-      "target": "iustin"
+      "correctAnswer": "D"
     }
   ]
 }
