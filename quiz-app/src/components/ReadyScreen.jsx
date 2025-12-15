@@ -28,36 +28,34 @@ function ReadyScreen({ player, questionCount, onStart }) {
           <img src="/images/milionar-logo.png" alt="Vrei să fii milionar?" />
         </div>
 
-        <div className="ready-player">
-          <span className="ready-player-label">Jucător selectat:</span>
-          <span className="ready-player-name">{player.name}</span>
-        </div>
+        <h1 className="ready-title">
+          <span className="ready-line">
+            <span className="ready-player-name">{player.name}</span>, EȘTI {isFeminine ? 'PREGĂTITĂ' : 'PREGĂTIT'}
+          </span>
+          <span className="ready-line highlight">SĂ DEVII {isFeminine ? 'MILIONARĂ' : 'MILIONAR'}?</span>
+        </h1>
 
         <div className="ready-rules">
           <div className="rule-item">
-            <span className="rule-icon">❓</span>
             <span className="rule-text">
-              <strong>{questionCount}</strong> întrebări
+              <strong>{questionCount}</strong> de întrebări
             </span>
           </div>
           <div className="rule-item">
-            <span className="rule-icon">💰</span>
             <span className="rule-text">
               {player.valueIncrement > 0 ? 'Prima întrebare' : 'Fiecare întrebare'}: <strong>{player.questionValue} RON</strong>
             </span>
           </div>
-          <div className="rule-item">
-            <span className="rule-icon">⏱️</span>
-            <span className="rule-text">Fără limită de timp</span>
-          </div>
           {player.valueIncrement > 0 && (
             <div className="rule-item">
-              <span className="rule-icon">📈</span>
               <span className="rule-text">
                 Valoarea fiecărei întrebări crește cu <strong>{player.valueIncrement} RON</strong>
               </span>
             </div>
           )}
+          <div className="rule-item">
+            <span className="rule-text">Fără limită de timp</span>
+          </div>
           <div className="rule-item highlight">
             <span className="rule-icon">🏆</span>
             <span className="rule-text">
@@ -65,11 +63,6 @@ function ReadyScreen({ player, questionCount, onStart }) {
             </span>
           </div>
         </div>
-
-        <h1 className="ready-title">
-          <span className="ready-line">EȘTI {isFeminine ? 'PREGĂTITĂ' : 'PREGĂTIT'}</span>
-          <span className="ready-line highlight">SĂ FII {isFeminine ? 'MILIONARĂ' : 'MILIONAR'}?</span>
-        </h1>
 
         <button className="start-game-button" onClick={handleStart} disabled={isStarting}>
           {isStarting ? 'SE ÎNCARCĂ...' : 'ÎNCEPE JOCUL'}
