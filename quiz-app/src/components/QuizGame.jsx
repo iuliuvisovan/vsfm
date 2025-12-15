@@ -86,9 +86,7 @@ function QuizGame({ player, questions, onComplete }) {
           </div>
         )}
 
-        <div className="question-box">
-          <p className="question-text">{currentQuestion.question}</p>
-        </div>
+        <p className="question-text">{currentQuestion.question}</p>
       </div>
 
       <div className={`options-grid ${optionKeys.length > 4 ? 'six-options' : ''}`}>
