@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import './QuizGame.css';
 import { playCorrectSound, playWrongSound, playSuspenseSound, stopSuspenseSound } from '../utils/sounds';
 
@@ -12,7 +12,9 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
   const [visibleOptions, setVisibleOptions] = useState([]);
 
   const currentQuestion = questions[currentIndex];
-  const optionKeys = Object.keys(currentQuestion?.options || {}).sort();
+  const optionKeys = useMemo(() => {
+    return Object.keys(currentQuestion?.options || {}).sort();
+  }, [currentQuestion]);
   const isCorrect = selectedAnswer === currentQuestion?.correctAnswer;
   const totalQuestions = questions.length;
   const hasImage = !!currentQuestion?.imageName;
@@ -49,7 +51,7 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
     const initialDelay = setTimeout(() => {
       optionKeys.forEach((key, index) => {
         const timer = setTimeout(() => {
-          setVisibleOptions(prev => [...prev, key]);
+          setVisibleOptions((prev) => [...prev, key]);
         }, index * 2000); // 2s between each option
         timers.push(timer);
       });
@@ -60,7 +62,7 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
     return () => {
       timers.forEach(clearTimeout);
     };
-  }, [currentIndex, currentQuestion, optionKeys]);
+  }, [currentQuestion, optionKeys]);
 
   const allOptionsVisible = visibleOptions.length === optionKeys.length;
 
