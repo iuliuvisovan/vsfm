@@ -39,7 +39,7 @@ function ReadyScreen({ player, questionCount, onStart }) {
           </div>
           <div className="rule-item">
             <span className="rule-icon">💰</span>
-            <span className="rule-text">Prima întrebare: <strong>{player.questionValue} RON</strong></span>
+            <span className="rule-text">{player.valueIncrement > 0 ? 'Prima întrebare' : 'Fiecare întrebare'}: <strong>{player.questionValue} RON</strong></span>
           </div>
           {player.valueIncrement > 0 && (
             <div className="rule-item">
