@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './QuizGame.css';
+import { playCorrectSound, playWrongSound } from '../utils/sounds';
 
 function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onIndexChange, onResultsChange }) {
   const [currentIndex, setCurrentIndex] = useState(savedIndex || 0);
@@ -27,10 +28,19 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
     setSelectedAnswer(answerKey);
     setShowResult(true);
 
+    const isAnswerCorrect = answerKey === currentQuestion.correctAnswer;
+
+    // Play sound effect
+    if (isAnswerCorrect) {
+      playCorrectSound();
+    } else {
+      playWrongSound();
+    }
+
     const result = {
       question: currentQuestion,
       selectedAnswer: answerKey,
-      isCorrect: answerKey === currentQuestion.correctAnswer,
+      isCorrect: isAnswerCorrect,
     };
     setResults([...results, result]);
   };

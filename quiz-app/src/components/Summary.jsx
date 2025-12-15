@@ -1,7 +1,13 @@
+import { useEffect } from 'react';
 import './Summary.css';
+import { playVictorySound } from '../utils/sounds';
 
 function Summary({ player, results, onRestart }) {
   const correctCount = results.filter((r) => r.isCorrect).length;
+
+  useEffect(() => {
+    playVictorySound();
+  }, []);
   const totalQuestions = results.length;
   const percentage = Math.round((correctCount / totalQuestions) * 100);
 
