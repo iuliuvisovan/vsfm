@@ -579,6 +579,20 @@
     },
     {
       "target": "iustin",
+      "id": "iusti-mama",
+      "subject": "Diverse",
+      "question": "Cum o cheamă pe mama?",
+      "options": {
+        "A": "Ana",
+        "B": "Maria",
+        "C": "Elena",
+        "D": "Georgiana"
+      },
+      "correctAnswer": "D",
+      "difficulty": 0.20
+    },
+    {
+      "target": "iustin",
       "id": "iusti-miau",
       "subject": "Diverse",
       "question": "Ce animal spune \"miau\"?",
@@ -589,7 +603,7 @@
         "D": "Oaia"
       },
       "correctAnswer": "A",
-      "difficulty": 3.20
+      "difficulty": 0.21
     },
     {
       "target": "iustin",
@@ -603,7 +617,7 @@
         "D": "soy"
       },
       "correctAnswer": "B",
-      "difficulty": 5.25
+      "difficulty": 0.22
     },
     {
       "target": "iustin",
@@ -617,7 +631,7 @@
         "D": "Iustin"
       },
       "correctAnswer": "D",
-      "difficulty": 6.20
+      "difficulty": 0.23
     },
     {
       "target": "iustin",
@@ -631,50 +645,7 @@
         "D": "Moș Gerilă"
       },
       "correctAnswer": "A",
-      "difficulty": 5.20
-    },
-    {
-      "target": "iustin",
-      "id": "iusti-anotimp-iarna",
-      "subject": "Diverse",
-      "question": "În ce anotimp ninge afară?",
-      "options": {
-        "A": "Iarna",
-        "B": "Primăvara",
-        "C": "Vara",
-        "D": "Toamna"
-      },
-      "correctAnswer": "A",
-      "difficulty": 7.20
-    },
-    {
-      "target": "iustin",
-      "id": "iusti-noaptea-cer",
-      "subject": "Diverse",
-      "question": "Ce se vede noaptea pe cer?",
-      "options": {
-        "A": "Luna",
-        "B": "Soarele",
-        "C": "Curcubeul",
-        "D": "Iepurasi"
-      },
-      "correctAnswer": "A",
-      "difficulty": 6.21
-    },
-    {
-      "target": "iustin",
-      "id": "iusti-animal",
-      "subject": "Diverse",
-      "question": "Ce animal este acesta?",
-      "imageName": "iusti-camel.jpeg",
-      "options": {
-        "A": "Cămilă",
-        "B": "Vacă",
-        "C": "Iepure",
-        "D": "Elefant"
-      },
-      "correctAnswer": "A",
-      "difficulty": 8.20
+      "difficulty": 0.24
     },
     {
       "target": "iustin",
@@ -689,21 +660,21 @@
         "D": "Varianta D"
       },
       "correctAnswer": "D",
-      "difficulty": 6.22
+      "difficulty": 0.25
     },
     {
       "target": "iustin",
-      "id": "iusti-mama",
+      "id": "iusti-noaptea-cer",
       "subject": "Diverse",
-      "question": "Cum o cheamă pe mama?",
+      "question": "Ce se vede noaptea pe cer?",
       "options": {
-        "A": "Ana",
-        "B": "Maria",
-        "C": "Elena",
-        "D": "Georgiana"
+        "A": "Luna",
+        "B": "Soarele",
+        "C": "Curcubeul",
+        "D": "Iepurasi"
       },
-      "correctAnswer": "D",
-      "difficulty": 4.20
+      "correctAnswer": "A",
+      "difficulty": 0.26
     },
     {
       "target": "iustin",
@@ -718,7 +689,36 @@
         "D": "Doamna educatoare"
       },
       "correctAnswer": "B",
-      "difficulty": 7.21
+      "difficulty": 0.27
+    },
+    {
+      "target": "iustin",
+      "id": "iusti-animal",
+      "subject": "Diverse",
+      "question": "Ce animal este acesta?",
+      "imageName": "iusti-camel.jpeg",
+      "options": {
+        "A": "Cămilă",
+        "B": "Vacă",
+        "C": "Iepure",
+        "D": "Elefant"
+      },
+      "correctAnswer": "A",
+      "difficulty": 0.28
+    },
+    {
+      "target": "iustin",
+      "id": "iusti-anotimp-iarna",
+      "subject": "Diverse",
+      "question": "În ce anotimp ninge afară?",
+      "options": {
+        "A": "Iarna",
+        "B": "Primăvara",
+        "C": "Vara",
+        "D": "Toamna"
+      },
+      "correctAnswer": "A",
+      "difficulty": 0.29
     }
   ]
 }
