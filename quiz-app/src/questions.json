@@ -12,7 +12,7 @@
         "D": "Mi-a spus că s a grăbit prea tare."
       },
       "correctAnswer": "C",
-      "difficulty": 3
+      "difficulty": 3.01
     },
     {
       "target": "petruta",
@@ -26,7 +26,7 @@
         "B": "Melbourne"
       },
       "correctAnswer": "C",
-      "difficulty": 6
+      "difficulty": 6.05
     },
     {
       "target": "petruta",
@@ -41,7 +41,7 @@
         "B": "Sri Lanka"
       },
       "correctAnswer": "A",
-      "difficulty": 7
+      "difficulty": 7.01
     },
     {
       "target": "petruta",
@@ -56,7 +56,7 @@
         "D": "Varianta D"
       },
       "correctAnswer": "A",
-      "difficulty": 3.1
+      "difficulty": 3.01
     },
     {
       "target": "petruta",
@@ -71,7 +71,7 @@
         "D": "Varianta D"
       },
       "correctAnswer": "D",
-      "difficulty": 7
+      "difficulty": 7.01
     },
     {
       "target": "petruta",
@@ -88,7 +88,7 @@
         "F": "Varianta F"
       },
       "correctAnswer": "E",
-      "difficulty": 10
+      "difficulty": 10.01
     },
     {
       "target": "petruta",
@@ -103,7 +103,7 @@
         "D": "Céline"
       },
       "correctAnswer": "B",
-      "difficulty": 6.1
+      "difficulty": 6.01
     },
     {
       "target": "petruta",
@@ -117,7 +117,7 @@
         "D": "A iniția o conversație într-o situație socială incomodă"
       },
       "correctAnswer": "D",
-      "difficulty": 7
+      "difficulty": 7.02
     },
     {
       "target": "petruta",
@@ -131,7 +131,7 @@
         "D": "Unitatea de măsură pentru vârsta stelelor"
       },
       "correctAnswer": "C",
-      "difficulty": 8
+      "difficulty": 8.01
     },
     {
       "target": "petruta",
@@ -145,7 +145,7 @@
         "D": "x = 6"
       },
       "correctAnswer": "B",
-      "difficulty": 7
+      "difficulty": 7.03
     },
     {
       "target": "petruta",
@@ -159,7 +159,7 @@
         "D": "14"
       },
       "correctAnswer": "B",
-      "difficulty": 6.2
+      "difficulty": 6.02
     },
     {
       "target": "petruta",
@@ -174,7 +174,7 @@
         "D": "7"
       },
       "correctAnswer": "B",
-      "difficulty": 9
+      "difficulty": 9.01
     },
     {
       "target": "petruta",
@@ -188,7 +188,7 @@
         "D": "Un efect secundar al deshidratării"
       },
       "correctAnswer": "C",
-      "difficulty": 6
+      "difficulty": 6.01
     },
     {
       "target": "petruta",
@@ -202,7 +202,7 @@
         "D": "Aproximativ 1 minut"
       },
       "correctAnswer": "A",
-      "difficulty": 9
+      "difficulty": 9.01
     },
     {
       "target": "petruta",
@@ -216,7 +216,7 @@
         "D": "Sternul"
       },
       "correctAnswer": "B",
-      "difficulty": 7
+      "difficulty": 7.04
     },
     {
       "target": "petruta",
@@ -230,7 +230,7 @@
         "D": "Finala mică"
       },
       "correctAnswer": "B",
-      "difficulty": 6.4
+      "difficulty": 6.04
     },
     {
       "target": "petruta",
@@ -244,7 +244,7 @@
         "D": "Kylie Jenner"
       },
       "correctAnswer": "A",
-      "difficulty": 6.3
+      "difficulty": 6.03
     },
     {
       "target": "petruta",
@@ -258,7 +258,7 @@
         "D": "Amazon"
       },
       "correctAnswer": "D",
-      "difficulty": 8
+      "difficulty": 8.01
     },
     {
       "target": "petruta",
@@ -272,7 +272,7 @@
         "D": "German Positioning Software"
       },
       "correctAnswer": "C",
-      "difficulty": 4
+      "difficulty": 4.01
     },
     {
       "target": "petruta",
@@ -286,7 +286,7 @@
         "D": "Calul"
       },
       "correctAnswer": "D",
-      "difficulty": 8
+      "difficulty": 8.02
     },
     {
       "target": "leo",
@@ -301,7 +301,7 @@
         "B": "Ucraina"
       },
       "correctAnswer": "C",
-      "difficulty": 3
+      "difficulty": 3.10
     },
     {
       "target": "leo",
@@ -316,7 +316,7 @@
         "D": "BMW"
       },
       "correctAnswer": "C",
-      "difficulty": 7
+      "difficulty": 7.01
     },
     {
       "target": "leo",
@@ -331,7 +331,7 @@
         "D": "Varianta D"
       },
       "correctAnswer": "B",
-      "difficulty": 4
+      "difficulty": 4.10
     },
     {
       "target": "leo",
@@ -348,7 +348,7 @@
         "F": "Varianta F"
       },
       "correctAnswer": "E",
-      "difficulty": 7
+      "difficulty": 7.11
     },
     {
       "target": "leo",
@@ -365,7 +365,7 @@
         "F": "Varianta F"
       },
       "correctAnswer": "D",
-      "difficulty": 9
+      "difficulty": 9.10
     },
     {
       "target": "leo",
