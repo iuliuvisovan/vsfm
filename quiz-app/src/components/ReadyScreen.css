@@ -5,7 +5,6 @@
   justify-content: center;
   height: 100%;
   position: relative;
-  overflow: hidden;
 }
 
 .ready-content {
@@ -213,7 +212,6 @@
   position: absolute;
   inset: 0;
   pointer-events: none;
-  overflow: hidden;
 }
 
 .spotlight {
