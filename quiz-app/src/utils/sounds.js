@@ -33,7 +33,8 @@ const preloadSounds = () => {
     sounds.suspense = new Audio('/sounds/suspense.mp3');
     sounds.final = new Audio('/sounds/final.mp3');
 
-    // Suspense loops
+    // Loop background/ambient tracks
+    sounds.before.loop = true;
     sounds.suspense.loop = true;
   }
 };
