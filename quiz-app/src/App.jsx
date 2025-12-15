@@ -1,20 +1,53 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import PlayerSelect from './components/PlayerSelect'
 import QuizGame from './components/QuizGame'
 import Summary from './components/Summary'
 import questionsData from './questions.json'
 import './App.css'
 
+const STORAGE_KEY = 'vsfm-quiz-state'
+
 function App() {
-  const [gameState, setGameState] = useState('select') // 'select', 'playing', 'summary'
+  const [gameState, setGameState] = useState('select')
   const [selectedPlayer, setSelectedPlayer] = useState(null)
   const [results, setResults] = useState([])
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [isLoaded, setIsLoaded] = useState(false)
 
   const players = [
-    { id: 'petruta', name: 'Petruta' },
+    { id: 'petruta', name: 'Petruța' },
     { id: 'leo', name: 'Leo' },
     { id: 'iustin', name: 'Iustin' }
   ]
+
+  // Load state from localStorage on mount
+  useEffect(() => {
+    const saved = localStorage.getItem(STORAGE_KEY)
+    if (saved) {
+      try {
+        const state = JSON.parse(saved)
+        if (state.gameState) setGameState(state.gameState)
+        if (state.selectedPlayer) setSelectedPlayer(state.selectedPlayer)
+        if (state.results) setResults(state.results)
+        if (state.currentIndex !== undefined) setCurrentIndex(state.currentIndex)
+      } catch (e) {
+        console.error('Failed to load saved state:', e)
+      }
+    }
+    setIsLoaded(true)
+  }, [])
+
+  // Save state to localStorage whenever it changes
+  useEffect(() => {
+    if (!isLoaded) return
+    const state = {
+      gameState,
+      selectedPlayer,
+      results,
+      currentIndex
+    }
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state))
+  }, [gameState, selectedPlayer, results, currentIndex, isLoaded])
 
   const getPlayerQuestions = (playerId) => {
     return questionsData.questions
@@ -25,6 +58,7 @@ function App() {
   const handlePlayerSelect = (player) => {
     setSelectedPlayer(player)
     setResults([])
+    setCurrentIndex(0)
     setGameState('playing')
   }
 
@@ -36,7 +70,21 @@ function App() {
   const handleRestart = () => {
     setSelectedPlayer(null)
     setResults([])
+    setCurrentIndex(0)
     setGameState('select')
+  }
+
+  const handleReset = () => {
+    localStorage.removeItem(STORAGE_KEY)
+    handleRestart()
+  }
+
+  const handleIndexChange = (index) => {
+    setCurrentIndex(index)
+  }
+
+  if (!isLoaded) {
+    return null
   }
 
   return (
@@ -54,6 +102,10 @@ function App() {
             player={selectedPlayer}
             questions={getPlayerQuestions(selectedPlayer.id)}
             onComplete={handleGameComplete}
+            savedIndex={currentIndex}
+            savedResults={results}
+            onIndexChange={handleIndexChange}
+            onResultsChange={setResults}
           />
         )}
 
@@ -63,6 +115,12 @@ function App() {
             results={results}
             onRestart={handleRestart}
           />
+        )}
+
+        {gameState !== 'select' && (
+          <button className="reset-button" onClick={handleReset}>
+            Reset
+          </button>
         )}
       </div>
     </div>

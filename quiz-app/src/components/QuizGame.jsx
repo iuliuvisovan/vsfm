@@ -1,15 +1,24 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './QuizGame.css'
 
-function QuizGame({ player, questions, onComplete }) {
-  const [currentIndex, setCurrentIndex] = useState(0)
+function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onIndexChange, onResultsChange }) {
+  const [currentIndex, setCurrentIndex] = useState(savedIndex || 0)
   const [selectedAnswer, setSelectedAnswer] = useState(null)
   const [showResult, setShowResult] = useState(false)
-  const [results, setResults] = useState([])
+  const [results, setResults] = useState(savedResults || [])
 
   const currentQuestion = questions[currentIndex]
   const isCorrect = selectedAnswer === currentQuestion?.correctAnswer
   const totalQuestions = questions.length
+  const hasImage = !!currentQuestion?.imageName
+
+  useEffect(() => {
+    onIndexChange?.(currentIndex)
+  }, [currentIndex, onIndexChange])
+
+  useEffect(() => {
+    onResultsChange?.(results)
+  }, [results, onResultsChange])
 
   const handleAnswerClick = (answerKey) => {
     if (showResult) return
@@ -73,10 +82,10 @@ function QuizGame({ player, questions, onComplete }) {
         </div>
       </div>
 
-      <div className="question-area">
+      <div className={`question-area ${hasImage ? 'has-image' : 'no-image'}`}>
         <div className="subject-badge">{currentQuestion.subject}</div>
 
-        {currentQuestion.imageName && (
+        {hasImage && (
           <div className="question-image-container">
             <img
               src={`/images/${currentQuestion.imageName}`}
@@ -86,7 +95,7 @@ function QuizGame({ player, questions, onComplete }) {
           </div>
         )}
 
-        <p className="question-text">{currentQuestion.question}</p>
+        <p className={`question-text ${hasImage ? '' : 'large'}`}>{currentQuestion.question}</p>
       </div>
 
       <div className={`options-grid ${optionKeys.length > 4 ? 'six-options' : ''}`}>
