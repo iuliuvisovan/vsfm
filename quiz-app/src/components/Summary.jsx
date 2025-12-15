@@ -20,6 +20,11 @@ function Summary({ player, results, onRestart }) {
     return sum;
   }, 0);
 
+  // Calculate max possible
+  const maxPossible = results.reduce((sum, _, index) => {
+    return sum + player.questionValue + index * player.valueIncrement;
+  }, 0);
+
   const getMessage = () => {
     if (percentage === 100) return 'PERFECT! Ești un adevărat milionar!';
     if (percentage >= 90) return 'Excelent! Aproape perfect!';
@@ -30,51 +35,77 @@ function Summary({ player, results, onRestart }) {
 
   return (
     <div className="summary">
-      <div className="summary-logo">
-        <img src="/images/milionar-logo.png" alt="Vrei să fii milionar?" />
-      </div>
-      <div className="summary-header">
-        <h1 className="summary-title">Rezultat final</h1>
-        <p className="player-name">{player.name}</p>
+      {/* Left Panel - Money Hero */}
+      <div className="summary-hero">
+        <div className="hero-header">
+          <img src="/images/milionar-logo.png" alt="Vrei să fii milionar?" className="hero-logo" />
+          <div className="hero-player">
+            <span className="hero-label">Câștigător</span>
+            <span className="hero-name">{player.name}</span>
+          </div>
+        </div>
+
+        <div className="money-showcase">
+          <div className="money-glow"></div>
+          <div className="money-amount">
+            <span className="amount">{totalWon.toFixed(totalWon % 1 === 0 ? 0 : 1)}</span>
+            <span className="currency">RON</span>
+          </div>
+          <div className="money-label">Total câștigat</div>
+          <div className="money-max">din {maxPossible.toFixed(maxPossible % 1 === 0 ? 0 : 1)} RON posibil</div>
+        </div>
+
+        <div className="stats-row">
+          <div className="stat-box">
+            <span className="stat-value correct">{correctCount}</span>
+            <span className="stat-label">Corecte</span>
+          </div>
+          <div className="stat-divider"></div>
+          <div className="stat-box">
+            <span className="stat-value incorrect">{totalQuestions - correctCount}</span>
+            <span className="stat-label">Greșite</span>
+          </div>
+          <div className="stat-divider"></div>
+          <div className="stat-box">
+            <span className="stat-value">{percentage}%</span>
+            <span className="stat-label">Scor</span>
+          </div>
+        </div>
+
+        <p className="hero-message">{getMessage()}</p>
       </div>
 
-      <div className="total-won">
-        <span className="total-won-label">Total câștigat</span>
-        <span className="total-won-amount">{totalWon.toFixed(totalWon % 1 === 0 ? 0 : 1)} RON</span>
-        <p className="score-message">{getMessage()}</p>
-      </div>
-
-      <div className="score-display">
-        <span className="score-number">{correctCount}</span>
-        <span className="score-divider">/</span>
-        <span className="score-total">{totalQuestions}</span>
-        <span className="score-label">răspunsuri corecte</span>
-      </div>
-
-      <div className="results-list">
-        <h2 className="results-title">Rezumat răspunsuri</h2>
+      {/* Right Panel - Results List */}
+      <div className="summary-results">
+        <h2 className="results-header">Rezumat întrebări</h2>
         <div className="results-scroll">
           {results.map((result, index) => {
             const questionValue = player.questionValue + index * player.valueIncrement;
             return (
-              <div key={index} className={`result-item ${result.isCorrect ? 'correct' : 'incorrect'}`}>
-                <div className="result-number">{index + 1}</div>
-                {result.question.imageName && (
-                  <div className="result-thumb">
-                    <img src={`/images/${result.question.imageName}`} alt="Imagine întrebare" />
-                  </div>
-                )}
-                <div className="result-content">
-                  <p className="result-question">{result.question.question}</p>
-                  <div className="result-answers">
-                    <span className={`your-answer ${result.isCorrect ? 'correct' : 'incorrect'}`}>
-                      Răspunsul tău: {result.selectedAnswer}
-                    </span>
-                    {!result.isCorrect && <span className="correct-answer">Corect: {result.question.correctAnswer}</span>}
+              <div key={index} className={`result-card ${result.isCorrect ? 'correct' : 'incorrect'}`}>
+                <div className="card-left">
+                  <span className="card-number">{index + 1}</span>
+                  {result.question.imageName && (
+                    <div className="card-thumb">
+                      <img src={`/images/${result.question.imageName}`} alt="" />
+                    </div>
+                  )}
+                </div>
+                <div className="card-content">
+                  <p className="card-question">{result.question.question}</p>
+                  <div className="card-answers">
+                    <span className="answer-yours">Tu: {result.selectedAnswer}</span>
+                    {!result.isCorrect && <span className="answer-correct">Corect: {result.question.correctAnswer}</span>}
                   </div>
                 </div>
-                <div className="result-value">{questionValue.toFixed(questionValue % 1 === 0 ? 0 : 1)} RON</div>
-                <div className={`result-icon ${result.isCorrect ? 'correct' : 'incorrect'}`}>{result.isCorrect ? '✓' : '✗'}</div>
+                <div className="card-right">
+                  <span className={`card-value ${result.isCorrect ? 'won' : 'lost'}`}>
+                    {result.isCorrect ? '+' : ''}{questionValue.toFixed(questionValue % 1 === 0 ? 0 : 1)}
+                  </span>
+                  <span className={`card-icon ${result.isCorrect ? 'correct' : 'incorrect'}`}>
+                    {result.isCorrect ? '✓' : '✗'}
+                  </span>
+                </div>
               </div>
             );
           })}
