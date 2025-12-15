@@ -3,7 +3,9 @@ import PlayerSelect from './components/PlayerSelect'
 import ReadyScreen from './components/ReadyScreen'
 import QuizGame from './components/QuizGame'
 import Summary from './components/Summary'
-import questionsData from './questions/questions.json'
+import petrutaQuestions from './questions/questions-petruta.json'
+import leoQuestions from './questions/questions-leo.json'
+import iustinQuestions from './questions/questions-iustin.json'
 import { enableSounds, playBeforeSound, playSuspenseSound, stopAllSounds } from './utils/sounds'
 import './App.css'
 
@@ -68,10 +70,15 @@ function App() {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state))
   }, [gameState, selectedPlayer, results, currentIndex, isLoaded])
 
+  const questionsByTarget = {
+    petruta: petrutaQuestions.questions,
+    leo: leoQuestions.questions,
+    iustin: iustinQuestions.questions
+  }
+
   const getPlayerQuestions = (playerId) => {
-    return questionsData.questions
-      .filter(q => q.target === playerId)
-      .sort((a, b) => a.difficulty - b.difficulty)
+    const list = questionsByTarget[playerId] || []
+    return [...list].sort((a, b) => a.difficulty - b.difficulty)
   }
 
   const handlePlayerSelect = (player) => {
