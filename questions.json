@@ -498,9 +498,9 @@
       "subject": "Fizică",
       "question": "Ce este viteza?",
       "options": {
-        "A": "Forța aplicată unui obiect",
+        "A": "Distanța parcursă într-un timp",
         "B": "Unitate de masură a mașinii",
-        "C": "Distanța parcursă într-un timp",
+        "C": "Forța aplicată unui obiect",
         "D": "Energia unui obiect"
       },
       "correctAnswer": "A",
