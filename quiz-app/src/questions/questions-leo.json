@@ -179,7 +179,7 @@
       "target": "leo",
       "id": "leo-brand-masina",
       "subject": "Branduri",
-      "question": "Cărui brand de mașină îi aparține acest logo?",
+      "question": "Cărui brand de mașini îi aparține acest logo?",
       "imageName": "leo-logo-1.jpeg",
       "options": {
         "A": "Mercedes",
