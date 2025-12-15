@@ -34,6 +34,15 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
     setResults([...results, result]);
   };
 
+  const handleRetry = () => {
+    if (!showResult) return;
+    if (results.length > 0) {
+      setResults(results.slice(0, -1));
+    }
+    setSelectedAnswer(null);
+    setShowResult(false);
+  };
+
   const handleNext = () => {
     if (currentIndex + 1 >= totalQuestions) {
       onComplete([...results]);
@@ -113,9 +122,14 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
               Răspunsul corect: <strong>{currentQuestion.correctAnswer}</strong> - {currentQuestion.options[currentQuestion.correctAnswer]}
             </div>
           )}
-          <button className="next-button" onClick={handleNext}>
-            {currentIndex + 1 >= totalQuestions ? 'Vezi rezultatele' : 'Următoarea întrebare'}
-          </button>
+          <div className="result-actions">
+            <button className="next-button" onClick={handleNext}>
+              {currentIndex + 1 >= totalQuestions ? 'Vezi rezultatele' : 'Următoarea întrebare'}
+            </button>
+            <button className="retry-button" onClick={handleRetry}>
+              Reincearcă întrebarea
+            </button>
+          </div>
         </div>
       )}
     </div>

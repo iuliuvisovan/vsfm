@@ -104,7 +104,7 @@
 }
 
 .question-image-container {
-  height: 400px;
+  height: 500px;
   border-radius: 15px;
   overflow: hidden;
   border: 2px solid rgba(212, 175, 55, 0.5);
@@ -311,6 +311,39 @@
 
 .correct-answer-info strong {
   color: #00c853;
+}
+
+.result-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.retry-button {
+  background: transparent;
+  color: #ffffff;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  opacity: 0;
+  pointer-events: auto;
+  transform: translateY(4px);
+  text-decoration: none;
+}
+
+.retry-button:hover,
+.retry-button:focus-visible {
+  opacity: 1;
+  transform: translateY(0);
+  text-decoration: underline;
+}
+
+.retry-button:hover {
+  color: #d4af37;
 }
 
 .next-button {
