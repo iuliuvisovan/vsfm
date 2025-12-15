@@ -165,7 +165,8 @@
       "target": "petruta",
       "id": "p-informatica-1",
       "subject": "Informatică",
-      "question": "Ce valoare va afișa următorul cod?\n\nint a = 7;\nint b = 3;\nint c = a + b;\n\nif (c % 2 == 0) {\n  c = c / 2;\n} else {\n  c = c * 2;\n}\n\ncout << c;",
+      "question": "Ce valoare va afișa următorul cod?",
+      "imageName": "p-code-1.png",
       "options": {
         "A": "10",
         "B": "5",
