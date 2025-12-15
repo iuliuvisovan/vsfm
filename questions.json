@@ -1,6 +1,7 @@
 {
   "questions": [
     {
+      "id": "p-romana-gramatica",
       "subject": "Limba română",
       "question": "Care dintre următoarele propoziții este scrisă corect din punct de vedere gramatical?",
       "options": {
@@ -13,6 +14,7 @@
       "target": "petruta"
     },
     {
+      "id": "p-geografie-capitala",
       "subject": "Geografie",
       "question": "Care este capitala Australiei?",
       "options": {
@@ -25,6 +27,7 @@
       "target": "petruta"
     },
     {
+      "id": "p-geografie-steag",
       "subject": "Geografie",
       "question": "Cărei țări îi aparține acest steag?",
       "imageName": "p-flag-1.png",
@@ -38,6 +41,7 @@
       "target": "petruta"
     },
     {
+      "id": "p-pattern-1",
       "subject": "Pattern recognition",
       "question": "Completează acest puzzle logic:",
       "imageName": "p-logic-1.png",
@@ -51,6 +55,7 @@
       "target": "petruta"
     },
     {
+      "id": "p-pattern-2",
       "subject": "Pattern recognition",
       "question": "Completează acest puzzle logic:",
       "imageName": "p-logic-2.png",
@@ -64,6 +69,7 @@
       "target": "petruta"
     },
     {
+      "id": "p-pattern-3",
       "subject": "Recunoasștere Pattern",
       "question": "Completează acest puzzle logic:",
       "imageName": "p-logic-2.png",
@@ -79,6 +85,7 @@
       "target": "petruta"
     },
     {
+      "id": "p-branduri-logo",
       "subject": "Branduri",
       "question": "Cărui brand îi aparține acest logo?",
       "imageName": "p-logo-1.png",
@@ -92,6 +99,7 @@
       "target": "petruta"
     },
     {
+      "id": "p-engleza-breakice",
       "subject": "Engleză",
       "question": "Ce înseamnă expresia din limba engleză \"to break the ice\"?",
       "options": {
@@ -104,6 +112,7 @@
       "target": "petruta"
     },
     {
+      "id": "p-astronomie-anlumina",
       "subject": "Astronomie",
       "question": "Ce reprezintă un an-lumină?",
       "options": {
@@ -116,6 +125,7 @@
       "target": "petruta"
     },
     {
+      "id": "p-matematica-ecuatie",
       "subject": "Matematică (Algebră)",
       "question": "Rezolvă ecuația: 2(x - 3) + 4x = 18",
       "options": {
@@ -128,6 +138,7 @@
       "target": "petruta"
     },
     {
+      "id": "p-matematica-catete",
       "subject": "Matematică (Geometrie)",
       "question": "Într-un triunghi dreptunghic, catetele au lungimile 6 și 8. Care este lungimea ipotenuzei?",
       "options": {
@@ -140,6 +151,7 @@
       "target": "petruta"
     },
     {
+      "id": "p-informatica-1",
       "subject": "Informatică",
       "question": "Ce valoare va afișa următorul cod?\n\nint a = 7;\nint b = 3;\nint c = a + b;\n\nif (c % 2 == 0) {\n  c = c / 2;\n} else {\n  c = c * 2;\n}\n\ncout << c;",
       "options": {
@@ -152,6 +164,7 @@
       "target": "petruta"
     },
     {
+      "id": "p-biologie-febra",
       "subject": "Biologie",
       "question": "Ce este febra?",
       "options": {
@@ -164,6 +177,7 @@
       "target": "petruta"
     },
     {
+      "id": "p-astronomie-lumina",
       "subject": "Astronomie",
       "question": "Cât timp îi ia luminii să ajungă de la Soare la Pământ?",
       "options": {
@@ -176,6 +190,7 @@
       "target": "petruta"
     },
     {
+      "id": "p-biologie-pasari",
       "subject": "Biologie",
       "question": "Care structură ajută păsările în zbor prin oxigenare eficientă și reducerea densității corpului?",
       "options": {
@@ -188,6 +203,7 @@
       "target": "petruta"
     },
     {
+      "id": "p-muzica-paul",
       "subject": "Muzică",
       "question": "Până în ce fază a ajuns Paul Ananie la Vocea României în anul 2025?",
       "options": {
@@ -200,6 +216,7 @@
       "target": "petruta"
     },
     {
+      "id": "p-cultura-kardashian",
       "subject": "Cultură generală",
       "question": "Care dintre următoarele NU este sora lui Kim Kardashian?",
       "options": {
@@ -212,6 +229,7 @@
       "target": "petruta"
     },
     {
+      "id": "p-tehnologie-elonmusk",
       "subject": "Tehnologie",
       "question": "Care dintre următoarele companii NU a fost fondată sau cofondată de Elon Musk?",
       "options": {
@@ -224,6 +242,7 @@
       "target": "petruta"
     },
     {
+      "id": "p-tehnologie-gps",
       "subject": "Tehnologie",
       "question": "De la ce vine prescurtarea GPS?",
       "options": {
@@ -236,6 +255,7 @@
       "target": "petruta"
     },
     {
+      "id": "p-biologie-rumega",
       "subject": "Biologie",
       "question": "Ce animal NU rumegă?",
       "options": {
@@ -248,6 +268,7 @@
       "target": "petruta"
     },
     {
+      "id": "leo-geografie-steag",
       "subject": "Geografie",
       "question": "Cărei țări îi aparține acest steag?",
       "imageName": "leo-flag-1.png",
@@ -261,6 +282,7 @@
       "target": "leo"
     },
     {
+      "id": "leo-brand-masina",
       "subject": "Branduri",
       "question": "Cărui brand de mașină îi aparține acest logo?",
       "imageName": "leo-logo-1.png",
@@ -274,6 +296,7 @@
       "target": "leo"
     },
     {
+      "id": "leo-pattern-1",
       "subject": "Pattern recognition",
       "question": "Completează acest puzzle logic:",
       "imageName": "leo-logic-1.png",
@@ -287,6 +310,7 @@
       "target": "leo"
     },
     {
+      "id": "leo-pattern-2",
       "subject": "Pattern recognition",
       "question": "Completează acest puzzle logic:",
       "imageName": "leo-logic-2.png",
@@ -302,6 +326,7 @@
       "target": "leo"
     },
     {
+      "id": "leo-pattern-3",
       "subject": "Pattern recognition",
       "question": "Completează acest puzzle logic:",
       "imageName": "leo-logic-3.png",
@@ -317,6 +342,7 @@
       "target": "leo"
     },
     {
+      "id": "leo-romana-propozitie-corecta",
       "subject": "Limba română",
       "question": "Care propoziție este scrisă corect?",
       "options": {
@@ -329,6 +355,7 @@
       "target": "leo"
     },
     {
+      "id": "leo-geografie-capitala-moldova",
       "subject": "Geografie",
       "question": "Care este capitala Republicii Moldova?",
       "options": {
@@ -341,6 +368,7 @@
       "target": "leo"
     },
     {
+      "id": "leo-engleza-intotdeauna",
       "subject": "Engleză",
       "question": "Cum se spune în engleză \"întotdeauna\"?",
       "options": {
@@ -353,6 +381,7 @@
       "target": "leo"
     },
     {
+      "id": "leo-astronomie-planeta-aproape",
       "subject": "Astronomie",
       "question": "Care este cea mai apropiată planetă de Pământ?",
       "options": {
@@ -365,6 +394,7 @@
       "target": "leo"
     },
     {
+      "id": "leo-matematica-5la3a",
       "subject": "Matematică (Algebră)",
       "question": "Cât e 5 la a 3-a?",
       "options": {
@@ -377,6 +407,7 @@
       "target": "leo"
     },
     {
+      "id": "leo-matematica-laturi-dreptunghi",
       "subject": "Matematică (Geometrie)",
       "question": "Câte laturi are un dreptunghi?",
       "options": {
@@ -389,6 +420,7 @@
       "target": "leo"
     },
     {
+      "id": "leo-tehnologie-incalzire",
       "subject": "Tehnologie",
       "question": "Care e principala cauză a încălzirii telefonului când te joci mult timp pe el?",
       "options": {
@@ -401,6 +433,7 @@
       "target": "leo"
     },
     {
+      "id": "leo-sport-fotbal",
       "subject": "Sport",
       "question": "Câți jucători are o echipă profesionistă de fotbal (cu tot cu portar)?",
       "options": {
@@ -413,6 +446,7 @@
       "target": "leo"
     },
     {
+      "id": "leo-biologie-raceala",
       "subject": "Biologie",
       "question": "Ce este răceala?",
       "options": {
@@ -425,6 +459,7 @@
       "target": "leo"
     },
     {
+      "id": "leo-fizica-viteza",
       "subject": "Fizică",
       "question": "Ce este viteza?",
       "options": {
@@ -437,6 +472,7 @@
       "target": "leo"
     },
     {
+      "id": "leo-rude-iuliuandrei",
       "subject": "Rude",
       "question": "Cum îl cheamă pe soțul Gabrielei?",
       "options": {
@@ -449,6 +485,7 @@
       "target": "leo"
     },
     {
+      "id": "leo-muzica-do",
       "subject": "Muzică",
       "question": "Care este a 3-a notă din gama Do?",
       "options": {
@@ -461,6 +498,7 @@
       "target": "leo"
     },
     {
+      "id": "leo-entertainment-johncena",
       "subject": "Entertainment",
       "question": "Din ce sport este cunoscut John Cena?",
       "options": {
@@ -473,6 +511,7 @@
       "target": "leo"
     },
     {
+      "id": "leo-istorie-dacia",
       "subject": "Istorie",
       "question": "Cum se numea teritoriul României în Antichitate?",
       "options": {
@@ -485,6 +524,7 @@
       "target": "leo"
     },
     {
+      "id": "leo-biologie-paine",
       "subject": "Biologie",
       "question": "Ce plantă este cultivată pentru a obține făină?",
       "options": {
@@ -497,6 +537,7 @@
       "target": "leo"
     },
     {
+      "id": "iusti-miau",
       "subject": "Diverse",
       "question": "Ce animal spune \"miau\"?",
       "options": {
@@ -509,6 +550,7 @@
       "target": "iustin"
     },
     {
+      "id": "iusti-sigma",
       "subject": "Diverse",
       "question": "Completați fraza: Sigma sigma...",
       "options": {
@@ -521,6 +563,7 @@
       "target": "iustin"
     },
     {
+      "id": "iusti-frate-leo",
       "subject": "Diverse",
       "question": "Cum îl cheamă pe fratele lui Leo?",
       "options": {
@@ -533,6 +576,7 @@
       "target": "iustin"
     },
     {
+      "id": "iusti-mos-craciun",
       "subject": "Diverse",
       "question": "Cum se numește Moșul care aduce cadouri de Crăciun?",
       "options": {
@@ -545,6 +589,7 @@
       "target": "iustin"
     },
     {
+      "id": "iusti-anotimp-iarna",
       "subject": "Diverse",
       "question": "În ce anotimp ninge afara?",
       "options": {
@@ -557,6 +602,7 @@
       "target": "iustin"
     },
     {
+      "id": "iusti-noaptea-cer",
       "subject": "Diverse",
       "question": "Ce se vede noaptea pe cer?",
       "options": {
@@ -569,6 +615,7 @@
       "target": "iustin"
     },
     {
+      "id": "iusti-animal",
       "subject": "Diverse",
       "question": "Ce animal este acesta?",
       "imageName": "iusti-camel.jpeg",
@@ -582,6 +629,7 @@
       "target": "iustin"
     },
     {
+      "id": "iusti-masina-iuliu",
       "subject": "Diverse",
       "question": "Care e mașina lui Iuliu?",
       "imageName": "iusti-car.jpeg",
@@ -595,6 +643,7 @@
       "target": "iustin"
     },
     {
+      "id": "iusti-mama",
       "subject": "Diverse",
       "question": "Cum o cheamă pe mama?",
       "options": {
@@ -607,6 +656,7 @@
       "target": "iustin"
     },
     {
+      "id": "iusti-gabita",
       "subject": "Diverse",
       "question": "Cine e în această poză?",
       "imageName": "iusti-gabita.jpg",
