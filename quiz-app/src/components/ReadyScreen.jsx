@@ -2,9 +2,14 @@ import { useState } from 'react';
 import './ReadyScreen.css';
 import { playGameStartSound } from '../utils/sounds';
 
-function ReadyScreen({ player, onStart }) {
+function ReadyScreen({ player, questionCount, onStart }) {
   const [isStarting, setIsStarting] = useState(false);
   const isFeminine = player.id === 'petruta';
+
+  // Calculate max possible winnings
+  const maxWinnings = Array.from({ length: questionCount }, (_, i) =>
+    player.questionValue + i * player.valueIncrement
+  ).reduce((sum, val) => sum + val, 0);
 
   const handleStart = () => {
     setIsStarting(true);
@@ -25,6 +30,27 @@ function ReadyScreen({ player, onStart }) {
         <div className="ready-player">
           <span className="ready-player-label">Jucător selectat:</span>
           <span className="ready-player-name">{player.name}</span>
+        </div>
+
+        <div className="ready-rules">
+          <div className="rule-item">
+            <span className="rule-icon">❓</span>
+            <span className="rule-text"><strong>{questionCount}</strong> întrebări</span>
+          </div>
+          <div className="rule-item">
+            <span className="rule-icon">💰</span>
+            <span className="rule-text">Prima întrebare: <strong>{player.questionValue} RON</strong></span>
+          </div>
+          {player.valueIncrement > 0 && (
+            <div className="rule-item">
+              <span className="rule-icon">📈</span>
+              <span className="rule-text">+{player.valueIncrement} RON la fiecare întrebare</span>
+            </div>
+          )}
+          <div className="rule-item highlight">
+            <span className="rule-icon">🏆</span>
+            <span className="rule-text">Premiu maxim: <strong>{maxWinnings} RON</strong></span>
+          </div>
         </div>
 
         <h1 className="ready-title">

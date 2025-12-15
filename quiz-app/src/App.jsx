@@ -123,6 +123,7 @@ function App() {
         {gameState === 'ready' && selectedPlayer && (
           <ReadyScreen
             player={selectedPlayer}
+            questionCount={getPlayerQuestions(selectedPlayer.id).length}
             onStart={handleStartGame}
           />
         )}
