@@ -10,6 +10,7 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
   const [showResult, setShowResult] = useState(false);
   const [results, setResults] = useState(savedResults || []);
   const [visibleOptions, setVisibleOptions] = useState([]);
+  const [questionVisible, setQuestionVisible] = useState(!WITH_ANIMATIONS);
 
   const currentQuestion = questions[currentIndex];
   const optionKeys = useMemo(() => {
@@ -36,6 +37,18 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
     return () => stopSuspenseSound();
   }, [currentIndex, showResult]);
 
+  // Show question text with 2s delay
+  useEffect(() => {
+    if (!WITH_ANIMATIONS) return;
+
+    setQuestionVisible(false);
+    const timer = setTimeout(() => {
+      setQuestionVisible(true);
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, [currentIndex]);
+
   // Show options with delay - 3 seconds wait, then one by one
   useEffect(() => {
     if (!currentQuestion) return;
@@ -55,7 +68,7 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
         }, index * 2000); // 2s between each option
         timers.push(timer);
       });
-    }, 2000); // 2 seconds initial delay
+    }, 7000); // 2 seconds initial delay
 
     timers.push(initialDelay);
 
@@ -166,7 +179,7 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
 
       <div className={`question-area ${hasImage ? 'has-image' : 'no-image'}`}>
 
-        <p className={`question-text ${hasImage ? '' : 'large'}`}>{currentQuestion.question}</p>
+        <p className={`question-text ${hasImage ? '' : 'large'} ${questionVisible ? 'visible' : 'hidden'}`}>{currentQuestion.question}</p>
 
         {hasImage && (
           <div className={`question-image-container ${showResult ? 'compact' : ''}`}>
