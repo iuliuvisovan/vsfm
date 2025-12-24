@@ -182,7 +182,7 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
         <p className={`question-text ${hasImage ? '' : 'large'} ${questionVisible ? 'visible' : 'hidden'}`}>{currentQuestion.question}</p>
 
         {hasImage && (
-          <div className={`question-image-container ${showResult ? 'compact' : ''}`}>
+          <div className={`question-image-container ${showResult ? 'compact' : ''} ${questionVisible ? 'visible' : 'hidden'}`}>
             <img src={`/images/${currentQuestion.imageName}`} alt="Imagine întrebare" className="question-image" />
           </div>
         )}
