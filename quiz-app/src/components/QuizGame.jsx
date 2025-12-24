@@ -124,6 +124,7 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
     if (currentIndex + 1 >= totalQuestions) {
       onComplete([...results]);
     } else {
+      setQuestionVisible(false);
       setCurrentIndex(currentIndex + 1);
       setSelectedAnswer(null);
       setShowResult(false);
