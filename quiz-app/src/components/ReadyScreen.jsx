@@ -58,8 +58,8 @@ function ReadyScreen({ player, questionCount, onStart }) {
           </div>
           <div className="rule-item highlight">
             <span className="rule-icon">🏆</span>
-            <span className="rule-text">
-              Premiu total: <strong>{maxWinnings} RON</strong>
+            <span className="rule-text" style={{ fontSize: '2em' }}>
+              Premiul maxim posibil: <strong>{maxWinnings} RON</strong>
             </span>
           </div>
         </div>
