@@ -38,7 +38,7 @@ function ReadyScreen({ player, questionCount, onStart }) {
         <div className="ready-rules">
           <div className="rule-item">
             <span className="rule-text">
-              <strong>{questionCount}</strong> de întrebări
+              <strong>{questionCount}</strong>{questionCount >= 20 ? ' de' : ''} întrebări
             </span>
           </div>
           <div className="rule-item">
