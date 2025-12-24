@@ -3,7 +3,7 @@
     {
       "id": "p-romana-gramatica",
       "subject": "Limba română",
-      "question": "Care dintre următoarele propoziții este scrisă corect din punct de vedere gramatical?",
+      "question": "Care dintre următoarele propoziții este scrisă corect gramatical?",
       "options": {
         "A": "S-a dus la magazin dar n a mai găsit nimic.",
         "B": "N-am știut dacă o să ajunga la timp.",
@@ -65,7 +65,7 @@
     {
       "id": "p-matematica-catete",
       "subject": "Matematică (Geometrie)",
-      "question": "Într-un triunghi dreptunghic, catetele au lungimile 6 și 8. Care este lungimea ipotenuzei?",
+      "question": "Catetele unui triunghi dreptunghic au lungimile 6 și 8. Care este lungimea ipotenuzei?",
       "options": {
         "A": "9",
         "B": "10",
@@ -77,7 +77,7 @@
     },
     {
       "id": "p-cultura-kardashian",
-      "subject": "Cultură generală",
+      "subject": "Divertisment",
       "question": "Care dintre următoarele NU este sora lui Kim Kardashian?",
       "options": {
         "A": "Kris Jenner",
@@ -140,7 +140,7 @@
     {
       "id": "p-engleza-breakice",
       "subject": "Engleză",
-      "question": "Ce înseamnă expresia din limba engleză \"to break the ice\"?",
+      "question": "Ce înseamnă expresia \"to break the ice\"?",
       "options": {
         "A": "A sparge gheața pentru a face o cale prin zăpadă",
         "B": "A întrerupe o discuție importantă",
@@ -152,7 +152,7 @@
     {
       "id": "p-matematica-ecuatie",
       "subject": "Matematică (Algebră)",
-      "question": "Rezolvă ecuația: 2(x - 3) + 4x = 18",
+      "question": "Rezolvă ecuația: \n2(x - 3) + 4x = 18",
       "options": {
         "A": "x = 3",
         "B": "x = 4",
@@ -164,7 +164,7 @@
     {
       "id": "p-biologie-pasari",
       "subject": "Biologie",
-      "question": "Care structură ajută păsările în zbor prin oxigenare eficientă și reducerea densității corpului?",
+      "question": "Ce structură ajută păsările în zbor prin reducerea densității corpului?",
       "options": {
         "A": "Plămânii dubli",
         "B": "Sacii aerieni",
@@ -188,7 +188,7 @@
     {
       "id": "p-tehnologie-elonmusk",
       "subject": "Tehnologie",
-      "question": "Care dintre următoarele companii NU a fost fondată sau cofondată de Elon Musk?",
+      "question": "Care dintre următoarele companii NU a fost fondată de Elon Musk?",
       "options": {
         "A": "Tesla",
         "B": "SpaceX",
