@@ -55,32 +55,37 @@ body::before {
   z-index: 0;
 }
 
-/* Subtle animated particles effect */
+/* Subtle snowflakes effect */
 body::after {
   content: '';
   position: fixed;
-  top: 0;
+  top: -100px;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: -100px;
   background-image:
-    radial-gradient(2px 2px at 20px 30px, rgba(212, 175, 55, 0.4), transparent),
-    radial-gradient(2px 2px at 40px 70px, rgba(212, 175, 55, 0.3), transparent),
-    radial-gradient(2px 2px at 50px 160px, rgba(212, 175, 55, 0.4), transparent),
-    radial-gradient(2px 2px at 90px 40px, rgba(212, 175, 55, 0.3), transparent),
-    radial-gradient(2px 2px at 130px 80px, rgba(212, 175, 55, 0.4), transparent),
-    radial-gradient(2px 2px at 160px 120px, rgba(212, 175, 55, 0.3), transparent);
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Ctext x='0' y='8' font-size='2' fill='white' opacity='0.5'%3E❄%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Ctext x='0' y='8' font-size='1.5' fill='white' opacity='0.4'%3E❄%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Ctext x='0' y='8' font-size='2' fill='white' opacity='0.35'%3E❄%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Ctext x='0' y='8' font-size='1.5' fill='white' opacity='0.45'%3E❄%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Ctext x='0' y='8' font-size='2' fill='white' opacity='0.3'%3E❄%3C/text%3E%3C/svg%3E");
+  background-position:
+    10px 15px,
+    35px 55px,
+    60px 25px,
+    85px 70px,
+    20px 90px;
   background-repeat: repeat;
-  background-size: 200px 200px;
-  animation: sparkle 20s linear infinite;
+  background-size: 100px 100px;
+  animation: sparkle 22s linear infinite;
   pointer-events: none;
   z-index: 0;
-  opacity: 0.75;
+  opacity: 0.25;
 }
 
 @keyframes sparkle {
   0% { transform: translateY(0); }
-  100% { transform: translateY(-200px); }
+  100% { transform: translateY(-100px); }
 }
 
 #root {
