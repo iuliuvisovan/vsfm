@@ -70,6 +70,7 @@ export const playCorrectSound = () => {
   try {
     preloadSounds();
     stopSuspenseSound();
+    sounds.correct.volume = 1.0;
     sounds.correct.currentTime = 0;
     sounds.correct.play();
   } catch {

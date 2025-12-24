@@ -29,12 +29,12 @@
       "subject": "Diverse",
       "question": "Completați fraza: Sigma sigma...",
       "options": {
-        "A": "bot",
-        "B": "boy",
-        "C": "voy",
-        "D": "soy"
+        "A": "soy",
+        "B": "voy",
+        "C": "boy",
+        "D": "bot"
       },
-      "correctAnswer": "B"
+      "correctAnswer": "C"
     },
     {
       "id": "iusti-frate-leo",
