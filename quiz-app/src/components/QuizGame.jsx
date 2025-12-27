@@ -2,7 +2,7 @@ import { useState, useEffect, useMemo } from 'react';
 import './QuizGame.css';
 import { playCorrectSound, playWrongSound, playSuspenseSound, stopSuspenseSound } from '../utils/sounds';
 
-const WITH_ANIMATIONS = false;
+const WITH_ANIMATIONS = true;
 
 function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onIndexChange, onResultsChange }) {
   const [currentIndex, setCurrentIndex] = useState(savedIndex || 0);
@@ -37,14 +37,14 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
     return () => stopSuspenseSound();
   }, [currentIndex, showResult]);
 
-  // Show question text with 2s delay
+  // Show question text with delay
   useEffect(() => {
     if (!WITH_ANIMATIONS) return;
 
     setQuestionVisible(false);
     const timer = setTimeout(() => {
       setQuestionVisible(true);
-    }, 5000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, [currentIndex]);
@@ -68,7 +68,7 @@ function QuizGame({ player, questions, onComplete, savedIndex, savedResults, onI
         }, index * 2000); // 2s between each option
         timers.push(timer);
       });
-    }, 7000); // 2 seconds initial delay
+    }, 5000); // 2 seconds initial delay
 
     timers.push(initialDelay);
 
