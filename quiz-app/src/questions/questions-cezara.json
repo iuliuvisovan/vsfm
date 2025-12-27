@@ -1,7 +1,7 @@
 {
   "questions": [
     {
-      "id": "iusti-mama",
+      "id": "cezi-mama",
       "subject": "Diverse",
       "question": "Cum o cheamă pe mama?",
       "options": {
@@ -13,7 +13,7 @@
       "correctAnswer": "D"
     },
     {
-      "id": "iusti-miau",
+      "id": "cezi-miau",
       "subject": "Diverse",
       "question": "Ce animal spune \"miau\"?",
       "options": {
@@ -25,7 +25,7 @@
       "correctAnswer": "A"
     },
     {
-      "id": "iusti-sigma",
+      "id": "cezi-sigma",
       "subject": "Diverse",
       "question": "Completați fraza: Sigma sigma...",
       "options": {
@@ -37,7 +37,7 @@
       "correctAnswer": "C"
     },
     {
-      "id": "iusti-frate-leo",
+      "id": "cezi-frate-leo",
       "subject": "Diverse",
       "question": "Cum îl cheamă pe fratele lui Leo?",
       "options": {
@@ -49,7 +49,7 @@
       "correctAnswer": "D"
     },
     {
-      "id": "iusti-mos-craciun",
+      "id": "cezi-mos-craciun",
       "subject": "Diverse",
       "question": "Cum se numește Moșul care aduce cadouri de Crăciun?",
       "options": {
@@ -61,10 +61,10 @@
       "correctAnswer": "A"
     },
     {
-      "id": "iusti-masina-iuliu",
+      "id": "cezi-masina-iuliu",
       "subject": "Diverse",
       "question": "Care e mașina lui Iuliu?",
-      "imageName": "iusti-car.png",
+      "imageName": "cezi-car.png",
       "options": {
         "A": "Varianta A",
         "B": "Varianta B",
@@ -74,7 +74,7 @@
       "correctAnswer": "D"
     },
     {
-      "id": "iusti-noaptea-cer",
+      "id": "cezi-noaptea-cer",
       "subject": "Diverse",
       "question": "Ce se vede noaptea pe cer?",
       "options": {
@@ -86,10 +86,10 @@
       "correctAnswer": "A"
     },
     {
-      "id": "iusti-gabita",
+      "id": "cezi-gabita",
       "subject": "Diverse",
       "question": "Cine este în această poză?",
-      "imageName": "iusti-gabita.jpg",
+      "imageName": "cezi-gabita.jpg",
       "options": {
         "A": "Mama",
         "B": "Nana Găbița",
@@ -99,10 +99,10 @@
       "correctAnswer": "B"
     },
     {
-      "id": "iusti-animal",
+      "id": "cezi-animal",
       "subject": "Diverse",
       "question": "Ce animal este acesta?",
-      "imageName": "iusti-camel.jpeg",
+      "imageName": "cezi-camel.jpeg",
       "options": {
         "A": "Cămilă",
         "B": "Vacă",
@@ -112,7 +112,7 @@
       "correctAnswer": "A"
     },
     {
-      "id": "iusti-anotimp-iarna",
+      "id": "cezi-anotimp-iarna",
       "subject": "Diverse",
       "question": "În ce anotimp ninge afară?",
       "options": {
