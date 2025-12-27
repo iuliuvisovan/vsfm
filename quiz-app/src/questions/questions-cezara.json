@@ -42,11 +42,11 @@
       "question": "Cum o cheamă pe fetița lu Crina?",
       "options": {
         "A": "Ana",
-        "B": "Denisa",
-        "C": "Cezi",
+        "B": "Cezi",
+        "C": "Denisa",
         "D": "Vlad"
       },
-      "correctAnswer": "C"
+      "correctAnswer": "B"
     },
     {
       "id": "cezi-mos-craciun",
@@ -64,7 +64,7 @@
       "id": "cezi-masina-iuliu",
       "subject": "Diverse",
       "question": "Care e mașina lui Iuliu?",
-      "imageName": "cezi-car.png",
+      "imageName": "iuliu-car.jpg",
       "options": {
         "A": "Varianta A",
         "B": "Varianta B",
