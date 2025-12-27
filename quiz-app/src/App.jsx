@@ -36,8 +36,8 @@ function App() {
   }
 
   const players = [
-    { id: 'petruta', name: 'Petruța', questionValue: 6, valueIncrement: 0.5 },
-    { id: 'leo', name: 'Leo', questionValue: 3, valueIncrement: 0.5 },
+    // { id: 'petruta', name: 'Petruța', questionValue: 6, valueIncrement: 0.5 },
+    // { id: 'leo', name: 'Leo', questionValue: 3, valueIncrement: 0.5 },
     { id: 'cezara', name: 'Cezara', questionValue: 5, valueIncrement: 0 }
   ]
 

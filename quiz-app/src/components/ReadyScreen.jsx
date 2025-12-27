@@ -4,7 +4,7 @@ import { playGameStartSound } from '../utils/sounds';
 
 function ReadyScreen({ player, questionCount, onStart }) {
   const [isStarting, setIsStarting] = useState(false);
-  const isFeminine = player.id === 'petruta';
+  const isFeminine = player.id === 'petruta' || player.id === 'cezara' || player.id === 'crina';
 
   // Calculate max possible winnings
   const maxWinnings = Array.from({ length: questionCount }, (_, i) => player.questionValue + i * player.valueIncrement).reduce(

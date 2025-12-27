@@ -6,59 +6,59 @@
       "question": "Cum o cheamă pe mama?",
       "options": {
         "A": "Ana",
-        "B": "Maria",
-        "C": "Elena",
-        "D": "Georgiana"
+        "B": "Gabi",
+        "C": "Crina",
+        "D": "Denisa"
       },
-      "correctAnswer": "D"
+      "correctAnswer": "C"
     },
     {
       "id": "cezi-miau",
       "subject": "Diverse",
       "question": "Ce animal spune \"miau\"?",
       "options": {
-        "A": "Pisica",
-        "B": "Câinele",
-        "C": "Vaca",
-        "D": "Oaia"
+        "A": "Câinele",
+        "B": "Vaca",
+        "C": "Oaia",
+        "D": "Pisica"
       },
-      "correctAnswer": "A"
+      "correctAnswer": "D"
     },
     {
       "id": "cezi-sigma",
       "subject": "Diverse",
-      "question": "Completați fraza: Sigma sigma...",
+      "question": "Cu ce vă spălați pe cap?",
       "options": {
-        "A": "soy",
-        "B": "voy",
-        "C": "boy",
-        "D": "bot"
+        "A": "cu șampon",
+        "B": "cu săpun",
+        "C": "cu oțet",
+        "D": "cu gel"
       },
       "correctAnswer": "C"
     },
     {
       "id": "cezi-frate-leo",
       "subject": "Diverse",
-      "question": "Cum îl cheamă pe fratele lui Leo?",
+      "question": "Cum o cheamă pe fetița lu Crina?",
       "options": {
-        "A": "Petru",
-        "B": "George",
-        "C": "Mihai",
-        "D": "Cezara"
+        "A": "Ana",
+        "B": "Denisa",
+        "C": "Cezi",
+        "D": "Vlad"
       },
-      "correctAnswer": "D"
+      "correctAnswer": "C"
     },
     {
       "id": "cezi-mos-craciun",
       "subject": "Diverse",
       "question": "Cum se numește Moșul care aduce cadouri de Crăciun?",
       "options": {
-        "A": "Moș Crăciun",
-        "B": "Moș Martin",
+        "A": "Moș Martin",
+        "B": "Moș Crăciun",
         "C": "Moș Nicolae",
         "D": "Moș Gerilă"
       },
-      "correctAnswer": "A"
+      "correctAnswer": "B"
     },
     {
       "id": "cezi-masina-iuliu",
@@ -86,17 +86,17 @@
       "correctAnswer": "A"
     },
     {
-      "id": "cezi-gabita",
+      "id": "cezi-vlad",
       "subject": "Diverse",
       "question": "Cine este în această poză?",
-      "imageName": "cezi-gabita.jpg",
+      "imageName": "cezi-vlad.png",
       "options": {
-        "A": "Mama",
-        "B": "Nana Găbița",
-        "C": "Bunica",
-        "D": "Doamna educatoare"
+        "A": "Tata",
+        "B": "Iuliu",
+        "C": "Vad",
+        "D": "Vlad"
       },
-      "correctAnswer": "B"
+      "correctAnswer": "D"
     },
     {
       "id": "cezi-animal",
@@ -114,14 +114,14 @@
     {
       "id": "cezi-anotimp-iarna",
       "subject": "Diverse",
-      "question": "În ce anotimp ninge afară?",
+      "question": "Arată-ne un obiect de culoare galben",
       "options": {
-        "A": "Iarna",
-        "B": "Primăvara",
-        "C": "Vara",
-        "D": "Toamna"
+        "A": "Corect",
+        "B": "Foarte bine",
+        "C": "Bravo",
+        "D": "Ești cea mai tare Cezara"
       },
-      "correctAnswer": "A"
+      "correctAnswer": "D"
     }
   ]
 }
