@@ -5,7 +5,7 @@ import QuizGame from './components/QuizGame'
 import Summary from './components/Summary'
 import petrutaQuestions from './questions/questions-petruta.json'
 import leoQuestions from './questions/questions-leo.json'
-import iustinQuestions from './questions/questions-iustin.json'
+import cezaraQuestions from './questions/questions-cezara.json'
 import { enableSounds, playBeforeSound, playSuspenseSound, stopAllSounds } from './utils/sounds'
 import './App.css'
 
@@ -38,7 +38,7 @@ function App() {
   const players = [
     { id: 'petruta', name: 'Petruța', questionValue: 6, valueIncrement: 0.5 },
     { id: 'leo', name: 'Leo', questionValue: 3, valueIncrement: 0.5 },
-    { id: 'iustin', name: 'Iustin', questionValue: 5, valueIncrement: 0 }
+    { id: 'cezara', name: 'Cezara', questionValue: 5, valueIncrement: 0 }
   ]
 
   // Load state from localStorage on mount
@@ -73,7 +73,7 @@ function App() {
   const questionsByTarget = {
     petruta: petrutaQuestions.questions,
     leo: leoQuestions.questions,
-    iustin: iustinQuestions.questions
+    cezara: cezaraQuestions.questions
   }
 
   const getPlayerQuestions = (playerId) => {
