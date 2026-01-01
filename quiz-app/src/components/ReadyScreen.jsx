@@ -4,7 +4,7 @@ import { playGameStartSound } from '../utils/sounds';
 
 function ReadyScreen({ player, questionCount, onStart }) {
   const [isStarting, setIsStarting] = useState(false);
-  const isFeminine = player.id === 'petruta' || player.id === 'cezara' || player.id === 'crina';
+  const isFeminine = player.id === 'cezara' || player.id === 'leo';
 
   // Calculate max possible winnings
   const maxWinnings = Array.from({ length: questionCount }, (_, i) => player.questionValue + i * player.valueIncrement).reduce(
@@ -38,7 +38,8 @@ function ReadyScreen({ player, questionCount, onStart }) {
         <div className="ready-rules">
           <div className="rule-item">
             <span className="rule-text">
-              <strong>{questionCount}</strong>{questionCount >= 20 ? ' de' : ''} întrebări
+              <strong>{questionCount}</strong>
+              {questionCount >= 20 ? ' de' : ''} întrebări
             </span>
           </div>
           <div className="rule-item">
@@ -59,7 +60,7 @@ function ReadyScreen({ player, questionCount, onStart }) {
           <div className="rule-item highlight">
             <span className="rule-icon">🏆</span>
             <span className="rule-text" style={{ fontSize: '2em' }}>
-              Premiul maxim posibil: <strong>{maxWinnings} RON</strong>
+              Premiul maxim posibil: <strong>10 RON</strong>
             </span>
           </div>
         </div>
